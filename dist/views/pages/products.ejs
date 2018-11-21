@@ -1,0 +1,28 @@
+
+<% include ../partials/header %>
+
+  <div class="container">
+    <h1>Products Page</h1>
+
+    <ul class="list-group">
+      <% for(let i = 0; i < products.length; ++i) { %>
+        <li class="list-group-item">
+          <h4>
+            <a href='/products_<%= products[i]._id %>'>Name: <%= products[i].name %></a>
+          </h4>
+
+          <p>
+            Price: <%= products[i].price %>
+          </p>
+
+        <% if (user) { %>
+          <a class="btn btn-primary" href="/edit-product_<%= products[i]._id %>">Edit</a>
+
+          <a class="btn btn-danger delete-product" href="#" id="<%= products[i]._id %>">Delete</a>
+        </li>
+        <% } %>
+      <% } %>
+    </ul>
+  </div>
+
+<% include ../partials/footer %>

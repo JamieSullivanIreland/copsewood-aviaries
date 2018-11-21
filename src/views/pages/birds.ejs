@@ -1,0 +1,29 @@
+
+<% include ../partials/header %>
+
+  <div class="container">
+    <h1>Birds for Sale</h1>
+
+    <ul class="list-group">
+      <% for(let i = 0; i < birds.length; ++i) { %>
+        <li class="list-group-item">
+          <h4>
+            <a href='/birds_<%=birds[i]._id %>'>Breed: <%= birds[i].breed %></a>
+          </h4>
+
+          <p>
+            Price: <%= birds[i].price %> <br />
+            Added By: <%= birds[i].addedBy %>
+          </p>
+
+          <% if (user) { %>
+            <a class="btn btn-primary" href="/edit-bird_<%= birds[i]._id %>">Edit</a>
+
+            <a class="btn btn-danger delete-bird" href="#" id="<%= birds[i]._id %>">Delete</a>
+          <% } %>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+
+<% include ../partials/footer %>

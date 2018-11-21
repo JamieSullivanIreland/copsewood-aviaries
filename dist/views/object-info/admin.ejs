@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+  <div class="container">
+    <h1>Edit Admin</h1>
+
+    <%- messages() %>
+
+    <% if (isEditing) { %>
+      <form method='POST' action='/api/admins/register/<%=  admin._id %>'>
+
+        <div class="form-group">
+          <label for="username">Name</label>
+          <input type="text" name="username" class="form-control" value="<%= admin.username %>">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirmPassword" class="form-control">
+        </div>
+
+        <input class="btn btn.primary" type="submit" value="Submit">
+
+      </form>
+    <% } else { %>
+      <h3> Name: <%= admin.username %> </h3>
+      <h3> Password: <%=  admin.password %> </h3>
+    <% } %>
+  </div>
+
+<% include ../partials/footer %>

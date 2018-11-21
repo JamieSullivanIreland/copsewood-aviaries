@@ -1,0 +1,41 @@
+
+  // --- ITCSS - Inverted Triangle CSS ---
+  //Settings - variables, sizes, colours, fonts, super classes etc
+  @import 'settings/variables';
+  @import 'settings/fonts';
+
+  // Tools - media-queries, mixins and functions
+  @import 'tools/media-queries';
+  @import 'tools/mixins';
+
+  // Generic - reset and/or normalize styles, box-sizing etc.
+  @import 'generic/normalise';
+
+  // Elements - Bare unclassed HTML elements links, lists, headings etc.
+  @import 'elements/elements';
+
+  // Components - App UI components
+  @import 'components/navigation';
+  @import 'components/buttons';
+
+  // Utilities - helper classes that override anything that goes before, e.g is-active, is-hidden. Only place where !important is permitted
+  @import 'utilities/helpers';
+
+#dropArea {
+  height: 300px;
+  width: 300px;
+  border: 3px dashed black;
+  border-radius: 8px;
+}
+
+.highlight-upload {
+  .st0 {
+    stroke: green;
+  }
+}
+
+.unhighlight-upload {
+  .st0 {
+    stroke: black;
+  }
+}

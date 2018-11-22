@@ -1,4 +1,4 @@
-import $ from 'jquery';
+const $ = require('jquery');
 
 $(document).ready(() => {
   $('.delete-bird').on('click', (e) => {

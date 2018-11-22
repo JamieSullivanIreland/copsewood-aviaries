@@ -5,7 +5,8 @@ const path = require('path');
 const expressValidator = require('express-validator');
 const session = require('express-session');
 const flash = require('connect-flash');
-const passport = require('passport');
+// const passport = require('passport');
+import passport from 'passport';
 
 // Initialise
 const app = new express();

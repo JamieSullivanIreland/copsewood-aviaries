@@ -4,13 +4,24 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const expressValidator = require('express-validator');
 const session = require('express-session');
-const flash = require('connect-flash');
+// const flash = require('connect-flash');
 // const passport = require('passport');
+// import webpack from 'webpack';
+// import config from '../webpack.client-dev.js';
+// import webpackDevMiddleware from 'webpack-dev-middleware';
+// import webpackHotMiddleware from 'webpack-hot-middleware';
+import flash from 'connect-flash';
 import passport from 'passport';
 
 // Initialise
-const app = new express();
+const app = express();
 const port = process.env.PORT || 3000;
+
+// app.use(webpackDevMiddleware(compiler, {
+//   publicPath: config.output.publicPath
+// }));
+//
+// app.use(webpackHotMiddleware(compiler));
 
 // View engine
 const ejs = require("ejs").__express;
@@ -61,12 +72,12 @@ app.use(expressValidator({
 
 // Middleware to remove any trailing / on routes
 app.use(function(req, res, next) {
-    if (req.path.substr(-1) == '/' && req.path.length > 1) {
-        var query = req.url.slice(req.path.length);
-        res.redirect(301, req.path.slice(0, -1) + query);
-    } else {
-        next();
-    }
+  if (req.path.substr(-1) == '/' && req.path.length > 1) {
+      var query = req.url.slice(req.path.length);
+      res.redirect(301, req.path.slice(0, -1) + query);
+  } else {
+      next();
+  }
 });
 
 // Passport config

@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
 const common = require('./webpack.common.js');
-const ConcatPlugin = require('webpack-concat-plugin');
 
 module.exports = {
   mode: 'development',
@@ -16,7 +15,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'src/public/js')
+    path: path.join(__dirname, 'src/public/js'),
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -29,10 +29,24 @@ module.exports = {
             presets: ['env']
           }
         }
-      }
+      },
+      {
+        test: /\.s?[ac]ss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      },
     ]
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ]
+  }
+  // plugins: [
+  //   new webpack.HotModuleReplacementPlugin(),
+  // ]
 };

@@ -1,27 +1,51 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
-const ConcatPlugin = require('webpack-concat-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/public/js/index.js',
+  mode: 'production',
+  target: 'web',
+  entry: './src/public/js/client.js',
   output: {
-    filename: 'index.js',
+    filename: 'client.js',
     path: path.join(__dirname, 'dist/public/js')
   },
-  target: 'web',
-  node: {
-    __dirname: false
+  optimization: {
+  minimizer: [
+      new UglifyJsPlugin({
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        extractComments: false
+      })
+    ]
   },
-  externals: [nodeExternals()],
-  plugins: [
-    new ConcatPlugin({
-      outputPath: '/dist/public/js',
-      fileName: 'index.js',
-      filesToConcat: ['./src/public/js/client/**'],
-      attributes: {
-        async: true
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
+        }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
       }
-    })
-  ]
+      // {
+      //   test: /\.s?[ac]ss$/,
+      //   use: [
+      //     MiniCssExtractPlugin.loader,
+      //     'css-loader',
+      //     'sass-loader'
+      //   ],
+      // }
+    ]
+  }
 }

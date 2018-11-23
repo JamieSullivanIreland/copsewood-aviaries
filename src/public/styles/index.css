@@ -1,1 +1,30 @@
-h1{color:#11ce59}body h1{font-size:32px}#messages{padding:0px}#messages li{list-style:none}#messages .alert-success_msg{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}#messages .error{color:#a94442;background-color:#f2dede;border-color:#ebccd1}#dropArea{height:300px;width:300px;border:3px dashed black;border-radius:8px}.highlight-upload .st0{stroke:green}.unhighlight-upload .st0{stroke:black}
+h1 {
+  color: #11ce59; }
+
+body h1 {
+  font-size: 32px; }
+
+#messages {
+  padding: 0px; }
+  #messages li {
+    list-style: none; }
+  #messages .alert-success_msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6; }
+  #messages .error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1; }
+
+#dropArea {
+  height: 300px;
+  width: 300px;
+  border: 3px dashed green;
+  border-radius: 8px; }
+
+.highlight-upload .st0 {
+  stroke: green; }
+
+.unhighlight-upload .st0 {
+  stroke: black; }

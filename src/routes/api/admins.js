@@ -3,9 +3,47 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
+const jwt = require('jsonwebtoken');
 
 const adminModel = require('../../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
+
+// FORMAT OF Token
+// Authorization: Bearer <accesss_token>
+// JSON Web Token
+function verifyToken(req, res, next) {
+  // Get auth header value
+  const bearerHeader = req.headers['authorization'];
+
+  // Check if bearer is undefined
+  if (typeof bearerHeader !== 'undefined') {
+    // Split at the space
+    const bearer = bearerHeader.split(' ');
+    // Get token from array
+    const bearerToken = bearer[1];
+    // Set the Token
+    req.token = bearerToken;
+    // Next Middleware
+    next();
+  } else {
+    // Forbidden
+    res.sendStatus(403);
+  }
+}
+
+router.get('/jwt', (req, res) => {
+  // Mock User - we authenticate user - skips to getting user back
+  const user = {
+    id: 1,
+    username: 'Jamie'
+  }
+
+  jwt.sign({ user }, 'secretkey', (err, token) => {
+    res.json({
+      token
+    })
+  });
+});
 
 // Login Admin Process
 router.post('/login', (req, res, next) => {
@@ -13,8 +51,19 @@ router.post('/login', (req, res, next) => {
     successRedirect: '/admin-panel',
     failureRedirect: '/login',
     failureFlash: true
-  })(req, res, next);
+  })(req, res, createToken(req));
 });
+
+function createToken(req) {
+  const user = {
+    username: req.body.username,
+    password: req.body.password
+  }
+
+  jwt.sign({ user }, 'secretkey', (err, token) => {
+    console.log(token);
+  });
+}
 
 // logout
 router.get('/logout', (req, res) => {
@@ -107,11 +156,20 @@ router.post('/register/:id', (req, res) => {
 
 // @router        GET api/admins
 // @description   Get all admins
-router.get('/', (req, res) => {
-  Admin.find()
-    .sort({name: 1})
-    .then(admins => res.status(200).json(admins))
-    .catch(err => res.status(404));
+router.get('/', verifyToken, (req, res) => {
+
+  jwt.verify(req.token, 'secretkey', (err, authData) => {
+    if (err) {
+      res.sendStatus(403);
+    } else {
+      Admin.find()
+        .sort({name: 1})
+        .then(admins => res.status(200).json(admins))
+        .catch(err => res.status(404));
+    }
+  });
+
+
 });
 
 // @router        GET api/admins/:id

@@ -17,12 +17,6 @@ import passport from 'passport';
 const app = express();
 const port = process.env.PORT || 3000;
 
-// app.use(webpackDevMiddleware(compiler, {
-//   publicPath: config.output.publicPath
-// }));
-//
-// app.use(webpackHotMiddleware(compiler));
-
 // View engine
 const ejs = require("ejs").__express;
 app.engine('.ejs', ejs);
@@ -105,7 +99,6 @@ mongoose
 // Routes
 const pages = require('./routes/pages');
 app.use('/', pages);
-
 
 const birds = require('./routes/api/birds');
 app.use('/api/birds', birds);

@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
+const passport = require('passport');
 
 // Models
 const birdModel = require('../models/Bird');
@@ -9,6 +10,39 @@ const productModel = require('../models/Product');
 const Product = mongoose.model('Product', productModel);
 const adminModel = require('../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
+
+// FORMAT OF Token
+// Authorization: Bearer <accesss_token>
+// JSON Web Token
+function verifyToken(req, res, next) {
+  // console.log(req.headers);
+  // res.clearCookie('auth');
+
+  // const token = req.cookies['jwt'];
+
+  // Get auth header value
+  // const bearerHeader = req.headers['authorization'];
+
+  // Check if bearer is not undefined
+  if (req.cookies['jwt']) {
+    const token = req.cookies['jwt'];
+
+    // // Split at the space
+    // const bearer = bearerHeader.split(' ');
+    //
+    // // Get token from array
+    // const bearerToken = bearer[1];
+
+    // Set the Token
+    req.token = token;
+
+    // Next Middleware
+    next();
+  } else {
+    // Forbidden
+    res.sendStatus(403);
+  }
+}
 
 // Access control
 function ensureAuthenticated(req, res, next) {
@@ -42,7 +76,8 @@ router.get('/admin-panel', (req, res) => {
 });
 
 // Admins Page
-router.get('/admins', (req, res) => {
+router.get('/admins', verifyToken, (req, res) => {
+  // console.log(req.headers);
   Admin.find({}, (err, admins) => {
     if (err) {
       console.log(err);

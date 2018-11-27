@@ -8,6 +8,21 @@ const jwt = require('jsonwebtoken');
 const adminModel = require('../../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
 
+router.get('/jwt', verifyToken, (req, res) => {
+  // Mock User - we authenticate user - skips to getting user back
+  res.send('JWT Authorised')
+  // const user = {
+  //   id: 1,
+  //   username: 'Jamie'
+  // }
+  //
+  // jwt.sign({ user }, 'secretkey', (err, token) => {
+  //   res.json({
+  //     token
+  //   })
+  // });
+});
+
 // FORMAT OF Token
 // Authorization: Bearer <accesss_token>
 // JSON Web Token
@@ -31,42 +46,65 @@ function verifyToken(req, res, next) {
   }
 }
 
-router.get('/jwt', (req, res) => {
-  // Mock User - we authenticate user - skips to getting user back
-  const user = {
-    id: 1,
-    username: 'Jamie'
-  }
-
-  jwt.sign({ user }, 'secretkey', (err, token) => {
-    res.json({
-      token
-    })
-  });
-});
-
 // Login Admin Process
+// router.post('/login', (req, res, next) => {
+//   passport.authenticate('local', {
+//     successRedirect: '/admin-panel',
+//     failureRedirect: '/login',
+//     failureFlash: true
+//   });
+// });
+
 router.post('/login', (req, res, next) => {
-  passport.authenticate('local', {
-    successRedirect: '/admin-panel',
-    failureRedirect: '/login',
-    failureFlash: true
-  })(req, res, createToken(req));
+  passport.authenticate('local', (err, user, info) => {
+
+
+    if (err) {
+      req.flash('alert alert-danger', 'There was a problem logging in');
+      return next(err);
+    }
+
+    if (!user) {
+      req.flash('alert alert-danger', info.message);
+      return res.redirect('/login');
+    }
+
+    req.logIn(user, (err) => {
+      // console.log(req.user);
+
+      if (err) {
+        req.flash('alert alert-danger', 'There was a problem logging in');
+        return next(err);
+      }
+
+      // res.clearCookie('jwt');
+
+      const user = req.user;
+      const token = jwt.sign(req.user.toJSON(), 'secretkey');
+      res.cookie('jwt', token);
+
+      // createToken(req, res)
+      return res.redirect('/birds');
+    });
+
+  })(req, res);
 });
 
-function createToken(req) {
-  const user = {
-    username: req.body.username,
-    password: req.body.password
-  }
+function createToken(req, res) {
+    const user = req.body.username;
+    const token = jwt.sign(user, 'secretkey');
+    return res.json({user, token});
 
-  jwt.sign({ user }, 'secretkey', (err, token) => {
-    console.log(token);
-  });
+    // jwt.sign({ user }, 'secretkey', (err, token) => {
+    //   // console.log(token);
+    //   // console.log(user);
+    //
+    // });
 }
 
 // logout
 router.get('/logout', (req, res) => {
+  res.clearCookie('jwt');
   req.logout();
   req.flash('alert alert-success', 'You are now logged out');
   res.redirect('/login');

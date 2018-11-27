@@ -140,7 +140,7 @@ eval("\n\nvar messages = document.querySelector('#messages');\n\nif (messages) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js?");
+eval("__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js?");
 
 /***/ })
 

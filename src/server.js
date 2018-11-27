@@ -12,6 +12,8 @@ const session = require('express-session');
 // import webpackHotMiddleware from 'webpack-hot-middleware';
 import flash from 'connect-flash';
 import passport from 'passport';
+const cookieParser = require('cookie-parser');
+
 
 // Initialise
 const app = express();
@@ -30,6 +32,9 @@ app.use('/uploads', express.static('uploads'));
 // Bodyparser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// Cookie parser middleware
+app.use(cookieParser());
 
 // Express Session Middleware
 app.use(session({

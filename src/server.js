@@ -1,19 +1,12 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-const path = require('path');
-const expressValidator = require('express-validator');
-const session = require('express-session');
-// const flash = require('connect-flash');
-// const passport = require('passport');
-// import webpack from 'webpack';
-// import config from '../webpack.client-dev.js';
-// import webpackDevMiddleware from 'webpack-dev-middleware';
-// import webpackHotMiddleware from 'webpack-hot-middleware';
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+import path from 'path';
+import expressValidator from 'express-validator';
+import session from 'express-session';
 import flash from 'connect-flash';
 import passport from 'passport';
-const cookieParser = require('cookie-parser');
-
+import cookieParser from 'cookie-parser';
 
 // Initialise
 const app = express();

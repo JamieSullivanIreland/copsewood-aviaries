@@ -7,58 +7,34 @@ const jwt = require('jsonwebtoken');
 
 const adminModel = require('../../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
-
-router.get('/jwt', verifyToken, (req, res) => {
-  // Mock User - we authenticate user - skips to getting user back
-  res.send('JWT Authorised')
-  // const user = {
-  //   id: 1,
-  //   username: 'Jamie'
-  // }
-  //
-  // jwt.sign({ user }, 'secretkey', (err, token) => {
-  //   res.json({
-  //     token
-  //   })
-  // });
-});
+const JWT_KEY = process.env.JWT_KEY || require('../../config/jwt').JWT_KEY;
 
 // FORMAT OF Token
 // Authorization: Bearer <accesss_token>
 // JSON Web Token
-function verifyToken(req, res, next) {
-  // Get auth header value
-  const bearerHeader = req.headers['authorization'];
-
-  // Check if bearer is undefined
-  if (typeof bearerHeader !== 'undefined') {
-    // Split at the space
-    const bearer = bearerHeader.split(' ');
-    // Get token from array
-    const bearerToken = bearer[1];
-    // Set the Token
-    req.token = bearerToken;
-    // Next Middleware
-    next();
-  } else {
-    // Forbidden
-    res.sendStatus(403);
-  }
-}
+// function verifyToken(req, res, next) {
+//   // Get auth header value
+//   const bearerHeader = req.headers['authorization'];
+//
+//   // Check if bearer is undefined
+//   if (typeof bearerHeader !== 'undefined') {
+//     // Split at the space
+//     const bearer = bearerHeader.split(' ');
+//     // Get token from array
+//     const bearerToken = bearer[1];
+//     // Set the Token
+//     req.token = bearerToken;
+//     // Next Middleware
+//     next();
+//   } else {
+//     // Forbidden
+//     res.sendStatus(403);
+//   }
+// }
 
 // Login Admin Process
-// router.post('/login', (req, res, next) => {
-//   passport.authenticate('local', {
-//     successRedirect: '/admin-panel',
-//     failureRedirect: '/login',
-//     failureFlash: true
-//   });
-// });
-
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
-
-
     if (err) {
       req.flash('alert alert-danger', 'There was a problem logging in');
       return next(err);
@@ -70,37 +46,19 @@ router.post('/login', (req, res, next) => {
     }
 
     req.logIn(user, (err) => {
-      // console.log(req.user);
-
       if (err) {
         req.flash('alert alert-danger', 'There was a problem logging in');
         return next(err);
       }
 
-      // res.clearCookie('jwt');
-
       const user = req.user;
-      const token = jwt.sign(req.user.toJSON(), 'secretkey');
+      const token = jwt.sign(user.toJSON(), JWT_KEY);
       res.cookie('jwt', token);
-
-      // createToken(req, res)
       return res.redirect('/birds');
     });
 
   })(req, res);
 });
-
-function createToken(req, res) {
-    const user = req.body.username;
-    const token = jwt.sign(user, 'secretkey');
-    return res.json({user, token});
-
-    // jwt.sign({ user }, 'secretkey', (err, token) => {
-    //   // console.log(token);
-    //   // console.log(user);
-    //
-    // });
-}
 
 // logout
 router.get('/logout', (req, res) => {
@@ -194,20 +152,11 @@ router.post('/register/:id', (req, res) => {
 
 // @router        GET api/admins
 // @description   Get all admins
-router.get('/', verifyToken, (req, res) => {
-
-  jwt.verify(req.token, 'secretkey', (err, authData) => {
-    if (err) {
-      res.sendStatus(403);
-    } else {
-      Admin.find()
-        .sort({name: 1})
-        .then(admins => res.status(200).json(admins))
-        .catch(err => res.status(404));
-    }
-  });
-
-
+router.get('/', (req, res) => {
+  Admin.find()
+    .sort({name: 1})
+    .then(admins => res.status(200).json(admins))
+    .catch(err => res.status(404));
 });
 
 // @router        GET api/admins/:id

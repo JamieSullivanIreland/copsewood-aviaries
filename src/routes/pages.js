@@ -11,31 +11,11 @@ const Product = mongoose.model('Product', productModel);
 const adminModel = require('../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
 
-// FORMAT OF Token
-// Authorization: Bearer <accesss_token>
-// JSON Web Token
+// Verify JWT
 function verifyToken(req, res, next) {
-  // console.log(req.headers);
-  // res.clearCookie('auth');
-
-  // const token = req.cookies['jwt'];
-
-  // Get auth header value
-  // const bearerHeader = req.headers['authorization'];
-
-  // Check if bearer is not undefined
   if (req.cookies['jwt']) {
-    const token = req.cookies['jwt'];
-
-    // // Split at the space
-    // const bearer = bearerHeader.split(' ');
-    //
-    // // Get token from array
-    // const bearerToken = bearer[1];
-
     // Set the Token
-    req.token = token;
-
+    req.token = req.cookies['jwt'];
     // Next Middleware
     next();
   } else {

@@ -121,7 +121,7 @@ router.delete('/:id', verifyToken, (req, res) => {
       }
 
       bird.remove().then(() => {
-        req.flash('alert alert-success', `${bird.breed} Was Deleted`);
+        req.flash('alert alert-success', `${bird.breed} Was Deleted Successfully`);
         res.status(200).redirect('/birds');
       })
     })

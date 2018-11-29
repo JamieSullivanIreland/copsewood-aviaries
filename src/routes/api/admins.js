@@ -8,29 +8,7 @@ const jwt = require('jsonwebtoken');
 const adminModel = require('../../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
 const JWT_KEY = process.env.JWT_KEY || require('../../config/jwt').JWT_KEY;
-
-// FORMAT OF Token
-// Authorization: Bearer <accesss_token>
-// JSON Web Token
-// function verifyToken(req, res, next) {
-//   // Get auth header value
-//   const bearerHeader = req.headers['authorization'];
-//
-//   // Check if bearer is undefined
-//   if (typeof bearerHeader !== 'undefined') {
-//     // Split at the space
-//     const bearer = bearerHeader.split(' ');
-//     // Get token from array
-//     const bearerToken = bearer[1];
-//     // Set the Token
-//     req.token = bearerToken;
-//     // Next Middleware
-//     next();
-//   } else {
-//     // Forbidden
-//     res.sendStatus(403);
-//   }
-// }
+const verifyToken = require('../../config/jwt').verifyToken;
 
 // Login Admin Process
 router.post('/login', (req, res, next) => {
@@ -51,12 +29,20 @@ router.post('/login', (req, res, next) => {
         return next(err);
       }
 
-      const user = req.user;
-      const token = jwt.sign(user.toJSON(), JWT_KEY);
-      res.cookie('jwt', token);
-      return res.redirect('/birds');
-    });
+      const user = { username: req.user.username };
 
+      jwt.sign(user, JWT_KEY, { expiresIn: '6h' }, (err, token) => {
+        if (err) {
+          return res.json({
+            success: false,
+            message: 'Failed to create token'
+          });
+        } else {
+          res.cookie('jwt', token);
+          return res.redirect('/admin-panel');
+        }
+      });
+    });
   })(req, res);
 });
 
@@ -69,7 +55,7 @@ router.get('/logout', (req, res) => {
 });
 
 // Register Admin Process
-router.post('/register', (req, res) => {
+router.post('/register', verifyToken, (req, res) => {
   req.checkBody('username', 'Name is Required').notEmpty();
   req.checkBody('password', 'Password is Required').notEmpty();
   req.checkBody('confirmPassword', 'Passwords do not match').equals(req.body.password);
@@ -110,7 +96,7 @@ router.post('/register', (req, res) => {
 });
 
 // Update Admin Process
-router.post('/register/:id', (req, res) => {
+router.post('/register/:id', verifyToken, (req, res) => {
   req.checkBody('username', 'Name is Required').notEmpty();
   req.checkBody('password', 'Password is Required').notEmpty();
   req.checkBody('confirmPassword', 'Passwords do not match').equals(req.body.password);
@@ -152,7 +138,7 @@ router.post('/register/:id', (req, res) => {
 
 // @router        GET api/admins
 // @description   Get all admins
-router.get('/', (req, res) => {
+router.get('/', verifyToken, (req, res) => {
   Admin.find()
     .sort({name: 1})
     .then(admins => res.status(200).json(admins))
@@ -161,7 +147,7 @@ router.get('/', (req, res) => {
 
 // @router        GET api/admins/:id
 // @description   Get a single admin
-router.get('/:id', (req, res) => {
+router.get('/:id', verifyToken, (req, res) => {
   Admin.findById(req.params.id)
     .then(admin => res.status(200).json(admin))
     .catch(err => res.status(404).json({success: false}));
@@ -169,7 +155,7 @@ router.get('/:id', (req, res) => {
 
 // @router        DELETE api/admins/:id
 // @description   Delete an admin
-router.delete('/:id', (req, res) => {
+router.delete('/:id', verifyToken, (req, res) => {
   Admin.findById(req.params.id)
     .then(admin => admin.remove().then(() => res.status(200).json({success: true})))
     .catch(err => res.status(404).json({success: false}));

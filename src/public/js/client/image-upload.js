@@ -1,4 +1,4 @@
-const $ = require('jquery'); 
+const $ = require('jquery');
 
 // Elements
 let dropArea;
@@ -218,11 +218,6 @@ function readAndPreview(file) {
 
 // POST data to server
 function sendData(formData) {
-  // console.log('\n\n\n\n\n\n');
-  // for (let pair of formData.entries()) {
-  //   console.log(pair);
-  // }
-
   const XHR = new XMLHttpRequest();
 
   // Define what happens on successful data submission

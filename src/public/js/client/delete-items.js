@@ -8,10 +8,12 @@ $(document).ready(() => {
       type: 'DELETE',
       url: `/api/birds/${id}`,
       success: res => {
-        window.location.href='/birds';
+        console.log('delete successful');
+        document.location.href = '/birds';
       },
       error: err => {
         console.log(err);
+        document.location.href = '/birds';
       }
     });
   });
@@ -25,7 +27,7 @@ $(document).ready(() => {
       type: 'DELETE',
       url: `/api/products/${id}`,
       success: res => {
-        window.location.href='/products';
+        document.location.href='/products';
       },
       error: err => {
         console.log(err);
@@ -42,7 +44,7 @@ $(document).ready(() => {
       type: 'DELETE',
       url: `/api/admins/${id}`,
       success: res => {
-        window.location.href='/admins';
+        document.location.href = '/admins';
       },
       error: err => {
         console.log(err);

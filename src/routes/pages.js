@@ -3,7 +3,6 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 
-// Models
 const birdModel = require('../models/Bird');
 const Bird = mongoose.model('Bird', birdModel);
 const productModel = require('../models/Product');
@@ -11,26 +10,13 @@ const Product = mongoose.model('Product', productModel);
 const adminModel = require('../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
 
-// Verify JWT
-function verifyToken(req, res, next) {
-  if (req.cookies['jwt']) {
-    // Set the Token
-    req.token = req.cookies['jwt'];
-    // Next Middleware
-    next();
-  } else {
-    // Forbidden
-    res.sendStatus(403);
-  }
-}
-
 // Access control
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   } else {
-    req.flash('alert alert-danger', 'Please Login');
-    res.redirect('/login');
+    req.flash('alert alert-danger', 'You Must Be Logged In To Access This Page');
+    res.status(401).redirect('/login');
   }
 }
 
@@ -42,7 +28,7 @@ router.get('/', (req, res) => {
 });
 
 // Admin Panel Page
-router.get('/admin-panel', (req, res) => {
+router.get('/admin-panel', ensureAuthenticated, (req, res) => {
   Admin.find({}, (err, admins) => {
     if (err) {
       console.log(err);
@@ -56,8 +42,7 @@ router.get('/admin-panel', (req, res) => {
 });
 
 // Admins Page
-router.get('/admins', verifyToken, (req, res) => {
-  // console.log(req.headers);
+router.get('/admins', ensureAuthenticated, (req, res) => {
   Admin.find({}, (err, admins) => {
     if (err) {
       console.log(err);
@@ -143,7 +128,7 @@ router.get('/products_:id', (req, res) => {
 });
 
 // Render admin information page
-router.get('/admins_:id', (req, res) => {
+router.get('/admins_:id', ensureAuthenticated, (req, res) => {
   Admin.findById(req.params.id, (err, admin) => {
     res.render('object-info/admin', {
       title: admin.name,

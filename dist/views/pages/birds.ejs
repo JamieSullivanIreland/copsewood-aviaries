@@ -4,6 +4,8 @@
   <div class="container">
     <h1>Birds for Sale</h1>
 
+    <%- messages() %>
+
     <ul class="list-group">
       <% for(let i = 0; i < birds.length; ++i) { %>
         <li class="list-group-item">
@@ -19,7 +21,7 @@
           <% if (user) { %>
             <a class="btn btn-primary" href="/edit-bird_<%= birds[i]._id %>">Edit</a>
 
-            <a class="btn btn-danger delete-bird" href="#" id="<%= birds[i]._id %>">Delete</a>
+            <button class="btn btn-danger delete-bird" id="<%= birds[i]._id %>">Delete</button>
           <% } %>
         </li>
       <% } %>

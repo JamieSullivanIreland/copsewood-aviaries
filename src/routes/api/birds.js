@@ -3,8 +3,10 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const multer = require('multer');
 const fs = require('fs');
+
 const birdModel = require('../../models/Bird');
 const Bird = mongoose.model('Bird', birdModel);
+const verifyToken = require('../../config/jwt').verifyToken;
 
 // Multer storage engine
 const storage = multer.diskStorage({
@@ -31,26 +33,26 @@ const upload = multer({
   fileFilter: fileFilter
 });
 
-// @route        GET api/birds
+// @route         GET api/birds
 // @description   Get all birds
-router.get('/', (req, res) => {
+router.get('/', verifyToken, (req, res) => {
   Bird.find()
     .sort({breed: 1})
     .then(birds => res.status(200).send(birds))
     .catch(err => res.status(404));
 });
 
-// @route        GET api/birds/:id
+// @route         GET api/birds/:id
 // @description   Get a single bird
-router.get('/:id', (req, res) => {
+router.get('/:id', verifyToken, (req, res) => {
   Bird.findById(req.params.id)
     .then(bird => res.status(200).send(bird))
     .catch(err => res.status(404).json({success: false}));
 });
 
-// @route        POST api/birds
+// @route         POST api/birds
 // @description   Create a Bird
-router.post('/', upload.any('images'), (req, res) => {
+router.post('/', upload.any('images'), verifyToken, (req, res) => {
   req.checkBody('breed', 'Breed is Required').notEmpty();
   req.checkBody('price', 'Price is Required').notEmpty();
   req.checkBody('category', 'Category is Required').notEmpty();
@@ -67,13 +69,14 @@ router.post('/', upload.any('images'), (req, res) => {
       images: req.files,
       breed: req.body.breed,
       price: req.body.price,
-      category: req.body.category
+      category: req.body.category,
+      addedBy: req.user.username
     });
 
     newBird.save()
       .then(bird => {
-        req.flash('alert alert-success', 'Bird was Created Successfully');
-        res.status(200).redirect('/birds');
+        req.flash('alert alert-success', `${newBird.breed} Was Created Successfully`);
+        res.status(200).redirect('/');
       })
       .catch(err => console.log(err));
   }
@@ -81,7 +84,7 @@ router.post('/', upload.any('images'), (req, res) => {
 
 // @router        POST api/birds/:id
 // @description   Update a bird
-router.post('/:id', (req, res) => {
+router.post('/:id', verifyToken, (req, res) => {
   const updatedBird = {
     breed: req.body.breed,
     price: req.body.price,
@@ -90,15 +93,15 @@ router.post('/:id', (req, res) => {
 
   Bird.findByIdAndUpdate(req.params.id, updatedBird)
     .then(bird => {
-      req.flash('alert alert-success', 'Bird was Updated Successfully');
-      res.status(200).redirect('/admin-panel')
+      req.flash('alert alert-success', `${bird.breed} Was Updated Successfully`);
+      res.status(200).redirect('/birds');
     })
     .catch(err => res.status(404));
 });
 
 // @route        DELETE api/birds/:id
 // @description   Delete a bird
-router.delete('/:id', (req, res) => {
+router.delete('/:id', verifyToken, (req, res) => {
   let path;
 
   Bird.findById(req.params.id)
@@ -117,9 +120,15 @@ router.delete('/:id', (req, res) => {
         }
       }
 
-      bird.remove().then(() => res.status(200).json({success: true}))
+      bird.remove().then(() => {
+        req.flash('alert alert-success', `${bird.breed} Was Deleted`);
+        res.status(200).redirect('/birds');
+      })
     })
-    .catch(err => res.status(404).json({success: false}));
+  .catch(err => {
+    console.log(err);
+    res.status(404).json({success: false});
+  });
 });
 
 module.exports = router;

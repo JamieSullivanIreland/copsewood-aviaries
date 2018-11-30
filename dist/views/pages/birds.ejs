@@ -4,17 +4,54 @@
   <div class="container">
     <h1>Birds for Sale</h1>
 
+    <form method='GET' action='/api/birds' class="my-3">
+      <input class="btn btn-primary mb-3" type="submit" value="Filter">
+      <br />
+
+      <input type="checkbox" value="Large Parrot" name="categories" aria-label="Checkbox for large parrot">
+      <label for="large-parrot">Large Parrot</label>
+      <br />
+
+      <input type="checkbox" value="Medium Parrot" name="categories" aria-label="Checkbox for medium parrot">
+      <label for="medium-parrot">Medium Parrot</label>
+      <br />
+
+      <input type="checkbox" value="Small Parrot" name="categories" aria-label="Checkbox for small parrot">
+      <label for="small-parrot">Small Parrot</label>
+      <br />
+
+      <input type="checkbox" value="Poultry" name="categories" aria-label="Checkbox for poultry">
+      <label for="poultry">Poultry</label>
+      <br />
+
+      <input type="radio" value="< 100" name="price" aria-label="Radio button for less than 100 euro">
+      <label for="poultry">&lt; 100</label>
+      <br />
+
+      <input type="radio" value="< 500" name="price" aria-label="Radio button for less than 500 euro">
+      <label for="poultry">&lt; 500</label>
+      <br />
+
+      <input type="radio" value="< 1000" name="price" aria-label="Radio button for less than 1000 euro">
+      <label for="poultry">&lt; 1000</label>
+      <br />
+
+      <input type="radio" value="> 1000" name="price" aria-label="Radio button for more than 1000 euro">
+      <label for="poultry">&gt; 1000</label>
+    </form>
+
     <%- messages() %>
 
-    <ul class="list-group">
+    <ul class="list-group birds-list">
       <% for(let i = 0; i < birds.length; ++i) { %>
         <li class="list-group-item">
-          <h4>
+          <h5>
             <a href='/birds_<%=birds[i]._id %>'>Breed: <%= birds[i].breed %></a>
-          </h4>
+          </h5>
 
           <p>
             Price: <%= birds[i].price %> <br />
+            Category: <%= birds[i].category %> <br />
             Added By: <%= birds[i].addedBy %>
           </p>
 

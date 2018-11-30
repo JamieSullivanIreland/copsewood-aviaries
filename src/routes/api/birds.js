@@ -7,6 +7,13 @@ const fs = require('fs');
 const birdModel = require('../../models/Bird');
 const Bird = mongoose.model('Bird', birdModel);
 const verifyToken = require('../../config/jwt').verifyToken;
+const createCategoriesQuery = require('../filters/queries').createCategoriesQuery;
+const createPriceQuery = require('../filters/queries').createPriceQuery;
+
+/*
+  TODO
+  Remove white spaces from image path
+*/
 
 // Multer storage engine
 const storage = multer.diskStorage({
@@ -35,11 +42,20 @@ const upload = multer({
 
 // @route         GET api/birds
 // @description   Get all birds
-router.get('/', verifyToken, (req, res) => {
-  Bird.find()
-    .sort({breed: 1})
-    .then(birds => res.status(200).send(birds))
-    .catch(err => res.status(404));
+router.get('/', (req, res) => {
+  let query = '';
+  if (req.query.categories) query = createCategoriesQuery(req.query.categories);
+  if (req.query.price) query += createPriceQuery(req.query.price, query);
+
+  Bird.find({})
+    // .sort({breed: -1})
+    .then(birds => {
+      res.status(200).redirect('/birds' + query);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(404);
+    });;
 });
 
 // @route         GET api/birds/:id

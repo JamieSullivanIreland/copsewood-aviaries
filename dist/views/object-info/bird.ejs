@@ -25,8 +25,16 @@
           <label for="large-parrot">Large Parrot</label>
           <br />
 
+          <input type="radio" value="Medium Parrot" name="category" <% if(bird.category === 'Medium Parrot'){ %> checked <% } %> aria-label="Radio button for medium parrot">
+          <label for="medium-parrot">Medium Parrot</label>
+          <br />
+
           <input type="radio" value="Small Parrot" name="category" <% if(bird.category === 'Small Parrot'){ %> checked <% } %> aria-label="Radio button for small parrot">
           <label for="small-parrot">Small Parrot</label>
+          <br />
+
+          <input type="radio" value="Poultry" name="category" <% if(bird.category === 'Poultry'){ %> checked <% } %> aria-label="Radio button for poultry">
+          <label for="poultry">Poultry</label>
         </div>
 
         <input class="btn btn.primary" type="submit" value="Submit">
@@ -34,13 +42,20 @@
       </form>
     <% } else { %>
 
-      <% for (let i = 0; i < bird.images.length; ++i) { %>
-        <img src=<%= bird.images[i].path %> width="300" height="300" />
-      <%  } %>
+      <div class="row">
+          <div class="col-4">
+            <% for (let i = 0; i < bird.images.length; ++i) { %>
+              <img src=<%= bird.images[i].path %> width="300" height="300" />
+            <%  } %>
+          </div>
 
-      <h3> Breed: <%= bird.breed %> </h3>
-      <h3> Price: €<%=  bird.price %> </h3>
-      <h3> Category: <%= bird.category %> </h3>
+          <div class="col-8">
+            <h3> Breed: <%= bird.breed %> </h3>
+            <h3> Price: €<%=  bird.price %> </h3>
+            <h3> Category: <%= bird.category %> </h3>
+          </div>
+      </div>
+
     <% } %>
   </div>
 

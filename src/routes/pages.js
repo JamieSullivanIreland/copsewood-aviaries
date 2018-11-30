@@ -9,6 +9,8 @@ const productModel = require('../models/Product');
 const Product = mongoose.model('Product', productModel);
 const adminModel = require('../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
+const filterByCategory = require('./filters/filters').filterByCategory;
+const filterByPrice = require('./filters/filters').filterByPrice;
 
 // Access control
 function ensureAuthenticated(req, res, next) {
@@ -69,6 +71,9 @@ router.get('/birds', (req, res) => {
     if (err) {
       console.log(err);
     } else {
+      if (req.query.categories) birds = filterByCategory(req.query.categories, birds);
+      if (req.query.price) birds = filterByPrice(req.query.price.split(' '), birds);
+
       res.render('pages/birds', {
         title: 'Birds',
         birds: birds

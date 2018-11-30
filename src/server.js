@@ -12,7 +12,7 @@ import http from "http";
 // Ping Heroku app to keep from sleeping
 setInterval(function() {
   http.get("http://copsewood-aviaries.herokuapp.com/");
-}, 120000); // every 5 minutes (300000)
+}, 600000); // every 10 minutes (600000)
 
 // Initialise
 const app = express();

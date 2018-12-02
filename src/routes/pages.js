@@ -67,10 +67,9 @@ router.get('/about', (req, res) => {
 // Birds Page
 router.get('/birds', (req, res) => {
   // {} for all results
-  Bird.find({}, (err, birds) => {
-    if (err) {
-      console.log(err);
-    } else {
+  Bird.find({})
+    // .sort({breed: -1})
+    .then(birds => {
       if (req.query.categories) birds = filterByCategory(req.query.categories, birds);
       if (req.query.price) birds = filterByPrice(req.query.price.split(' '), birds);
 
@@ -78,8 +77,11 @@ router.get('/birds', (req, res) => {
         title: 'Birds',
         birds: birds
       });
-    }
-  });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(404);
+    });;
 });
 
 // Products Page

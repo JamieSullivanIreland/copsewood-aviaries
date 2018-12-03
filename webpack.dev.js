@@ -9,7 +9,8 @@ module.exports = {
     'client': [
       path.resolve(__dirname, './src/public/js/client/delete-items.js'),
       path.resolve(__dirname, './src/public/js/client/image-upload.js'),
-      path.resolve(__dirname, './src/public/js/client/messages.js')
+      path.resolve(__dirname, './src/public/js/client/messages.js'),
+      path.resolve(__dirname, './src/public/js/client/checkbox.js')
     ]
   },
   output: {

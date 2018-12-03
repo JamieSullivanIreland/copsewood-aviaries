@@ -97,6 +97,18 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
+/***/ "./src/public/js/client/checkbox.js":
+/*!******************************************!*\
+  !*** ./src/public/js/client/checkbox.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar filterForm = document.querySelector('#filter-form').elements;\nvar checkboxes = document.querySelectorAll(\"#filter-form input[type=checkbox]\");\nvar radioButtons = document.querySelectorAll(\"#filter-form input[type=radio]\");\n// let checkboxes = [];\n// let radioButtons = [];\n\n// Check if admin-panel was loaded\n$(document).ready(function () {\n  if (window.location.href.indexOf(\"/birds\") > -1) {\n    console.log(filterForm);\n  }\n});\n\n// filterFormElements.forEach(element => {\n//   if (element.type === 'checkbox') checkboxes.push(element);\n//   if (element.type === 'radio') radioButtons.push(element);\n// });\n\nconsole.log(checkboxes);\nconsole.log(radioButtons);\n\n//# sourceURL=webpack:///./src/public/js/client/checkbox.js?");
+
+/***/ }),
+
 /***/ "./src/public/js/client/delete-items.js":
 /*!**********************************************!*\
   !*** ./src/public/js/client/delete-items.js ***!
@@ -134,13 +146,13 @@ eval("\n\nvar messages = document.querySelector('#messages');\n\nif (messages) {
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************!*\
-  !*** multi ./src/public/js/client/delete-items.js ./src/public/js/client/image-upload.js ./src/public/js/client/messages.js ***!
-  \******************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************!*\
+  !*** multi ./src/public/js/client/delete-items.js ./src/public/js/client/image-upload.js ./src/public/js/client/messages.js ./src/public/js/client/checkbox.js ***!
+  \*****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js?");
+eval("__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\checkbox.js */\"./src/public/js/client/checkbox.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js_./src/public/js/client/checkbox.js?");
 
 /***/ })
 

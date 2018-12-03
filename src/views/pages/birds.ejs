@@ -3,6 +3,7 @@
 
   <div class="container">
     <h1>Birds for Sale</h1>
+    <h2><%= birds.length %> Results</h2>
 
     <form method='GET' action='/api/birds' class="my-3">
       <input class="btn btn-primary mb-3" type="submit" value="Filter">
@@ -28,8 +29,16 @@
       <label for="poultry">&lt; 100</label>
       <br />
 
+      <input type="radio" value="< 300" name="price" aria-label="Radio button for less than 300 euro">
+      <label for="poultry">&lt; 300</label>
+      <br />
+
       <input type="radio" value="< 500" name="price" aria-label="Radio button for less than 500 euro">
       <label for="poultry">&lt; 500</label>
+      <br />
+
+      <input type="radio" value="< 800" name="price" aria-label="Radio button for less than 800 euro">
+      <label for="poultry">&lt; 800</label>
       <br />
 
       <input type="radio" value="< 1000" name="price" aria-label="Radio button for less than 1000 euro">
@@ -38,9 +47,24 @@
 
       <input type="radio" value="> 1000" name="price" aria-label="Radio button for more than 1000 euro">
       <label for="poultry">&gt; 1000</label>
+      <br />
+
+      <button class="btn btn-outline-secondary dropdown-toggle mt-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By</button>
+      <div class="dropdown-menu">
+        <button class="dropdown-item" onclick="submit" value="date asc" name="sort">Most Recent</button>
+        <button class="dropdown-item" onclick="submit" value="date desc" name="sort">Oldest</button>
+        <button class="dropdown-item" onclick="submit" value="breed asc" name="sort">Breed A-Z</button>
+        <button class="dropdown-item" onclick="submit" value="breed desc" name="sort">Breed Z-A</button>
+        <button class="dropdown-item" onclick="submit" value="price asc" name="sort">Price High to Low</button>
+        <button class="dropdown-item" onclick="submit" value="price desc" name="sort">Price Low to High</button>
+      </div>
     </form>
 
     <%- messages() %>
+
+    <% if (user) { %>
+      <button class="btn btn-danger delete-all-birds mb-3">Delete All</button>
+    <% } %>
 
     <ul class="list-group birds-list">
       <% for(let i = 0; i < birds.length; ++i) { %>
@@ -52,7 +76,9 @@
           <p>
             Price: <%= birds[i].price %> <br />
             Category: <%= birds[i].category %> <br />
-            Added By: <%= birds[i].addedBy %>
+            Added By: <%= birds[i].addedBy %> <br />
+            Date: <%= birds[i].date %> <br />
+            Time: <%= birds[i].time %>
           </p>
 
           <% if (user) { %>

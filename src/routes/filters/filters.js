@@ -14,13 +14,16 @@ export function filterByCategory(categories, birds) {
   return filteredBirds;
 }
 
-export function filterByPrice(price, birds) {
-  // Check for what conditional was entered and filter by price
-  birds = birds.filter(bird => {
-    return price[0] === '<' ?
-      bird.price < price[1] :
-      bird.price > price[1];
+export function filterByPrice(priceArgs, birds) {
+  let condition = priceArgs[0];
+  let price = priceArgs[1];
+
+  // Check for what conditional was selected and filter by price
+  let filteredBirds = birds.filter(bird => {
+    return condition === '<' ?
+      bird.price < price :
+      bird.price > price;
   });
 
-  return birds;
+  return filteredBirds;
 }

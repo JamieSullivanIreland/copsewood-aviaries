@@ -20,6 +20,25 @@ $(document).ready(() => {
 });
 
 $(document).ready(() => {
+  $('.delete-all-birds').on('click', (e) => {
+    if (confirm('Are you sure you want to remove all birds?')) {
+      $.ajax({
+        type: 'DELETE',
+        url: `/api/birds`,
+        success: res => {
+          console.log('delete successful');
+          document.location.href = '/birds';
+        },
+        error: err => {
+          console.log(err);
+          document.location.href = '/birds';
+        }
+      });
+    }
+  });
+});
+
+$(document).ready(() => {
   $('.delete-product').on('click', (e) => {
     const $target = $(e.target);
     const id = $target.attr('id');

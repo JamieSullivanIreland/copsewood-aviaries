@@ -9,43 +9,25 @@ const Bird = mongoose.model('Bird', birdModel);
 const verifyToken = require('../../config/jwt').verifyToken;
 const createCategoriesQuery = require('../filters/queries').createCategoriesQuery;
 const createPriceQuery = require('../filters/queries').createPriceQuery;
-
-/*
-  TODO
-  Remove white spaces from image path
-*/
-
-// Multer storage engine
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, './uploads/birds');
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + file.originalname);
-  }
-});
-
-// Filter images
-const fileFilter = (req, file, cb) => {
-  if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/jpg' || file.mimetype === 'image/png') {
-    cb(null, true);
-  } else {
-    cb(null, false);
-  }
-};
-
-// Init multer uploads
-const upload = multer({
-  storage: storage,
-  fileFilter: fileFilter
-});
+const createSortQuery = require('../filters/queries').createSortQuery;
+const createDateInfo = require('../date/date').createDateInfo;
+const storage = require('../multer/images').storage;
+const fileFilter = require('../multer/images').fileFilter;
+const upload = require('../multer/images').upload;
 
 // @route         GET api/birds
 // @description   Get all birds
 router.get('/', (req, res) => {
   let query = '';
+
   if (req.query.categories) query = createCategoriesQuery(req.query.categories);
+
   if (req.query.price) query += createPriceQuery(req.query.price, query);
+
+  if (req.query.sort) {
+    let split = req.query.sort.split(' ');
+    query += createSortQuery(split[0], split[1], query);
+  }
 
   Bird.find({})
     // .sort({breed: -1})
@@ -81,12 +63,17 @@ router.post('/', upload.any('images'), verifyToken, (req, res) => {
     });
     res.status(404).redirect('/admin-panel');
   } else {
+    let dateInfo = createDateInfo();
+
     const newBird = new Bird({
       images: req.files,
       breed: req.body.breed,
       price: req.body.price,
       category: req.body.category,
-      addedBy: req.user.username
+      addedBy: req.user.username,
+      timestamp: dateInfo['timestamp'],
+      date: dateInfo['date'],
+      time: dateInfo['time']
     });
 
     newBird.save()
@@ -113,6 +100,28 @@ router.post('/:id', verifyToken, (req, res) => {
       res.status(200).redirect('/birds');
     })
     .catch(err => res.status(404));
+});
+
+// @route        DELETE api/birds
+// @description   Delete all birds
+router.delete('/', verifyToken, (req, res) => {
+  Bird.find({})
+    .then(birds => {
+      birds.forEach(bird => {
+        bird.remove()
+        .then(() => {
+          req.flash('alert alert-success', `All Birds Were Deleted Successfully`);
+          res.status(200).redirect('/birds');
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      res.json({success: false});
+    });;
 });
 
 // @route        DELETE api/birds/:id

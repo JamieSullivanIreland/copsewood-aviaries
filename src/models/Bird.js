@@ -27,6 +27,18 @@ const birdModel= mongoose.Schema({
   },
   addedBy: {
     type: String
+  },
+  date: {
+    type: String,
+    required: true
+  },
+  time: {
+    type: String,
+    required: true
+  },
+  timestamp: {
+    type:  Number,
+    required: true
   }
 });
 

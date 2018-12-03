@@ -11,6 +11,7 @@ const adminModel = require('../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
 const filterByCategory = require('./filters/filters').filterByCategory;
 const filterByPrice = require('./filters/filters').filterByPrice;
+const sort = require('./filters/sort').sort;
 
 // Access control
 function ensureAuthenticated(req, res, next) {
@@ -67,19 +68,24 @@ router.get('/about', (req, res) => {
 // Birds Page
 router.get('/birds', (req, res) => {
   // {} for all results
-  Bird.find({}, (err, birds) => {
-    if (err) {
-      console.log(err);
-    } else {
+  Bird.find({})
+    // .sort({breed: -1})
+    .then(birds => {
       if (req.query.categories) birds = filterByCategory(req.query.categories, birds);
+
       if (req.query.price) birds = filterByPrice(req.query.price.split(' '), birds);
+
+      if (req.query.sortby) birds = sort(req.query.sortby.split(' '), birds);
 
       res.render('pages/birds', {
         title: 'Birds',
         birds: birds
       });
-    }
-  });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(404);
+    });;
 });
 
 // Products Page

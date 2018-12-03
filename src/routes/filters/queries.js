@@ -25,3 +25,11 @@ export function createPriceQuery(price, query) {
 
   return query.replace(' ', '+');
 }
+
+export function createSortQuery(sortBy, order, query) {
+  query.indexOf('categories') > -1 || query.indexOf('price') > -1 ?
+    query = `&sortby=${sortBy}+${order}` :
+    query = `?sortby=${sortBy}+${order}`;
+
+  return query;
+}

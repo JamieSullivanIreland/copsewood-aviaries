@@ -97,18 +97,6 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./src/public/js/client/checkbox.js":
-/*!******************************************!*\
-  !*** ./src/public/js/client/checkbox.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar filterForm = document.querySelector('#filter-form').elements;\nvar checkboxes = document.querySelectorAll(\"#filter-form input[type=checkbox]\");\nvar radioButtons = document.querySelectorAll(\"#filter-form input[type=radio]\");\n// let checkboxes = [];\n// let radioButtons = [];\n\n// Check if admin-panel was loaded\n$(document).ready(function () {\n  if (window.location.href.indexOf(\"/birds\") > -1) {\n    console.log(filterForm);\n  }\n});\n\n// filterFormElements.forEach(element => {\n//   if (element.type === 'checkbox') checkboxes.push(element);\n//   if (element.type === 'radio') radioButtons.push(element);\n// });\n\nconsole.log(checkboxes);\nconsole.log(radioButtons);\n\n//# sourceURL=webpack:///./src/public/js/client/checkbox.js?");
-
-/***/ }),
-
 /***/ "./src/public/js/client/delete-items.js":
 /*!**********************************************!*\
   !*** ./src/public/js/client/delete-items.js ***!
@@ -118,6 +106,18 @@ eval("\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist
 
 "use strict";
 eval("\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n$(document).ready(function () {\n  $('.delete-bird').on('click', function (e) {\n    var $target = $(e.target);\n    var id = $target.attr('id');\n    $.ajax({\n      type: 'DELETE',\n      url: '/api/birds/' + id,\n      success: function success(res) {\n        console.log('delete successful');\n        document.location.href = '/birds';\n      },\n      error: function error(err) {\n        console.log(err);\n        document.location.href = '/birds';\n      }\n    });\n  });\n});\n\n$(document).ready(function () {\n  $('.delete-all-birds').on('click', function (e) {\n    if (confirm('Are you sure you want to remove all birds?')) {\n      $.ajax({\n        type: 'DELETE',\n        url: '/api/birds',\n        success: function success(res) {\n          console.log('delete successful');\n          document.location.href = '/birds';\n        },\n        error: function error(err) {\n          console.log(err);\n          document.location.href = '/birds';\n        }\n      });\n    }\n  });\n});\n\n$(document).ready(function () {\n  $('.delete-product').on('click', function (e) {\n    var $target = $(e.target);\n    var id = $target.attr('id');\n    $.ajax({\n      type: 'DELETE',\n      url: '/api/products/' + id,\n      success: function success(res) {\n        document.location.href = '/products';\n      },\n      error: function error(err) {\n        console.log(err);\n      }\n    });\n  });\n});\n\n$(document).ready(function () {\n  $('.delete-admin').on('click', function (e) {\n    var $target = $(e.target);\n    var id = $target.attr('id');\n    $.ajax({\n      type: 'DELETE',\n      url: '/api/admins/' + id,\n      success: function success(res) {\n        document.location.href = '/admins';\n      },\n      error: function error(err) {\n        console.log(err);\n      }\n    });\n  });\n});\n\n//# sourceURL=webpack:///./src/public/js/client/delete-items.js?");
+
+/***/ }),
+
+/***/ "./src/public/js/client/filters.js":
+/*!*****************************************!*\
+  !*** ./src/public/js/client/filters.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar checkboxes = void 0;\nvar radioButtons = void 0;\nvar checkboxesLS = [];\n\n// If on bird list page check LS for checkboxes and radio buttons\n// Else clear LS of checkboxes and radio buttons\n\n// If LS is undefined create checkbox and radio list\n// Else get checkboxes and radios, loop through them and get value\n\n\nwindow.onload = function () {\n  var URL = window.location.href;\n\n  // If on bird list page, initialise elements\n  if (URL.indexOf(\"/birds\") > -1 && URL.split('/')[3].length === 5) {\n    filtersInit();\n  } else {\n    localStorage.clear();\n  }\n};\n\nfunction filtersInit() {\n  checkboxes = document.querySelectorAll(\"#filter-form input[type=checkbox]\");\n  radioButtons = document.querySelectorAll(\"#filter-form input[type=radio]\");\n  createCheckboxes();\n}\n\nfunction createCheckboxes() {\n  if (JSON.parse(localStorage.getItem(\"checkboxes\"))) {\n    checkboxesLS = JSON.parse(localStorage.getItem(\"checkboxes\"));\n  } else {\n    var tempCheckboxes = [];\n\n    checkboxes.forEach(function (checkbox) {\n      checkbox.addEventListener('change', handleChangeCheckbox);\n      tempCheckboxes.push({ key: checkbox.id, checked: checkbox.checked });\n    });\n\n    localStorage.setItem('checkboxes', JSON.stringify(tempCheckboxes));\n  }\n}\n\nfunction handleChangeCheckbox(e) {\n  var index = e.target.id.split('-')[2];\n  var filterCheckboxes = JSON.parse(localStorage.getItem(\"filterCheckboxes\"));\n  filterCheckboxes[index].checked = e.target.checked;\n  localStorage.setItem('filterCheckboxes', JSON.stringify(filterCheckboxes));\n  console.log(filterCheckboxes[index]);\n}\n\n// console.log(checkboxes);\n// console.log(radioButtons);\n\n//# sourceURL=webpack:///./src/public/js/client/filters.js?");
 
 /***/ }),
 
@@ -146,13 +146,13 @@ eval("\n\nvar messages = document.querySelector('#messages');\n\nif (messages) {
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************************************************************************************!*\
-  !*** multi ./src/public/js/client/delete-items.js ./src/public/js/client/image-upload.js ./src/public/js/client/messages.js ./src/public/js/client/checkbox.js ***!
-  \*****************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************!*\
+  !*** multi ./src/public/js/client/delete-items.js ./src/public/js/client/image-upload.js ./src/public/js/client/messages.js ./src/public/js/client/filters.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\checkbox.js */\"./src/public/js/client/checkbox.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js_./src/public/js/client/checkbox.js?");
+eval("__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\n__webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\Jamie\\Documents\\Projects\\Personal\\Github\\copsewood-aviaries\\src\\public\\js\\client\\filters.js */\"./src/public/js/client/filters.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js_./src/public/js/client/filters.js?");
 
 /***/ })
 

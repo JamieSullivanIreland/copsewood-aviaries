@@ -1,21 +1,24 @@
+const $ = require('jquery');
+
 let checkboxes;
 let radios;
 let checkboxesLS = [];
 let radiosLS = [];
 
-window.onload = () => {
+$(document).ready(() => {
   const URL = window.location.href;
   const SPLIT_URL = URL.split('/');
 
   // If on bird list page initialise checkboxes and radio buttons
-  // Else clear LS of checkboxes and radio buttons
-  if (URL.indexOf("/birds") > -1 && (SPLIT_URL[3].length === 5 || SPLIT_URL[3][5] === '?')) {
+  // Page will always have a query, 6th character is ?
+  // Else clear Local Storage
+  if (SPLIT_URL[3][5] === '?') {
     initCheckboxes();
     initRadios();
-  } else {
-    localStorage.clear();
   }
-}
+
+  if (!(URL.indexOf('birds') > -1)) localStorage.clear();
+});
 
 function initCheckboxes() {
   // Create checkboxes and  change their value to match Local Storage
@@ -30,21 +33,18 @@ function initCheckboxes() {
 
 function createCheckboxesLS() {
   // Check if checkboxes already exist in Local Storage
-  // If not, then create them based on DOM elements
+  // If there is none, then create them based on DOM elements
   let tempCheckboxes = [];
 
-  if (JSON.parse(localStorage.getItem("checkboxes"))) {
-    tempCheckboxes = JSON.parse(localStorage.getItem("checkboxes"));
-  } else {
+  if (!(JSON.parse(localStorage.getItem("checkboxes")))) {
     checkboxes.forEach(checkbox => {
       tempCheckboxes.push({ key: checkbox.id, checked: checkbox.checked });
     });
 
     localStorage.setItem('checkboxes', JSON.stringify(tempCheckboxes));
-    tempCheckboxes = JSON.parse(localStorage.getItem("checkboxes"));
   }
 
-  return tempCheckboxes;
+  return JSON.parse(localStorage.getItem("checkboxes"));
 }
 
 function handleChangeCheckbox(e) {
@@ -67,21 +67,18 @@ function initRadios() {
 
 function createRadiosLS() {
   // Check if radio buttons already exist in Local Storage
-  // If not, then create them based on DOM elements
+  // If there is none, then create them based on DOM elements
   let tempRadios = [];
 
-  if (JSON.parse(localStorage.getItem("radios"))) {
-    tempRadios = JSON.parse(localStorage.getItem("radios"));
-  } else {
+  if (!(JSON.parse(localStorage.getItem("radios")))) {
     radios.forEach(radioBtn => {
       tempRadios.push({ key: radioBtn.id, checked: radioBtn.checked });
     });
 
     localStorage.setItem('radios', JSON.stringify(tempRadios));
-    tempRadios = JSON.parse(localStorage.getItem("radios"));
   }
 
-  return tempRadios;
+  return JSON.parse(localStorage.getItem("radios"));
 }
 
 function handleChangeRadio(e) {

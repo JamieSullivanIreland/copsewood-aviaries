@@ -49,14 +49,15 @@
       <label for="poultry">&gt; 1000</label>
       <br />
 
-      <button class="btn btn-outline-secondary dropdown-toggle mt-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By</button>
+      <span>Sort By: </span>
+      <button class="btn btn-outline-secondary dropdown-toggle mt-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-selection">Breed A-Z</button>
       <div class="dropdown-menu">
-        <button class="dropdown-item" onclick="submit" value="date asc" name="sort">Most Recent</button>
-        <button class="dropdown-item" onclick="submit" value="date desc" name="sort">Oldest</button>
-        <button class="dropdown-item" onclick="submit" value="breed asc" name="sort">Breed A-Z</button>
-        <button class="dropdown-item" onclick="submit" value="breed desc" name="sort">Breed Z-A</button>
-        <button class="dropdown-item" onclick="submit" value="price asc" name="sort">Price High to Low</button>
-        <button class="dropdown-item" onclick="submit" value="price desc" name="sort">Price Low to High</button>
+        <button id="sort-btn-0" class="dropdown-item" onclick="submit" value="breed asc" name="sort">Breed A-Z</button>
+        <button id="sort-btn-1" class="dropdown-item" onclick="submit" value="breed desc" name="sort">Breed Z-A</button>
+        <button id="sort-btn-2" class="dropdown-item" onclick="submit" value="date asc" name="sort">Most Recent</button>
+        <button id="sort-btn-3" class="dropdown-item" onclick="submit" value="date desc" name="sort">Oldest</button>
+        <button id="sort-btn-4" class="dropdown-item" onclick="submit" value="price asc" name="sort">Price High to Low</button>
+        <button id="sort-btn-5" class="dropdown-item" onclick="submit" value="price desc" name="sort">Price Low to High</button>
       </div>
     </form>
 

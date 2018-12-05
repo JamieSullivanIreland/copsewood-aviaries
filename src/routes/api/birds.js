@@ -30,7 +30,6 @@ router.get('/', (req, res) => {
   }
 
   Bird.find({})
-    // .sort({breed: -1})
     .then(birds => {
       res.status(200).redirect('/birds' + query);
     })

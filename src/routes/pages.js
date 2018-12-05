@@ -69,7 +69,6 @@ router.get('/about', (req, res) => {
 router.get('/birds', (req, res) => {
   // {} for all results
   Bird.find({})
-    // .sort({breed: -1})
     .then(birds => {
       if (req.query.categories) birds = filterByCategory(req.query.categories, birds);
 

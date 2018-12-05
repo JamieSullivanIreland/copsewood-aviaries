@@ -5,47 +5,47 @@
     <h1>Birds for Sale</h1>
     <h2><%= birds.length %> Results</h2>
 
-    <form method='GET' action='/api/birds' class="my-3">
+    <form method='GET' action='/api/birds' class="my-3" id="filter-form">
       <input class="btn btn-primary mb-3" type="submit" value="Filter">
       <br />
 
-      <input type="checkbox" value="Large Parrot" name="categories" aria-label="Checkbox for large parrot">
+      <input type="checkbox" value="Large Parrot" name="categories" aria-label="Checkbox for large parrot" id="filter-checkbox-0">
       <label for="large-parrot">Large Parrot</label>
       <br />
 
-      <input type="checkbox" value="Medium Parrot" name="categories" aria-label="Checkbox for medium parrot">
+      <input type="checkbox" value="Medium Parrot" name="categories" aria-label="Checkbox for medium parrot" id="filter-checkbox-1">
       <label for="medium-parrot">Medium Parrot</label>
       <br />
 
-      <input type="checkbox" value="Small Parrot" name="categories" aria-label="Checkbox for small parrot">
+      <input type="checkbox" value="Small Parrot" name="categories" aria-label="Checkbox for small parrot" id="filter-checkbox-2">
       <label for="small-parrot">Small Parrot</label>
       <br />
 
-      <input type="checkbox" value="Poultry" name="categories" aria-label="Checkbox for poultry">
+      <input type="checkbox" value="Poultry" name="categories" aria-label="Checkbox for poultry" id="filter-checkbox-3">
       <label for="poultry">Poultry</label>
       <br />
 
-      <input type="radio" value="< 100" name="price" aria-label="Radio button for less than 100 euro">
+      <input type="radio" value="< 100" name="price" aria-label="Radio button for less than 100 euro" id="filter-radio-0">
       <label for="poultry">&lt; 100</label>
       <br />
 
-      <input type="radio" value="< 300" name="price" aria-label="Radio button for less than 300 euro">
+      <input type="radio" value="< 300" name="price" aria-label="Radio button for less than 300 euro" id="filter-radio-1">
       <label for="poultry">&lt; 300</label>
       <br />
 
-      <input type="radio" value="< 500" name="price" aria-label="Radio button for less than 500 euro">
+      <input type="radio" value="< 500" name="price" aria-label="Radio button for less than 500 euro" id="filter-radio-2">
       <label for="poultry">&lt; 500</label>
       <br />
 
-      <input type="radio" value="< 800" name="price" aria-label="Radio button for less than 800 euro">
+      <input type="radio" value="< 800" name="price" aria-label="Radio button for less than 800 euro" id="filter-radio-3">
       <label for="poultry">&lt; 800</label>
       <br />
 
-      <input type="radio" value="< 1000" name="price" aria-label="Radio button for less than 1000 euro">
+      <input type="radio" value="< 1000" name="price" aria-label="Radio button for less than 1000 euro" id="filter-radio-4">
       <label for="poultry">&lt; 1000</label>
       <br />
 
-      <input type="radio" value="> 1000" name="price" aria-label="Radio button for more than 1000 euro">
+      <input type="radio" value="> 1000" name="price" aria-label="Radio button for more than 1000 euro" id="filter-radio-5">
       <label for="poultry">&gt; 1000</label>
       <br />
 

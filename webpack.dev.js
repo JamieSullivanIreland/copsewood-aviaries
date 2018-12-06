@@ -10,8 +10,8 @@ module.exports = {
       path.resolve(__dirname, './src/public/js/client/delete-items.js'),
       path.resolve(__dirname, './src/public/js/client/image-upload.js'),
       path.resolve(__dirname, './src/public/js/client/messages.js'),
-      path.resolve(__dirname, './src/public/js/client/filtersLS.js'),
-      path.resolve(__dirname, './src/public/js/client/sortDropdown.js')
+      path.resolve(__dirname, './src/public/js/client/filters-ls.js'),
+      path.resolve(__dirname, './src/public/js/client/sort-dropdown.js')
     ]
   },
   output: {

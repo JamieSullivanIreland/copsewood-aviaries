@@ -28,3 +28,6 @@ body h1 {
 
 .unhighlight-upload .st0 {
   stroke: black; }
+
+#sortby-input {
+  display: none; }

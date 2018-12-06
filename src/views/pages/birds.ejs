@@ -6,7 +6,7 @@
     <h2><%= birds.length %> Results</h2>
 
     <form method='GET' action='/api/birds' class="my-3" id="filter-form">
-      <input class="btn btn-primary mb-3" type="submit" value="Filter">
+      <button class="btn btn-primary mb-3" onclick="submit" id="filter-button">Filter</button>
       <br />
 
       <input type="checkbox" value="Large Parrot" name="categories" aria-label="Checkbox for large parrot" id="filter-checkbox-0">
@@ -49,15 +49,18 @@
       <label for="poultry">&gt; 1000</label>
       <br />
 
+      <input name="sort" id="sortby-input" class="btn btn-outline-secondary dropdown-toggle mt-3"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+
       <span>Sort By: </span>
       <button class="btn btn-outline-secondary dropdown-toggle mt-3" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-selection">Breed A-Z</button>
+
       <div class="dropdown-menu">
-        <button id="sort-btn-0" class="dropdown-item" onclick="submit" value="breed asc" name="sort">Breed A-Z</button>
-        <button id="sort-btn-1" class="dropdown-item" onclick="submit" value="breed desc" name="sort">Breed Z-A</button>
-        <button id="sort-btn-2" class="dropdown-item" onclick="submit" value="date asc" name="sort">Most Recent</button>
-        <button id="sort-btn-3" class="dropdown-item" onclick="submit" value="date desc" name="sort">Oldest</button>
-        <button id="sort-btn-4" class="dropdown-item" onclick="submit" value="price asc" name="sort">Price High to Low</button>
-        <button id="sort-btn-5" class="dropdown-item" onclick="submit" value="price desc" name="sort">Price Low to High</button>
+        <button id="sort-btn-0" class="dropdown-item" onclick="submit" value="breed asc">Breed A-Z</button>
+        <button id="sort-btn-1" class="dropdown-item" onclick="submit" value="breed desc">Breed Z-A</button>
+        <button id="sort-btn-4" class="dropdown-item" onclick="submit" value="price asc">Price High to Low</button>
+        <button id="sort-btn-5" class="dropdown-item" onclick="submit" value="price desc">Price Low to High</button>
+        <button id="sort-btn-2" class="dropdown-item" onclick="submit" value="date asc">Most Recent</button>
+        <button id="sort-btn-3" class="dropdown-item" onclick="submit" value="date desc">Oldest</button>
       </div>
     </form>
 

@@ -19,6 +19,7 @@ const upload = require('../multer/images').upload;
 // @description   Get all birds
 router.get('/', (req, res) => {
   let query = '';
+  console.log(req.query);
 
   if (req.query.categories) query = createCategoriesQuery(req.query.categories);
 

@@ -67,6 +67,7 @@ router.get('/about', (req, res) => {
 
 // Birds Page
 router.get('/birds', (req, res) => {
+  let test = ['hello', 'world'];
   // {} for all results
   Bird.find({})
     // .limit(5)
@@ -80,7 +81,9 @@ router.get('/birds', (req, res) => {
 
       res.render('pages/birds', {
         title: 'Birds',
-        birds: birds
+        birds: birds,
+        numPages: Math.ceil(birds.length / 5),
+        test: JSON.stringify(test),
       });
     })
     .catch(err => {

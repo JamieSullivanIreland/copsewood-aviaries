@@ -11,7 +11,8 @@ module.exports = {
       path.resolve(__dirname, './src/public/js/client/image-upload.js'),
       path.resolve(__dirname, './src/public/js/client/messages.js'),
       path.resolve(__dirname, './src/public/js/client/filters-ls.js'),
-      path.resolve(__dirname, './src/public/js/client/sort-dropdown.js')
+      path.resolve(__dirname, './src/public/js/client/sort-dropdown.js'),
+      path.resolve(__dirname, './src/public/js/client/pagination.js')
     ]
   },
   output: {

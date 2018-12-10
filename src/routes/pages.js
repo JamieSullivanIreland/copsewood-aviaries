@@ -11,6 +11,7 @@ const adminModel = require('../models/Admin');
 const Admin = mongoose.model('Admin', adminModel);
 const filterByCategory = require('./filters/filters').filterByCategory;
 const filterByPrice = require('./filters/filters').filterByPrice;
+const changePage = require('./filters/pagination').changePage;
 const sort = require('./filters/sort').sort;
 
 // Access control
@@ -67,23 +68,36 @@ router.get('/about', (req, res) => {
 
 // Birds Page
 router.get('/birds', (req, res) => {
-  let test = ['hello', 'world'];
   // {} for all results
   Bird.find({})
     // .limit(5)
     .sort({ breed: 1 })
     .then(birds => {
+      let numPages = 0;
+      let totalResults = birds.length;
+
+      // Categories filter
       if (req.query.categories) birds = filterByCategory(req.query.categories, birds);
 
+      // Price filter
       if (req.query.price) birds = filterByPrice(req.query.price.split(' '), birds);
 
+      // Sort by filter
       if (req.query.sortby) birds = sort(req.query.sortby.split(' '), birds);
+
+      // Calculate number of pages and total results after filtering
+      numPages = Math.ceil(birds.length / 10);
+      totalResults = birds.length;
+
+      // Pagination filter, pageNum, birds data, limit
+      if (req.query.page) birds = changePage(req.query.page, birds, 10);
+      else birds = changePage(1, birds, 10);
 
       res.render('pages/birds', {
         title: 'Birds',
         birds: birds,
-        numPages: Math.ceil(birds.length / 5),
-        test: JSON.stringify(test),
+        totalResults: totalResults,
+        numPages: numPages
       });
     })
     .catch(err => {

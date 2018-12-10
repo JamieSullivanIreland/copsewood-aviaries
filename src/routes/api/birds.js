@@ -10,6 +10,7 @@ const verifyToken = require('../../config/jwt').verifyToken;
 const createCategoriesQuery = require('../filters/queries').createCategoriesQuery;
 const createPriceQuery = require('../filters/queries').createPriceQuery;
 const createSortQuery = require('../filters/queries').createSortQuery;
+const createPageQuery = require('../filters/queries').createPageQuery;
 const createDateInfo = require('../date/date').createDateInfo;
 const storage = require('../multer/images').storage;
 const fileFilter = require('../multer/images').fileFilter;
@@ -28,6 +29,11 @@ router.get('/', (req, res) => {
   if (req.query.sort) {
     let split = req.query.sort.split(' ');
     query += createSortQuery(split[0], split[1], query);
+  }
+
+  if (req.query.page) {
+    let pageNum = req.query.page.split('-')[1];
+    query += createPageQuery(pageNum, query);
   }
 
   Bird.find({})

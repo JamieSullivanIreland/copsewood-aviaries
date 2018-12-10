@@ -20,6 +20,7 @@ $(document).ready(() => {
     localStorage.setItem('sortButtons', JSON.stringify([]));
     initSortDropdown();
     dropdownSelection.innerHTML = 'Breed A-Z';
+    sortbyInput.value  = 'breed asc';
   }
 });
 
@@ -42,9 +43,12 @@ function initSortDropdown() {
 }
 
 function setDropdownText() {
-  // Check for which button was last selected
+  // Check for which button was last selected, set input text and value
   sortButtonsLS.forEach(button => {
-    if (button.selected) dropdownSelection.innerHTML = button.text;
+    if (button.selected) {
+      dropdownSelection.innerHTML = button.text;
+      sortbyInput.value = button.value;
+    }
   });
 }
 
@@ -89,14 +93,16 @@ function createSortButtonsLS() {
       tempSortButtons.push({
         id: button.id,
         text: button.innerHTML,
-        selected: false
+        selected: false,
+        value: button.value
       });
     });
 
     tempSortButtons[0] = {
       id: sortButtons[0].id,
       text: sortButtons[0].innerHTML,
-      selected: true
+      selected: true,
+      value: 'breed asc'
     };
 
     localStorage.setItem('sortButtons', JSON.stringify(tempSortButtons));

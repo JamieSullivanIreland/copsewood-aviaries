@@ -33,3 +33,13 @@ export function createSortQuery(sortBy, order, query) {
 
   return query;
 }
+
+export function createPageQuery(pageNum, query) {
+  query.indexOf('categories') > -1 ||
+  query.indexOf('price') > -1 ||
+  query.indexOf('sortby') > -1?
+    query = `&page=${pageNum}` :
+    query = `?page=${pageNum}`;
+
+  return query;
+}

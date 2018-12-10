@@ -13,7 +13,7 @@
       <nav aria-label="Page navigation">
         <ul class="pagination" id="pagination-nav">
           <li class="page-item">
-            <button class="page-link" value="page-previous" onclick="submit">Previous</button>
+            <button class="page-link" id="previous-btn" value="page-previous" onclick="submit">Previous</button>
           </li>
           <% for(let i = 0; i < numPages; ++i) { %>
             <li class="page-item">
@@ -21,7 +21,7 @@
             </li>
             <% } %>
             <li class="page-item">
-              <button class="page-link" value="page-next" onclick="submit">Next</button>
+              <button class="page-link" id="next-btn" value="page-next" onclick="submit">Next</button>
             </li>
           </ul>
         </nav>

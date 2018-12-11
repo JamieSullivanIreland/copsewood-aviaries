@@ -15,7 +15,7 @@ $(document).ready(() => {
 });
 
 function initPagination() {
-  paginationBtns = document.querySelectorAll("#pagination-nav li button");
+  paginationBtns = document.querySelectorAll("#page-link");
   pageInput = document.querySelector("#page-input");
   nextBtn = document.querySelector("#next-btn");
   previousBtn = document.querySelector("#previous-btn");
@@ -25,15 +25,18 @@ function initPagination() {
 
   paginationBtns.forEach(btn => {
     let pageNum = btn.value.split('-')[1];
+    btn.addEventListener('click', changePage);
 
     // Add active class to button that was clicked
     if (window.location.href.indexOf(`page=${pageNum}`) > -1) btn.parentElement.classList.add('active');
-    btn.addEventListener('click', changePage);
   });
 
   // If naviagated through navbar to /birds add active
   if (!(window.location.href.indexOf(`page=`) > -1))
-  paginationBtns[1].parentElement.classList.add('active');
+  paginationBtns[0].parentElement.classList.add('active');
+
+  // Disable next and/or previous button
+  disableBtn();
 }
 
 function changePage(e) {
@@ -41,29 +44,31 @@ function changePage(e) {
 }
 
 function nextPage() {
-  let btn = getActiveBtn();
-  let index = Number(btn.split('-')[1]);
+  let activeBtn = getActiveBtn();
+  let index = Number(activeBtn.split('-')[1]);
   ++index;
   pageInput.value = `page-${index}`;
-  console.log(pageInput.value);
 }
 
 function previousPage() {
-  let btn = getActiveBtn();
-  let index = Number(btn.split('-')[1]);
-  index = index - 1;
+  let activeBtn = getActiveBtn();
+  let index = Number(activeBtn.split('-')[1]);
+  index -= 1;
   pageInput.value = `page-${index}`;
-  console.log(pageInput.value);
 }
 
 function getActiveBtn() {
-  let activeBtn = '';
-
-  paginationBtns.forEach(btn => {
-    if (btn.parentElement.classList.contains('active')) {
-      activeBtn = btn.value;
+  for (let i = 0; i < paginationBtns.length; ++i) {
+    if (paginationBtns[i].parentElement.classList.contains('active')) {
+      return paginationBtns[i].value;
     }
-  });
+  }
+}
 
-  return activeBtn;
+function disableBtn() {
+  let activeBtn = getActiveBtn();
+  let index = Number(activeBtn.split('-')[1]);
+
+  if (index === 1) previousBtn.parentElement.classList.add('disabled');
+  if (index === paginationBtns.length) nextBtn.parentElement.classList.add('disabled');
 }

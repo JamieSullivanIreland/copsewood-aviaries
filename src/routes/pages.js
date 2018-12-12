@@ -70,11 +70,10 @@ router.get('/about', (req, res) => {
 router.get('/birds', (req, res) => {
   // {} for all results
   Bird.find({})
-    // .limit(5)
     .sort({ breed: 1 })
     .then(birds => {
       let numPages = 0;
-      let totalResults = birds.length;
+      let total = birds.length;
 
       // Categories filter
       if (req.query.categories) birds = filterByCategory(req.query.categories, birds);
@@ -87,16 +86,17 @@ router.get('/birds', (req, res) => {
 
       // Calculate number of pages and total results after filtering
       numPages = Math.ceil(birds.length / 10);
-      totalResults = birds.length;
+      total = birds.length;
 
       // Pagination filter, pageNum, birds data, limit
+      // If a page link was clicked pass query, if not pass 1 for first page
       if (req.query.page) birds = changePage(req.query.page, birds, 10);
       else birds = changePage(1, birds, 10);
 
       res.render('pages/birds', {
         title: 'Birds',
         birds: birds,
-        totalResults: totalResults,
+        total: total,
         numPages: numPages
       });
     })

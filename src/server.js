@@ -116,15 +116,14 @@ app.use('/api/products', products);
 const admins = require('./routes/api/admins');
 app.use('/api/admins', admins);
 
+// Send Email
 app.post('/send', (req, res) => {
   const output = `
-    <p>You have a new message</p>
+    <p>You have a new inquiry</p>
     <h3>Contact Details</h3>
-    <ul>
-      <li>Name: ${req.body.name}</li>
-      <li>Email: ${req.body.email}</li>
-      <li>Phone: ${req.body.phone}</li>
-    </ul>
+    <p><b>Name:</b> ${req.body.name}</p>
+    <p><b>Email:</b> ${req.body.email}</p>
+    <p><b>Phone:</b> ${req.body.phone}</p>
     <h3>Message</h3>
     <p>${req.body.message}</p>
   `;
@@ -136,13 +135,16 @@ app.post('/send', (req, res) => {
     auth: {
       user: EMAIL_ADDRESS,
       pass: EMAIL_PASSWORD
+    },
+    tls: {
+      rejectUnauthorized: false
     }
   });
 
   let mailOptions = {
     from: `<${EMAIL_ADDRESS}>`,
     to: 'jamiesullivan523@gmail.com',
-    subject: 'New Inquiry',
+    subject: 'New Bird Inquiry',
     text: '',
     html: output,
   }

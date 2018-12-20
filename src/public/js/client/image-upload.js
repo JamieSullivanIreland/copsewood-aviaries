@@ -13,11 +13,11 @@ let imagesToSubmit = [];
 
 // Check if admin-panel was loaded
 $(document).ready(function () {
-  if(window.location.href.indexOf("admin-panel") > -1) init();
+  if(window.location.href.indexOf("admin-panel") > -1) initImageUpload();
 });
 
 // Initialise elements and event listeners
-function init() {
+function initImageUpload() {
   dropArea = document.querySelector('#dropArea');
   inputLabel = document.querySelector('#image-input-label');
   imageInput = document.querySelector('#image-input');

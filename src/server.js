@@ -8,11 +8,14 @@ import flash from 'connect-flash';
 import passport from 'passport';
 import cookieParser from 'cookie-parser';
 import http from "http";
+import nodemailer from "nodemailer";
+
+import { EMAIL_ADDRESS, EMAIL_PASSWORD } from './config/email';
 
 // Ping Heroku app to keep from sleeping
-setInterval(function() {
-  http.get("http://copsewood-aviaries.herokuapp.com/");
-}, 600000); // every 10 minutes (600000)
+// setInterval(() => {
+//   http.get("http://copsewood-aviaries.herokuapp.com/");
+// }, 600000); // every 10 minutes (600000)
 
 // Initialise
 const app = express();
@@ -112,6 +115,50 @@ app.use('/api/products', products);
 
 const admins = require('./routes/api/admins');
 app.use('/api/admins', admins);
+
+app.post('/send', (req, res) => {
+  const output = `
+    <p>You have a new message</p>
+    <h3>Contact Details</h3>
+    <ul>
+      <li>Name: ${req.body.name}</li>
+      <li>Email: ${req.body.email}</li>
+      <li>Phone: ${req.body.phone}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${req.body.message}</p>
+  `;
+
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.office365.com',
+    port: 587,
+    secure: false,
+    auth: {
+      user: EMAIL_ADDRESS,
+      pass: EMAIL_PASSWORD
+    }
+  });
+
+  let mailOptions = {
+    from: `<${EMAIL_ADDRESS}>`,
+    to: 'jamiesullivan523@gmail.com',
+    subject: 'New Inquiry',
+    text: '',
+    html: output,
+  }
+
+  transporter.sendMail(mailOptions, (err, info) => {
+    if (err) {
+      console.log(err);
+      req.flash('alert alert-success', `Problem Sending The Email`);
+      res.redirect('/contact');
+    }
+
+    req.flash('alert alert-success', `Email Was Sent Successfully`);
+    res.redirect('/contact');
+  });
+
+});
 
 // Start Server
 app.listen(port, () => {

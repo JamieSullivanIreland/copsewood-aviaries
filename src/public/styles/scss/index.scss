@@ -1,25 +1,21 @@
+// --- ITCSS - Inverted Triangle CSS ---
+//Settings - variables, sizes, colours, fonts
+@import './settings/settings';
 
-  // --- ITCSS - Inverted Triangle CSS ---
-  //Settings - variables, sizes, colours, fonts, super classes etc
-  @import 'settings/variables';
-  @import 'settings/fonts';
+// Tools - media-queries, mixins and functions
+@import './tools/tools';
 
-  // Tools - media-queries, mixins and functions
-  @import 'tools/media-queries';
-  @import 'tools/mixins';
+// Structure - grids, wrappers, containers
+@import './structure/structure';
 
-  // Generic - reset and/or normalize styles, box-sizing etc.
-  @import 'generic/normalise';
+// Elements - Bare unclassed HTML elements links, lists, headings etc.
+@import './elements/elements';
 
-  // Elements - Bare unclassed HTML elements links, lists, headings etc.
-  @import 'elements/elements';
+// Components - App UI components
+@import './components/components';
 
-  // Components - App UI components
-  @import 'components/navigation';
-  @import 'components/buttons';
-
-  // Utilities - helper classes that override anything that goes before, e.g is-active, is-hidden. Only place where !important is permitted
-  @import 'utilities/helpers';
+// Utilities - helper classes that override anything that goes before, e.g is-active, is-hidden. Only place where !important is permitted
+@import './utilities/utilities';
 
 #dropArea {
   height: 300px;

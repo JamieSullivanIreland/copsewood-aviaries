@@ -1,9 +1,33 @@
-h1 {
-  color: $heading-colour;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  h1 {
-    font-size: 32px;
+h3 {
+  @extend .sub-header-font;
+  font-size: 32px;
+  color: $dark;
+}
+
+p {
+  @extend .body-font;
+}
+
+header {
+  @extend .header-font;
+  background-color: $primary;
+  padding: 10px 0;
+  color: $light;
+
+  a {
+    @extend .header-font;
+    color: $light;
+
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
   }
 }

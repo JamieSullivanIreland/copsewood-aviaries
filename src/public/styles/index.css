@@ -1,8 +1,90 @@
-h1 {
-  color: #11ce59; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:700");
+.header-font, header, header a, .banner h1, .banner a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 28px; }
 
-body h1 {
-  font-size: 32px; }
+.sub-header-font, h3, .navigation, .banner h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #E23406; }
+
+.body-font, p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #191512;
+  line-height: 35px; }
+
+.container {
+  max-width: 85%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-size: 32px;
+  color: #191512; }
+
+header {
+  background-color: #225E00;
+  padding: 10px 0;
+  color: #EFE9DF; }
+  header a {
+    color: #EFE9DF; }
+    header a:hover {
+      text-decoration: none;
+      color: white; }
+
+.navigation {
+  background-color: #EFE9DF;
+  overflow: hidden;
+  padding: 10px 0; }
+  .navigation a {
+    color: #191512;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 15px; }
+    .navigation a:hover {
+      background-color: #E23406;
+      color: #EFE9DF; }
+    .navigation a:active {
+      color: #191512; }
+
+.banner {
+  background-color: #191512;
+  text-align: center; }
+  .banner h1 {
+    color: #EFE9DF;
+    margin: 35px 0;
+    font-size: 48px; }
+  .banner h2 {
+    color: #EFE9DF;
+    margin: 35px 0;
+    font-size: 26px;
+    line-height: 40px; }
+  .banner a {
+    background-color: #E23406;
+    color: #EFE9DF;
+    font-size: 18px;
+    margin: 35px 0; }
+    .banner a:hover {
+      background-color: #225E00; }
+  .banner img {
+    width: 100%;
+    min-height: 400px;
+    max-height: 500px; }
+  .banner .banner__text {
+    margin: auto 0; }
+
+.welcome .container {
+  width: 80%; }
+
+.welcome .row {
+  margin: 20px 0;
+  min-height: 250px; }
 
 #messages {
   padding: 0px; }

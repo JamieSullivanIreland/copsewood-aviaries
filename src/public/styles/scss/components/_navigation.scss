@@ -1,0 +1,43 @@
+
+.navigation {
+  background-color: $light;
+  overflow: hidden;
+  padding: 10px 0;
+  @extend .sub-header-font;
+
+  a {
+    color: $dark;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 15px;
+
+    &:hover {
+      background-color: $secondary;
+      color: $light;
+    }
+
+    &:active {
+      color: $dark;
+    }
+  }
+
+
+  // li {
+  //   color: $dark;
+  //   display: inline;
+  //
+  //   &:hover {
+  //     background-color: $secondary;
+  //   }
+  //
+  //   a {
+  //     @extend .sub-header-font;
+  //     color: $dark;
+  //
+  //     &:hover {
+  //       text-decoration: none;
+  //     }
+  //   }
+  // }
+
+}

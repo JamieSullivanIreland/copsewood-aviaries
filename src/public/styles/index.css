@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:700");
-.header-font, header, header a, .banner h1, .banner a {
+.header-font, header, header a, .banner h1 {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 28px; }
 
-.sub-header-font, h3, .navigation, .banner h2 {
+.sub-header-font, h3, .navigation, .banner h2, .banner a, .birds-for-sale button, .birds-for-sale .card-header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -14,8 +14,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #191512;
-  line-height: 35px; }
+  color: #191512; }
 
 .container {
   max-width: 85%; }
@@ -23,6 +22,9 @@
 * {
   margin: 0;
   padding: 0; }
+
+body {
+  margin-bottom: 100px; }
 
 h3 {
   font-size: 32px;
@@ -73,18 +75,45 @@ header {
     .banner a:hover {
       background-color: #225E00; }
   .banner img {
+    object-fit: cover;
     width: 100%;
     min-height: 400px;
     max-height: 500px; }
   .banner .banner__text {
     margin: auto 0; }
 
-.welcome .container {
-  width: 80%; }
+.welcome {
+  line-height: 30px; }
+  .welcome .row {
+    margin: 20px 0;
+    min-height: 250px; }
 
-.welcome .row {
-  margin: 20px 0;
-  min-height: 250px; }
+.birds-for-sale .card {
+  border-color: #191512;
+  height: 500px;
+  width: 320px; }
+
+.birds-for-sale button {
+  background-color: #E23406;
+  color: #EFE9DF;
+  font-size: 16px;
+  margin: 0; }
+  .birds-for-sale button:hover {
+    background-color: #225E00; }
+
+.birds-for-sale .card-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #191512;
+  color: #EFE9DF; }
+
+.birds-for-sale .card-text {
+  font-size: 16px; }
+
+.birds-for-sale img {
+  object-fit: cover;
+  max-height: 200px;
+  border-radius: 0px; }
 
 #messages {
   padding: 0px; }

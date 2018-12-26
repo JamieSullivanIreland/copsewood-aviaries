@@ -6,6 +6,7 @@
 
 body {
   margin-bottom: 100px;
+  // background-color: $light;
 }
 
 h3 {
@@ -16,22 +17,4 @@ h3 {
 
 p {
   @extend .body-font;
-}
-
-header {
-  @extend .header-font;
-  background-color: $primary;
-  padding: 10px 0;
-  color: $light;
-
-  a {
-    @extend .header-font;
-    color: $light;
-
-
-    &:hover {
-      text-decoration: none;
-      color: white;
-    }
-  }
 }

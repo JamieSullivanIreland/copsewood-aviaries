@@ -1,10 +1,10 @@
 
-// .button {
-//   @extend .header-font;
-//   background-color: $secondary;
-//   color: $light;
-//
-//   &:hover {
-//     background-color: $primary;
-//   }
-// }
+.btn {
+  @extend .header-font;
+  background-color: $secondary;
+  color: $light;
+
+  &:hover {
+    background-color: $primary;
+  }
+}

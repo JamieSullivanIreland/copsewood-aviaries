@@ -1,14 +1,14 @@
 
 <% include ../partials/header %>
 
-<div class="container">
+<div class="">
   <h1>Admins</h1>
 
   <%- messages() %>
 
-  <ul class="list-group">
+  <ul>
     <% for(let i = 0; i < admins.length; ++i) { %>
-      <li class="list-group-item">
+      <li>
         <h4>
           <a href='/admins_<%= admins[i]._id %>'>Name: <%= admins[i].username %></a>
         </h4>

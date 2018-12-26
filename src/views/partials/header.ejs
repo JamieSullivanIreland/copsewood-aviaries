@@ -5,26 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= title %></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="row">
+  <div class="grid">
+    <header class="header row">
+      <div class="brand col">
+        <a class="brand__img row" href="/">
+          <img src="images/Logo-Placeholder.png" />
+          <span class="brand__text">Copsewood Aviaries</span>
+        </a>
+      </div>
 
-        <div class="logo col">
-          <a class="logo__img" href="/">
-            <img src="images/Logo-Placeholder.png" height="70px" width="70px" />
-            <span class="logo__text">Copsewood Aviaries</span>
-          </a>
-        </div>
+      <div class="phone col">
+        <span class="phone__text">Call Us - 086 2620201</span>
+      </div>
+    </header>
 
-        <div class="phone col align-self-center text-right">
-          <span class="phone__text">Call Us - 086 2620201</span>
-        </div>
-
-       </div> <!-- row -->
-    </div>
-  </header>
     <% include navbar %>

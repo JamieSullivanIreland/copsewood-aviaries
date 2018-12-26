@@ -1,0 +1,44 @@
+.banner-height {
+  height: 500px;
+}
+
+.banner {
+  background-color: $dark;
+  grid-column: 1 / span 5;
+  grid-row: 3 / span 1;
+  text-align: center;
+}
+
+.banner__text {
+  @extend .banner-height;
+  justify-content: center;
+
+  h1 {
+    @extend .header-font;
+    color: $light;
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
+
+  h2 {
+    @extend .sub-header-font;
+    color: $light;
+    font-size: 26px;
+  }
+
+  a {
+    margin-top: 50px;
+  }
+}
+
+.banner__image {
+  grid-column: 6 / span 12;
+  grid-row: 3 / span 1;
+  @extend .banner-height;
+
+  img {
+    @extend .banner-height;
+    object-fit: cover;
+    width: 100%;
+  }
+}

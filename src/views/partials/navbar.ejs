@@ -1,18 +1,33 @@
 
-<nav class="navigation">
+<!-- <nav class="grid">
+  <div class="navigation">
+  </div>
+  <ul class="navigation__group">
+    <li class="navigation__item">
+      <a  href="/">Home</a>
+    </li >
+    <li class="navigation__item">
+      <a href="/about">About</a>
+    </li>
+    <li class="navigation__item">
+      <a href="/birds">Birds for Sale</a>
+    </li>
+  </ul>
 
-  <div class="container">
-    <a class="" href="/">Home</a>
-    <a class="" href="/about">About</a>
-    <a class="" href="/birds">Birds for Sale</a>
-    <a class="" href="/contact">Contact</a>
+</nav> -->
+
+
+  <div class="navigation__background"></div>
+  <div class="navigation__group">
+    <a class="navigation__item" href="/">Home</a>
+    <a class="navigation__item" href="/about">About</a>
+    <a class="navigation__item" href="/birds">Birds for Sale</a>
+    <a class="navigation__item" href="/contact">Contact</a>
     <% if (user) { %>
-      <a class="" href="/admin-panel">Admin Panel</a>
-      <a class="" href="/admins">Admins</a>
-      <a class="" href="/api/admins/logout">Logout</a>
+      <a class="navigation__item" href="/admin-panel">Admin Panel</a>
+      <a class="navigation__item" href="/admins">Admins</a>
+      <a class="navigation__item" href="/api/admins/logout">Logout</a>
     <% } else { %>
-      <a class="" href="/login">Login</a>
+      <a class="navigation__item" href="/login">Login</a>
     <% } %>
   </div>
-
-</nav>

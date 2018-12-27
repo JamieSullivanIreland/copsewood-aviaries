@@ -40,7 +40,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      {from: './src/views', to: './views'},
+      { from: './src/views', to: './views' },
+      { from: './src/public/images', to: './public/images' },
     ])
   ]
 }

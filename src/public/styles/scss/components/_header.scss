@@ -31,4 +31,13 @@
     } // brand__img
 
   } // brand
+  
+  .menu {
+    display: none;
+    
+    img {
+      width: 50px; 
+    }
+    
+  } // menu
 } // header

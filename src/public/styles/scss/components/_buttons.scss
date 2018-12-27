@@ -3,6 +3,10 @@
   @extend .header-font;
   background-color: $secondary;
   color: $light;
+  padding: 0;
+  display: inline-block;
+  width: auto;
+  text-align: center;
 
   &:hover {
     background-color: $primary;

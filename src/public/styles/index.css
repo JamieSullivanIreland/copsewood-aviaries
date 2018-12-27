@@ -44,7 +44,11 @@ h3 {
 
 .btn {
   background-color: #E23406;
-  color: #EFE9DF; }
+  color: #EFE9DF;
+  padding: 0;
+  display: inline-block;
+  width: auto;
+  text-align: center; }
   .btn:hover {
     background-color: #225E00; }
 
@@ -67,6 +71,10 @@ h3 {
       margin-right: 10px;
       width: 60px;
       height: 60px; }
+  .header .menu {
+    display: none; }
+    .header .menu img {
+      width: 50px; }
 
 .navigation__background {
   grid-column: 1 / span 12;
@@ -89,17 +97,19 @@ h3 {
   .navigation__item:active {
     color: #191512; }
 
-.banner-height, .banner__text, .banner__image, .banner__image img {
+.banner-height, .banner, .banner__image, .banner__image img {
   height: 500px; }
 
 .banner {
   background-color: #191512;
-  grid-column: 1 / span 5;
-  grid-row: 3 / span 1;
-  text-align: center; }
+  grid-column: 1 / span 12;
+  grid-row: 3 / span 1; }
 
 .banner__text {
-  justify-content: center; }
+  grid-column: 1 / span 5;
+  grid-row: 3 / span 1;
+  text-align: center;
+  align-self: center; }
   .banner__text h1 {
     color: #EFE9DF;
     margin-bottom: 50px;
@@ -107,7 +117,7 @@ h3 {
   .banner__text h2 {
     color: #EFE9DF;
     font-size: 26px; }
-  .banner__text a {
+  .banner__text button {
     margin-top: 50px; }
 
 .banner__image {
@@ -116,6 +126,11 @@ h3 {
   .banner__image img {
     object-fit: cover;
     width: 100%; }
+
+.welcome {
+  grid-column: 2 / span 10;
+  grid-row: 4 / span 1;
+  line-height: 30px; }
 
 #messages {
   padding: 0px; }

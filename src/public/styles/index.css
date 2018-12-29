@@ -4,7 +4,7 @@
   color: white;
   font-size: 28px; }
 
-.sub-header-font, .btn__primary, .navigation__item, .banner__text h2, .welcome h3 {
+.sub-header-font, .btn__primary, .navigation__item, .banner__text h2, .welcome h3, .card .card-header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -151,6 +151,40 @@ body {
   .welcome p {
     font-size: 20px; }
 
+.bird-categories {
+  grid-column: 1 / span 12;
+  grid-row: 5 / span 1;
+  background-color: #EFE9DF;
+  color: #191512; }
+
+.bird-categories-container {
+  grid-column: 2 / span 10;
+  grid-row: 5 / span 1;
+  padding: 50px 0; }
+
+.card {
+  border: 0.1rem solid #191512;
+  border-radius: 6px;
+  margin-left: -2px;
+  width: 350px; }
+  .card .card-header {
+    color: #EFE9DF;
+    background-color: #191512;
+    font-size: 22px;
+    padding: 5px 15px; }
+  .card img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover; }
+  .card .card-body {
+    padding: 0 15px; }
+    .card .card-body .card-text {
+      margin: 15px 0; }
+    .card .card-body button {
+      font-size: 18px;
+      margin-bottom: 15px;
+      float: right; }
+
 #messages {
   padding: 0px; }
   #messages li {
@@ -186,7 +220,7 @@ body {
   .navigation__item {
     display: none; }
   .banner-height, .banner, .banner__image, .banner__image img {
-    height: 400px; }
+    height: 380px; }
   .banner {
     grid-row: 3 / span 1; }
   .banner__text {
@@ -217,7 +251,8 @@ body {
     margin-top: 25px;
     font-size: 20px; }
   .welcome {
-    padding: 40px 0; }
+    padding: 40px 0;
+    line-height: 26px; }
     .welcome h3 {
       font-size: 30px; }
     .welcome p {

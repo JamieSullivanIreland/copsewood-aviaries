@@ -36,8 +36,16 @@
     display: none;
     
     img {
-      width: 50px; 
+      width: 40px; 
     }
-    
+
+    button {
+      background: none;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   } // menu
 } // header

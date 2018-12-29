@@ -9,12 +9,6 @@ body {
   // background-color: $light;
 }
 
-h3 {
-  @extend .sub-header-font;
-  font-size: 32px;
-  color: $dark;
-}
-
 p {
   @extend .body-font;
 }

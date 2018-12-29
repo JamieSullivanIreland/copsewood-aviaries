@@ -1,0 +1,56 @@
+
+/* Tablet - Below 1400px */
+@media (max-width: $tablet-bp) {
+  .header {
+    padding: 10px 30px;
+
+    .phone {
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+    } 
+  } 
+  // header
+
+  .navigation__background {
+    display: none;
+  }
+  
+  .navigation__group {
+    display: none;
+  }
+  
+  .navigation__item {
+    display: none;
+  }
+  // navigation
+
+  .banner-height {
+    height: 400px;
+  }
+
+  .banner {
+    grid-row: 3 / span 1;
+  }
+  
+  .banner__text {
+    grid-column: 1 / span 12;
+    grid-row: 3 / span 1;
+  
+    h1 {
+      margin-bottom: 35px;
+    }
+  
+    button {
+      margin-top: 35px;
+    }
+  }
+  
+  .banner__image {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+  }
+  // banner
+}

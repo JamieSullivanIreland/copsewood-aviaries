@@ -1,0 +1,46 @@
+
+/* Phone - Below 600px */
+@media (max-width: $phone-bp) {
+  .header {
+    padding: 10px 10px;
+
+    .brand__text {
+      display: none;
+    }
+  } 
+  // header
+
+  .banner-height {
+    height: 300px;
+  }
+  
+  .banner__text {
+    h1 {
+      margin-bottom: 25px;
+      font-size: 34px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      margin-top: 25px;
+      font-size: 20px;
+    }
+  }
+  // banner
+
+  .welcome {
+    padding: 40px 0;
+    
+    h3 {
+      font-size: 30px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  } 
+  // welcome
+}

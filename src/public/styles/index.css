@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:700");
-.header-font, .btn, .header, .header .brand a, .banner__text h1 {
+.header-font, .header, .header .brand a, .banner__text h1 {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 28px; }
 
-.sub-header-font, h3, .navigation__item, .banner__text h2 {
+.sub-header-font, .btn__primary, .navigation__item, .banner__text h2, .welcome h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #E23406; }
 
-.body-font, p {
+.body-font, p, .welcome p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -38,19 +38,26 @@
 body {
   margin-bottom: 100px; }
 
-h3 {
-  font-size: 32px;
-  color: #191512; }
-
 .btn {
-  background-color: #E23406;
-  color: #EFE9DF;
-  padding: 0;
-  display: inline-block;
-  width: auto;
-  text-align: center; }
+  padding: 8px 12px;
+  text-align: center;
+  border: none;
+  border-radius: 4px; }
   .btn:hover {
+    cursor: pointer; }
+  .btn:active {
+    outline: 0; }
+  .btn:focus {
+    outline: 0; }
+
+.btn__primary {
+  font-size: 22px;
+  background-color: #E23406;
+  color: #EFE9DF; }
+  .btn__primary:hover {
     background-color: #225E00; }
+  .btn__primary:active {
+    background-color: #E23406; }
 
 .header {
   grid-column: 1 / span 12;
@@ -74,7 +81,12 @@ h3 {
   .header .menu {
     display: none; }
     .header .menu img {
-      width: 50px; }
+      width: 40px; }
+    .header .menu button {
+      background: none;
+      border: none; }
+      .header .menu button:hover {
+        cursor: pointer; }
 
 .navigation__background {
   grid-column: 1 / span 12;
@@ -130,7 +142,14 @@ h3 {
 .welcome {
   grid-column: 2 / span 10;
   grid-row: 4 / span 1;
+  padding: 50px 0;
   line-height: 30px; }
+  .welcome h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #191512; }
+  .welcome p {
+    font-size: 20px; }
 
 #messages {
   padding: 0px; }
@@ -144,6 +163,65 @@ h3 {
     color: #a94442;
     background-color: #f2dede;
     border-color: #ebccd1; }
+
+/* Phone - Below 1000px */
+@media (max-width: 1400px) {
+  .banner__text {
+    grid-column: 1 / span 6; }
+  .banner__image {
+    grid-column: 7 / span 12; } }
+
+/* Tablet - Below 1400px */
+@media (max-width: 1000px) {
+  .header {
+    padding: 10px 30px; }
+    .header .phone {
+      display: none; }
+    .header .menu {
+      display: block; }
+  .navigation__background {
+    display: none; }
+  .navigation__group {
+    display: none; }
+  .navigation__item {
+    display: none; }
+  .banner-height, .banner, .banner__image, .banner__image img {
+    height: 400px; }
+  .banner {
+    grid-row: 3 / span 1; }
+  .banner__text {
+    grid-column: 1 / span 12;
+    grid-row: 3 / span 1; }
+    .banner__text h1 {
+      margin-bottom: 35px; }
+    .banner__text button {
+      margin-top: 35px; }
+  .banner__image {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1; } }
+
+/* Phone - Below 600px */
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 10px; }
+    .header .brand__text {
+      display: none; }
+  .banner-height, .banner, .banner__image, .banner__image img {
+    height: 300px; }
+  .banner__text h1 {
+    margin-bottom: 25px;
+    font-size: 34px; }
+  .banner__text h2 {
+    font-size: 20px; }
+  .banner__text button {
+    margin-top: 25px;
+    font-size: 20px; }
+  .welcome {
+    padding: 40px 0; }
+    .welcome h3 {
+      font-size: 30px; }
+    .welcome p {
+      font-size: 16px; } }
 
 #dropArea {
   height: 300px;

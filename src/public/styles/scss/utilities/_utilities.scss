@@ -1,2 +1,7 @@
 @import 'helpers';
-@import 'media-queries';
+
+// Media queries for each page
+@import 'index/laptop';
+@import 'index/tablet';
+@import 'index/phone';
+

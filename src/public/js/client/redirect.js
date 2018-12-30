@@ -20,7 +20,7 @@ function initButtons() {
   viewLargeBtn = document.querySelector('#view-large-parrots');
 
   inquiryButton.addEventListener('click', () => redirect('contact'));
-  viewLargeBtn.addEventListener('click', () => redirect('birds?categories=large'));
+  viewLargeBtn.addEventListener('click', () => redirect('birds'));
 }
 
 function redirect(route) {

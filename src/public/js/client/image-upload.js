@@ -1,3 +1,5 @@
+// Variables and Data
+const imagesToSubmit = [];
 const $ = require('jquery');
 
 // Elements
@@ -7,9 +9,6 @@ let imageInput;
 let birdForm;
 let uploadPlaceholder;
 let submitBirdButton;
-
-// Variables and Data
-let imagesToSubmit = [];
 
 // Check if admin-panel was loaded
 $(document).ready(function () {
@@ -39,7 +38,7 @@ function initImageUpload() {
 
   dropArea.addEventListener('drop', handleDrop, false);
   birdForm.addEventListener('submit', handleSubmit, false);
-  imageInput.addEventListener('change', handleChange, false);
+  imageInput.addEventListener('change', handleInput, false);
 }
 
 function preventDefaults (e) {
@@ -62,11 +61,11 @@ function unhighlight(e) {
 }
 
 // Get files when user selects from input
-function handleChange(e) {
+function handleInput(e) {
   preventDefaults(e);
 
-  let files = imageInput.files;
-  let filesArr = Array.from(files);
+  const files = imageInput.files;
+  const filesArr = Array.from(files);
 
   for (let i = 0; i < filesArr.length; ++i) {
     // Check if image limit was reached
@@ -93,8 +92,8 @@ function handleChange(e) {
 function handleDrop(e) {
   preventDefaults(e);
 
-  let files = e.dataTransfer.files;
-  let filesArr = Array.from(files);
+  const files = e.dataTransfer.files;
+  const filesArr = Array.from(files);
 
   for (let i = 0; i < filesArr.length; ++i) {
     // Check if image limit was reached
@@ -183,8 +182,8 @@ function createErrorMessage(message) {
 
 // Create image div and load into the DOM
 function readAndPreview(file) {
-  let img;
   const reader = new FileReader();
+  const img = new Image(100, 100);
   const div = document.createElement('div');
   const br = document.createElement("br");
   const removeButton = document.createElement('button');
@@ -203,7 +202,6 @@ function readAndPreview(file) {
 
   // Set properties and create a div for each image that was loaded
   reader.addEventListener("load", () => {
-    img = new Image(100, 100);
     img.className = 'output-image';
     img.src = reader.result;
     img.id = file.id;

@@ -1,6 +1,16 @@
+.footer {
+	grid-column: 2 / span 10;
+	grid-row: 6 / span 1;
+	justify-content: space-between;
+	align-items: center;
+	height: 200px;
+}
 
 .footer__location {
-  grid-column: 4 / span 12;
-  grid-row: 8 / span 1;
-  background-color: red;
+}
+
+.footer__opening {
+}
+
+.footer__contact {
 }

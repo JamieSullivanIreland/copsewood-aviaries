@@ -1,14 +1,13 @@
-
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  margin-bottom: 100px;
-  // background-color: $light;
+	// margin-bottom: 50px;
+	// background-color: $light;
 }
 
 p {
-  @extend .body-font;
+	@extend .body-font;
 }

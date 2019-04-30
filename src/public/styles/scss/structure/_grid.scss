@@ -1,22 +1,26 @@
-
 // .container {
 //   max-width: 85%;
 // }
 
+.wrapper {
+	padding: 0px 40px;
+}
+
 .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .col {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin-bottom: 0;
+	// grid-auto-rows: auto;
 }

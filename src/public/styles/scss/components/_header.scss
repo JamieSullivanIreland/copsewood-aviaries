@@ -1,51 +1,44 @@
-
 .header {
-  grid-column: 1 / span 12;
-  grid-row: 1 / span 1;
-  @extend .header-font;
-  background-color: $primary;
-  color: $light;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
+	grid-column: 1 / span 12;
+	grid-row: 1 / span 1;
+	@extend .header-font;
+	background-color: $primary;
+	color: $light;
+	padding: 10px 0px;
 
-  .brand {
-    a {
-      @extend .header-font;
-      color: $light;
-      text-decoration: none;
+	.row {
+		justify-content: space-between;
+		align-items: center;
+	}
 
-      &:hover {
-        color: white;
-      }
-    } // a
+	.brand {
+		div {
+			vertical-align: middle;
+			display: inline;
+		}
 
-    .brand__img {
-      align-items: center;
+		img {
+			vertical-align: middle;
+			margin-right: 10px;
+			width: 60px;
+			height: 60px;
+		}
+	} // brand
 
-      img {
-        margin-right: 10px;
-        width: 60px;
-        height: 60px;
-      }
-    } // brand__img
+	.menu {
+		display: none;
 
-  } // brand
-  
-  .menu {
-    display: none;
-    
-    img {
-      width: 40px; 
-    }
+		img {
+			width: 40px;
+		}
 
-    button {
-      background: none;
-      border: none;
+		button {
+			background: none;
+			border: none;
 
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  } // menu
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	} // menu
 } // header

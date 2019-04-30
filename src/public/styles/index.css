@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:700");
-.header-font, .header, .header .brand a, .banner__text h1 {
+.header-font, .header, .banner__text h1 {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 28px; }
@@ -16,6 +16,9 @@
   font-size: 18px;
   color: #191512; }
 
+.wrapper {
+  padding: 0px 40px; }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -29,14 +32,11 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: auto; }
+  margin-bottom: 0; }
 
 * {
   margin: 0;
   padding: 0; }
-
-body {
-  margin-bottom: 100px; }
 
 .btn {
   padding: 8px 12px;
@@ -64,20 +64,18 @@ body {
   grid-row: 1 / span 1;
   background-color: #225E00;
   color: #EFE9DF;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px; }
-  .header .brand a {
-    color: #EFE9DF;
-    text-decoration: none; }
-    .header .brand a:hover {
-      color: white; }
-  .header .brand .brand__img {
+  padding: 10px 0px; }
+  .header .row {
+    justify-content: space-between;
     align-items: center; }
-    .header .brand .brand__img img {
-      margin-right: 10px;
-      width: 60px;
-      height: 60px; }
+  .header .brand div {
+    vertical-align: middle;
+    display: inline; }
+  .header .brand img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px; }
   .header .menu {
     display: none; }
     .header .menu img {
@@ -185,10 +183,12 @@ body {
       margin-bottom: 15px;
       float: right; }
 
-.footer__location {
-  grid-column: 4 / span 12;
-  grid-row: 8 / span 1;
-  background-color: red; }
+.footer {
+  grid-column: 2 / span 10;
+  grid-row: 6 / span 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px; }
 
 #messages {
   padding: 0px; }

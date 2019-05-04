@@ -1,0 +1,12 @@
+.bird-categories {
+	grid-column: 1 / span 12;
+	grid-row: 5 / span 1;
+	background-color: $light;
+
+	.row {
+		justify-content: space-between;
+	}
+}
+
+.bird-categories-container {
+}

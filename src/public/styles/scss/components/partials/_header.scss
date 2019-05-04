@@ -6,6 +6,10 @@
 	color: $light;
 	padding: 10px 0px;
 
+	.wrapper {
+		padding: 0 40px;
+	}
+
 	.row {
 		justify-content: space-between;
 		align-items: center;
@@ -19,9 +23,10 @@
 
 		img {
 			vertical-align: middle;
-			margin-right: 10px;
+			margin-right: 12px;
 			width: 60px;
 			height: 60px;
+			// margin-left: -5px;
 		}
 	} // brand
 

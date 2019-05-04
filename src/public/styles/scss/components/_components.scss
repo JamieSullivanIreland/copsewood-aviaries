@@ -1,5 +1,11 @@
+// Components
 @import 'buttons';
-@import 'header';
-@import 'navigation';
-@import 'index/index';
-@import 'footer';
+@import 'cards';
+
+// Partials
+@import 'partials/header';
+@import 'partials/navigation';
+@import 'partials/footer';
+
+// Pages
+@import 'pages/index/index';

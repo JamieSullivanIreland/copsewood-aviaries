@@ -1,12 +1,15 @@
+/* Laptop - Between 1000px - 1400px */
+@media (min-width: $laptop-bp) and (max-width: $desktop-bp) {
+	.wrapper {
+		padding: 0px 90px;
+	}
 
-/* Phone - Below 1000px */
-@media (max-width: $laptop-bp) {
-  .banner__text {
-    grid-column: 1 / span 6;
-  }
-  
-  .banner__image {
-    grid-column: 7 / span 12;
-  }
-  // banner 
+	// .banner__text {
+	// 	grid-column: 1 / span 6;
+	// }
+
+	// .banner__image {
+	// 	grid-column: 7 / span 12;
+	// }
+	// banner
 }

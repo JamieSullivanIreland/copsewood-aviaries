@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:700');
 
+/* 
+  fluid-type($min_font, $max_font);
+*/
+
 .header-font {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  font-size: 28px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 28px;
 }
 
 .sub-header-font {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: $secondary;
+	@include fluid-type(26px, 32px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: $secondary;
 }
 
 .body-font {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: $dark;
+	@include fluid-type(14px, 20px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: $dark;
 }

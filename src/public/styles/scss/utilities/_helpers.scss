@@ -1,25 +1,46 @@
-
-
 #messages {
-  padding: 0px;
+	padding: 0px;
 
-  li {
-    list-style: none;
-  }
+	li {
+		list-style: none;
+	}
 
-  .alert-success {
+	.alert-success {
+	}
 
-  }
+	.alert-success_msg {
+		color: #3c763d;
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+	}
 
-  .alert-success_msg {
-    color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d6e9c6
-  }
+	.error {
+		color: #a94442;
+		background-color: #f2dede;
+		border-color: #ebccd1;
+	}
+}
 
-  .error {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1
-  }
+#dropArea {
+	height: 300px;
+	width: 300px;
+	border: 3px dashed green;
+	border-radius: 8px;
+}
+
+.highlight-upload {
+	.st0 {
+		stroke: green;
+	}
+}
+
+.unhighlight-upload {
+	.st0 {
+		stroke: black;
+	}
+}
+
+#sortby-input,
+#page-input {
+	display: none;
 }

@@ -1,18 +1,18 @@
 .welcome {
 	grid-column: 1 / span 12;
 	grid-row: 4 / span 1;
-	padding: 50px 0;
+	// padding: 50px 0;
 	line-height: 30px;
 
 	h3 {
 		@extend .sub-header-font;
-		font-size: 34px;
+		// font-size: 34px;
 		margin-bottom: 10px;
 		color: $dark;
 	}
 
 	p {
 		@extend .body-font;
-		font-size: 20px;
+		// font-size: 20px;
 	}
 } // welcome

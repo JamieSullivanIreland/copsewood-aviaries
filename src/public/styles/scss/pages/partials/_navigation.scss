@@ -12,7 +12,7 @@
 	}
 
 	.navigation__item {
-		@extend .sub-header-font;
+		@extend .navbar-font;
 		@extend .nav-padding;
 		color: $dark;
 		text-decoration: none;

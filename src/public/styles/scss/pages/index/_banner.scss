@@ -16,20 +16,16 @@
   align-self: center;
 
   h1 {
-    @extend .header-font;
-    color: $light;
-    margin-bottom: 50px;
-    font-size: 48px;
+    @extend .banner-header-font;
+    // margin-bottom: 40px;
   }
 
   h2 {
-    @extend .sub-header-font;
-    color: $light;
-    font-size: 26px;
+    @extend .banner-sub-header-font;
   }
 
   button {
-    margin-top: 50px;
+    // margin-top: 50px;
   }
 }
 

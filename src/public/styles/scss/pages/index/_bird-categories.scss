@@ -3,8 +3,11 @@
 	grid-row: 5 / span 1;
 	background-color: $light;
 
-	.row {
-		justify-content: space-between;
+	.wrapper {
+		.row {
+			width: 50%;
+			justify-content: space-around;
+		}
 	}
 }
 

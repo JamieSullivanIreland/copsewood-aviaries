@@ -1,24 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:700');
 
 /* 
-  fluid-type($min_font, $max_font);
+  fluid-type($min-v, $max-v, $min_font, $max_font);
 */
 
 .header-font {
+	@include fluid-type($phone-bp, $laptop-bp, 28px, 34px);
 	font-family: 'Raleway', sans-serif;
-	color: white;
-	font-size: 28px;
+	color: $light;
+}
+
+.banner-header-font {
+	@include fluid-type($phone-bp, $desktop-bp, 42px, 48px);
+	font-family: 'Raleway', sans-serif;
+	color: $light;
+}
+
+.banner-sub-header-font {
+	@include fluid-type($phone-bp, $desktop-bp, 26px, 32px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: $light;
 }
 
 .sub-header-font {
-	@include fluid-type(26px, 32px);
+	@include fluid-type($phone-bp, $desktop-bp, 24px, 30px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: $secondary;
+}
+
+.navbar-font {
+	@include fluid-type($phone-bp, $desktop-bp, 24px, 26px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: $secondary;
 }
 
 .body-font {
-	@include fluid-type(14px, 20px);
+	@include fluid-type($phone-bp, $desktop-bp, 14px, 20px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: $dark;
+}
+
+.card-header-font {
+	@include fluid-type($phone-bp, $desktop-bp, 18px, 22px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: $light;
+}
+
+.card-body-font {
+	@include fluid-type($phone-bp, $desktop-bp, 14px, 16px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: $dark;

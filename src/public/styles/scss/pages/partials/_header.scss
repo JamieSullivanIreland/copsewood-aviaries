@@ -1,9 +1,8 @@
 .header {
+	@extend .header-font;
 	grid-column: 1 / span 12;
 	grid-row: 1 / span 1;
-	@extend .header-font;
 	background-color: $primary;
-	color: $light;
 	padding: 10px 0px;
 
 	.wrapper {
@@ -23,10 +22,9 @@
 
 		img {
 			vertical-align: middle;
-			margin-right: 12px;
+			margin-right: 10px;
 			width: 60px;
 			height: 60px;
-			// margin-left: -5px;
 		}
 	} // brand
 

@@ -1,15 +1,13 @@
 .card {
 	border: 0.1rem solid $dark;
 	border-radius: 6px;
-	margin-left: -2px;
 	width: 300px;
 
 	.card__header {
-		@extend .sub-header-font;
-		color: $light;
+		@extend .card-header-font;
 		background-color: $dark;
 		font-size: 22px;
-		padding: 5px 15px;
+		padding: 4px 12px 6px 12px;
 	}
 
 	img {
@@ -22,6 +20,7 @@
 		padding: 0 10px;
 
 		.card__text {
+			@extend .card-body-font;
 			margin: 5px 0;
 		}
 

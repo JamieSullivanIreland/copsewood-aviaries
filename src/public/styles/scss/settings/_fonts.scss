@@ -7,6 +7,7 @@
 .header-font {
 	@include fluid-type($phone-bp, $laptop-bp, 28px, 34px);
 	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 	color: $light;
 }
 
@@ -27,33 +28,50 @@
 	@include fluid-type($phone-bp, $desktop-bp, 24px, 30px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
+	margin-bottom: 8px;
 	color: $secondary;
 }
 
 .navbar-font {
-	@include fluid-type($phone-bp, $desktop-bp, 24px, 26px);
+	@include fluid-type($phone-bp, $desktop-bp, 22px, 24px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: $secondary;
 }
 
 .body-font {
-	@include fluid-type($phone-bp, $desktop-bp, 14px, 20px);
+	@include fluid-type($phone-bp, $laptop-bp, 14px, 20px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: $dark;
 }
 
-.card-header-font {
+.footer-header-font {
 	@include fluid-type($phone-bp, $desktop-bp, 18px, 22px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: $light;
 }
 
-.card-body-font {
+.footer-body-font {
 	@include fluid-type($phone-bp, $desktop-bp, 14px, 16px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
+	color: $light;
+}
+
+.card-header-font {
+	@extend .footer-header-font;
+}
+
+.card-body-font {
+	@extend .footer-body-font;
 	color: $dark;
+}
+
+.card-button-font {
+	@include fluid-type($phone-bp, $desktop-bp, 14px, 18px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: $light;
 }

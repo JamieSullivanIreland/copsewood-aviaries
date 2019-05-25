@@ -17,15 +17,11 @@
 
   h1 {
     @extend .banner-header-font;
-    // margin-bottom: 40px;
   }
 
   h2 {
     @extend .banner-sub-header-font;
-  }
-
-  button {
-    // margin-top: 50px;
+    margin: 50px 0;
   }
 }
 

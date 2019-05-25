@@ -1,4 +1,4 @@
-/* Laptop - Below 1000px */
+/* Laptop - Below */
 @media (max-width: $laptop-bp) {
 	.banner__text {
 		grid-column: 1 / span 6;
@@ -10,7 +10,7 @@
 	// banner
 }
 
-/* Laptop - Between 1000px - 1400px */
+/* Laptop - Between */
 @media (min-width: $laptop-bp) and (max-width: $desktop-bp) {
 
 }

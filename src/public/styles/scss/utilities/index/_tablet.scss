@@ -1,4 +1,4 @@
-/* Tablet - Below 800px */
+/* Tablet - Below */
 @media (max-width: $tablet-bp) {
 	.wrapper {
 		padding: 0px 50px;
@@ -46,14 +46,6 @@
 	.banner__text {
 		grid-column: 1 / span 12;
 		grid-row: 3 / span 1;
-
-		// h1 {
-		// 	margin-bottom: 35px;
-		// }
-
-		// button {
-		// 	margin-top: 35px;
-		// }
 	}
 
 	.banner__image {
@@ -63,8 +55,7 @@
 	// banner
 }
 
-/* Tablet - Between 800px - 1000px */
+/* Tablet - Between */
 @media (min-width: $tablet-bp) and (max-width: $laptop-bp) {
-
 
 }

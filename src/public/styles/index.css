@@ -4,13 +4,14 @@
 */
 .header-font, .header {
   font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   color: #efe9df; }
   .header-font, .header {
     font-size: 28px; }
     @media screen and (min-width: 500px) {
       .header-font, .header {
-        font-size: calc( 28px + 6 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
+        font-size: calc( 28px + 6 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
       .header-font, .header {
         font-size: 34px; } }
 
@@ -21,8 +22,8 @@
     font-size: 42px; }
     @media screen and (min-width: 500px) {
       .banner-header-font, .banner__text h1 {
-        font-size: calc( 42px + 6 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
+        font-size: calc( 42px + 6 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
       .banner-header-font, .banner__text h1 {
         font-size: 48px; } }
 
@@ -34,21 +35,22 @@
     font-size: 26px; }
     @media screen and (min-width: 500px) {
       .banner-sub-header-font, .banner__text h2 {
-        font-size: calc( 26px + 6 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
+        font-size: calc( 26px + 6 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
       .banner-sub-header-font, .banner__text h2 {
         font-size: 32px; } }
 
 .sub-header-font, .welcome h3, .btn__primary {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  margin-bottom: 8px;
   color: #e23406; }
   .sub-header-font, .welcome h3, .btn__primary {
     font-size: 24px; }
     @media screen and (min-width: 500px) {
       .sub-header-font, .welcome h3, .btn__primary {
-        font-size: calc( 24px + 6 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
+        font-size: calc( 24px + 6 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
       .sub-header-font, .welcome h3, .btn__primary {
         font-size: 30px; } }
 
@@ -57,13 +59,13 @@
   font-weight: 600;
   color: #e23406; }
   .navbar-font, .navigation .navigation__item {
-    font-size: 24px; }
+    font-size: 22px; }
     @media screen and (min-width: 500px) {
       .navbar-font, .navigation .navigation__item {
-        font-size: calc( 24px + 2 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
+        font-size: calc( 22px + 2 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
       .navbar-font, .navigation .navigation__item {
-        font-size: 26px; } }
+        font-size: 24px; } }
 
 .body-font, p, .welcome p {
   font-family: 'Open Sans', sans-serif;
@@ -73,36 +75,52 @@
     font-size: 14px; }
     @media screen and (min-width: 500px) {
       .body-font, p, .welcome p {
-        font-size: calc( 14px + 6 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
+        font-size: calc( 14px + 6 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
       .body-font, p, .welcome p {
         font-size: 20px; } }
 
-.card-header-font, .card .card__header {
+.footer-header-font, .card-header-font, .card .card__header, .footer h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #efe9df; }
-  .card-header-font, .card .card__header {
+  .footer-header-font, .card-header-font, .card .card__header, .footer h3 {
     font-size: 18px; }
     @media screen and (min-width: 500px) {
-      .card-header-font, .card .card__header {
-        font-size: calc( 18px + 4 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
-      .card-header-font, .card .card__header {
+      .footer-header-font, .card-header-font, .card .card__header, .footer h3 {
+        font-size: calc( 18px + 4 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
+      .footer-header-font, .card-header-font, .card .card__header, .footer h3 {
         font-size: 22px; } }
 
-.card-body-font, .card .card__body .card__text {
+.footer-body-font, .card-body-font, .card .card__body .card__text, .footer p, .footer a, .footer__location {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #191512; }
-  .card-body-font, .card .card__body .card__text {
+  color: #efe9df; }
+  .footer-body-font, .card-body-font, .card .card__body .card__text, .footer p, .footer a, .footer__location {
     font-size: 14px; }
     @media screen and (min-width: 500px) {
-      .card-body-font, .card .card__body .card__text {
-        font-size: calc( 14px + 2 * ((100vw - 500px) / 900)); } }
-    @media screen and (min-width: 1400px) {
-      .card-body-font, .card .card__body .card__text {
+      .footer-body-font, .card-body-font, .card .card__body .card__text, .footer p, .footer a, .footer__location {
+        font-size: calc( 14px + 2 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
+      .footer-body-font, .card-body-font, .card .card__body .card__text, .footer p, .footer a, .footer__location {
         font-size: 16px; } }
+
+.card-body-font, .card .card__body .card__text {
+  color: #191512; }
+
+.card-button-font, .card .card__body button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #efe9df; }
+  .card-button-font, .card .card__body button {
+    font-size: 14px; }
+    @media screen and (min-width: 500px) {
+      .card-button-font, .card .card__body button {
+        font-size: calc( 14px + 4 * ((100vw - 500px) / 950)); } }
+    @media screen and (min-width: 1450px) {
+      .card-button-font, .card .card__body button {
+        font-size: 18px; } }
 
 .row {
   display: flex;
@@ -175,7 +193,16 @@ body {
 .footer {
   grid-column: 1 / span 12;
   grid-row: 6 / span 1;
+  background-color: #191512;
   justify-content: space-between; }
+  .footer h3 {
+    margin-bottom: 8px; }
+  .footer a {
+    margin: 4px 0;
+    text-decoration: none; }
+
+.footer__location span {
+  margin: 4px 0; }
 
 .banner-height, .banner, .banner__image, .banner__image img {
   height: 500px; }
@@ -190,6 +217,8 @@ body {
   grid-row: 3 / span 1;
   text-align: center;
   align-self: center; }
+  .banner__text h2 {
+    margin: 50px 0; }
 
 .banner__image {
   grid-column: 6 / span 12;
@@ -201,9 +230,9 @@ body {
 .welcome {
   grid-column: 1 / span 12;
   grid-row: 4 / span 1;
-  line-height: 30px; }
+  padding: 30px 0;
+  line-height: 35px; }
   .welcome h3 {
-    margin-bottom: 10px;
     color: #191512; }
 
 .bird-categories {
@@ -212,6 +241,7 @@ body {
   background-color: #efe9df; }
   .bird-categories .wrapper .row {
     width: 50%;
+    padding: 50px 0;
     justify-content: space-around; }
 
 .btn {
@@ -252,7 +282,6 @@ body {
     .card .card__body .card__text {
       margin: 5px 0; }
     .card .card__body button {
-      font-size: 18px;
       margin-bottom: 15px;
       float: right; }
 
@@ -285,8 +314,21 @@ body {
 #page-input {
   display: none; }
 
-/* Desktop - Below 1400px */
-@media (max-width: 1400px) {
+/* Desktop - Below */
+@media (max-width: 1450px) {
+  .wrapper {
+    padding: 0px 110px; }
+  .banner__text {
+    grid-column: 1 / span 5; }
+  .banner__image {
+    grid-column: 6 / span 12; }
+  .bird-categories .wrapper .row {
+    padding: 30px 0 0 0; }
+  .bird-categories .wrapper .card {
+    margin-bottom: 30px; } }
+
+/* Desktop - Above */
+@media (min-width: 1450px) {
   .wrapper {
     padding: 0px 110px; }
   .banner__text {
@@ -294,24 +336,15 @@ body {
   .banner__image {
     grid-column: 6 / span 12; } }
 
-/* Desktop - Above 1400px */
-@media (min-width: 1400px) {
-  .wrapper {
-    padding: 0px 110px; }
-  .banner__text {
-    grid-column: 1 / span 5; }
-  .banner__image {
-    grid-column: 6 / span 12; } }
-
-/* Laptop - Below 1000px */
+/* Laptop - Below */
 @media (max-width: 1100px) {
   .banner__text {
     grid-column: 1 / span 6; }
   .banner__image {
     grid-column: 7 / span 12; } }
 
-/* Laptop - Between 1000px - 1400px */
-/* Tablet - Below 800px */
+/* Laptop - Between */
+/* Tablet - Below */
 @media (max-width: 900px) {
   .wrapper {
     padding: 0px 50px; }
@@ -339,8 +372,8 @@ body {
     grid-column: 1 / span 12;
     grid-row: 2 / span 1; } }
 
-/* Tablet - Between 800px - 1000px */
-/* Phone - Below 500px */
+/* Tablet - Between */
+/* Phone - Below */
 @media (max-width: 500px) {
   .wrapper {
     padding: 0px 20px; } }

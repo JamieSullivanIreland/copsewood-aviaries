@@ -47,14 +47,14 @@
 }
 
 .footer-header-font {
-	@include fluid-type($phone-bp, $desktop-bp, 18px, 22px);
+	@include fluid-type($phone-bp, $desktop-bp, 20px, 24px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: $light;
 }
 
 .footer-body-font {
-	@include fluid-type($phone-bp, $desktop-bp, 14px, 16px);
+	@include fluid-type($phone-bp, $desktop-bp, 16px, 18px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	color: $light;

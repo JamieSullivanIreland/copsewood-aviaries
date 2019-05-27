@@ -1,8 +1,9 @@
-.footer {
+.footer.wrapper.row {
 	grid-column: 1 / span 12;
 	grid-row: 6 / span 1;
 	background-color: $dark;
-	// padding: 100px 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	// margin-top: 100px;
 	justify-content: space-between;
 	// align-items: flex-start;
@@ -10,33 +11,65 @@
 
 	h3 {
 		@extend .footer-header-font;
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 	}
 
-	p {
+	div {
 		@extend .footer-body-font;
 	}
 
 	a {
 		@extend .footer-body-font;
-		margin: 4px 0;
 		text-decoration: none;
 	}
 }
 
 .footer__location {
 	@extend .footer-body-font;
+
+	.location-details :first-child {
+		margin-top: 0px;
+	}
+
+	.location-details :last-child {
+		margin-bottom: 0px;
+	}
 	
-	span {
-		margin: 4px 0; 
+	div {
+		margin: 20px 0; 
 	}
 }
 
 .footer__navigation {
+	.links :first-child {
+		margin-top: 0;
+	}
+
+	a {
+		margin: 10px 0;
+	}
 }
 
 .footer__opening {
+	.timetable :first-child {
+		margin-top: 0;
+	}
+
+	.timetable {
+		div {
+			margin: 20px 0;
+		}
+	}
 }
 
 .footer__contact {
+	.contact-details :first-child {
+		margin-top: 0;
+	}
+
+	.contact-details {
+		div {
+			margin: 20px 0;
+		}
+	}
 }

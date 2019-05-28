@@ -80,30 +80,30 @@
       .body-font, p, .welcome p {
         font-size: 20px; } }
 
-.footer-header-font, .card-header-font, .card .card__header, .footer.wrapper.row h3 {
+.footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #efe9df; }
-  .footer-header-font, .card-header-font, .card .card__header, .footer.wrapper.row h3 {
+  .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
     font-size: 20px; }
     @media screen and (min-width: 500px) {
-      .footer-header-font, .card-header-font, .card .card__header, .footer.wrapper.row h3 {
+      .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
         font-size: calc( 20px + 4 * ((100vw - 500px) / 950)); } }
     @media screen and (min-width: 1450px) {
-      .footer-header-font, .card-header-font, .card .card__header, .footer.wrapper.row h3 {
+      .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
         font-size: 24px; } }
 
-.footer-body-font, .card-body-font, .card .card__body .card__text, .footer.wrapper.row div, .footer.wrapper.row a, .footer__location {
+.footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #efe9df; }
-  .footer-body-font, .card-body-font, .card .card__body .card__text, .footer.wrapper.row div, .footer.wrapper.row a, .footer__location {
+  .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
     font-size: 16px; }
     @media screen and (min-width: 500px) {
-      .footer-body-font, .card-body-font, .card .card__body .card__text, .footer.wrapper.row div, .footer.wrapper.row a, .footer__location {
+      .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
         font-size: calc( 16px + 2 * ((100vw - 500px) / 950)); } }
     @media screen and (min-width: 1450px) {
-      .footer-body-font, .card-body-font, .card .card__body .card__text, .footer.wrapper.row div, .footer.wrapper.row a, .footer__location {
+      .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
         font-size: 18px; } }
 
 .card-body-font, .card .card__body .card__text {
@@ -140,9 +140,6 @@
 * {
   margin: 0;
   padding: 0; }
-
-body {
-  margin-bottom: 50px; }
 
 .header {
   grid-column: 1 / span 12;
@@ -190,44 +187,46 @@ body {
     .navigation .navigation__item:active {
       color: #191512; }
 
-.footer.wrapper.row {
+.footer {
   grid-column: 1 / span 12;
-  grid-row: 6 / span 1;
-  background-color: #191512;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  justify-content: space-between; }
-  .footer.wrapper.row h3 {
-    margin-bottom: 10px; }
-  .footer.wrapper.row a {
-    text-decoration: none; }
-
-.footer__location .location-details :first-child {
-  margin-top: 0px; }
-
-.footer__location .location-details :last-child {
-  margin-bottom: 0px; }
-
-.footer__location div {
-  margin: 20px 0; }
-
-.footer__navigation .links :first-child {
-  margin-top: 0; }
-
-.footer__navigation a {
-  margin: 10px 0; }
-
-.footer__opening .timetable :first-child {
-  margin-top: 0; }
-
-.footer__opening .timetable div {
-  margin: 20px 0; }
-
-.footer__contact .contact-details :first-child {
-  margin-top: 0; }
-
-.footer__contact .contact-details div {
-  margin: 20px 0; }
+  grid-row: 6 / span 1; }
+  .footer .wrapper:after {
+    content: "";
+    margin: 40px 40px 0 40px;
+    background: #ffffff;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px; }
+  .footer .wrapper {
+    background-color: #191512;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between; }
+    .footer .wrapper h3 {
+      margin-bottom: 10px; }
+    .footer .wrapper a {
+      text-decoration: none; }
+    .footer .wrapper .row {
+      justify-content: space-around;
+      width: 50%; }
+  .footer .footer__location .location-details :first-child {
+    margin-top: 0px; }
+  .footer .footer__location .location-details :last-child {
+    margin-bottom: 0px; }
+  .footer .footer__location div {
+    margin: 20px 0; }
+  .footer .footer__navigation .links :first-child {
+    margin-top: 0; }
+  .footer .footer__navigation a {
+    margin: 10px 0; }
+  .footer .footer__opening .timetable :first-child {
+    margin-top: 0; }
+  .footer .footer__opening .timetable div {
+    margin: 20px 0; }
+  .footer .footer__contact .contact-details :first-child {
+    margin-top: 0; }
+  .footer .footer__contact .contact-details div {
+    margin: 20px 0; }
 
 .banner-height, .banner, .banner__image, .banner__image img {
   height: 500px; }
@@ -292,6 +291,7 @@ body {
 
 .card {
   border: 0.1rem solid #191512;
+  background-color: #ffffff;
   border-radius: 6px;
   width: 300px; }
   .card .card__header {
@@ -350,7 +350,9 @@ body {
   .bird-categories .wrapper .row {
     padding: 30px 0 0 0; }
   .bird-categories .wrapper .card {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .footer .wrapper:after {
+    margin: 40px 25px 0px 25px; } }
 
 /* Desktop - Above */
 @media (min-width: 1450px) {
@@ -366,7 +368,16 @@ body {
   .banner__text {
     grid-column: 1 / span 6; }
   .banner__image {
-    grid-column: 7 / span 12; } }
+    grid-column: 7 / span 12; }
+  .footer .wrapper:after {
+    margin: 40px 0px 0px 0px; }
+  .footer .wrapper .row {
+    width: 100%;
+    justify-content: space-between; }
+    .footer .wrapper .row .footer__contact, .footer .wrapper .row .footer__navigation {
+      text-align: right; }
+    .footer .wrapper .row .footer__opening, .footer .wrapper .row .footer__contact {
+      margin-top: 20px; } }
 
 /* Laptop - Between */
 /* Tablet - Below */
@@ -395,10 +406,23 @@ body {
     grid-row: 3 / span 1; }
   .banner__image {
     grid-column: 1 / span 12;
-    grid-row: 2 / span 1; } }
+    grid-row: 2 / span 1; }
+  .footer .wrapper:after {
+    margin: 50px 0px 0px 0px; } }
 
 /* Tablet - Between */
 /* Phone - Below */
 @media (max-width: 500px) {
   .wrapper {
-    padding: 0px 20px; } }
+    padding: 0px 20px; }
+  .footer .wrapper:after {
+    margin: 60px 0px 0px 0px; }
+  .footer .row.wrapper .row {
+    flex-direction: column;
+    align-content: center; }
+    .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__navigation, .footer .row.wrapper .row .footer__opening {
+      margin-top: 20px; }
+    .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__navigation {
+      text-align: left; }
+    .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__opening {
+      margin-left: -22px; } }

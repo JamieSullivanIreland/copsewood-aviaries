@@ -40,12 +40,17 @@
 	}
 }
 
-.menu-is-active {
-	display: block !important;
-	flex-direction: column;
+.show-menu {
+	height: 232px !important;
+	transition: height 0.6s;
 }
 
-#sortby-input,
-#page-input {
+.hide-menu {
+	height: 0px !important;
+	transition:  height 0.6s;
+}
+
+
+#sortby-input, #page-input {
 	display: none;
 }

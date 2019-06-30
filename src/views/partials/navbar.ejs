@@ -1,24 +1,24 @@
 <nav class="navigation wrapper">
   <ul class="navigation__group row">
-    <li>
-      <a class="navigation__item" href="/">Home</a>
+    <li class="navigation__item">
+      <a href="/">Home</a>
     </li>
-    <li>
-      <a class="navigation__item" href="/about">About</a>
+    <li class="navigation__item">
+      <a href="/about">About</a>
     </li>
-    <li>
-      <a class="navigation__item" href="/birds">Birds for Sale</a>
+    <li class="navigation__item">
+      <a href="/birds">Birds for Sale</a>
     </li>
-    <li>
-      <a class="navigation__item" href="/contact">Contact</a>
+    <li class="navigation__item">
+      <a href="/contact">Contact</a>
     </li>
-    <li>
+    <li class="navigation__item">
       <% if (user) { %>
-        <a class="navigation__item" href="/admin-panel">Admin Panel</a>
-        <a class="navigation__item" href="/admins">Admins</a>
-        <a class="navigation__item" href="/api/admins/logout">Logout</a>
+        <a href="/admin-panel">Admin Panel</a>
+        <a href="/admins">Admins</a>
+        <a href="/api/admins/logout">Logout</a>
       <% } else { %>
-        <a class="navigation__item" href="/login">Login</a>
+        <a href="/login">Login</a>
       <% } %>
     </li>
   </ul>

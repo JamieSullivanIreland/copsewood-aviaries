@@ -19,8 +19,30 @@
 	} // header
 
 	.navigation__group {
-		display: none;
+		height: 0;
+		padding: 0;
+		flex-direction: column !important;
+		text-align: center;
+		flex-wrap: nowrap;
 	} // navigation
+
+	.navigation__item {
+		padding: 0;
+
+		a {
+			display: inline-block;
+			width: 100%;
+
+			&:hover {
+				background-color: $secondary;
+				color: $light;
+			}
+
+			&:active {
+				color: $dark;
+			}
+		}
+	}
 
 	.bird-categories {	
 		.wrapper {
@@ -82,5 +104,7 @@
 
 /* Tablet - Above */
 @media (min-width: $tablet-bp) {
-
+	.navigation__item {
+		padding: 8px 0px;
+	}
 }

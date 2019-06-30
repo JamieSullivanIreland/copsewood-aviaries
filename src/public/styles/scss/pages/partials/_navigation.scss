@@ -2,35 +2,31 @@ nav {
 	display: inline;
 }
 
-.nav-padding {
-	padding: 8px 0px;
-}
-
 .navigation {
 	background-color: $light;
 	grid-column: 1 / span 12;
 	grid-row: 2 / span 1;
 
 	.navigation__group {
-		@extend .nav-padding;
 		list-style: none;
 	}
 
 	.navigation__item {
 		@extend .navbar-font;
-		@extend .nav-padding;
-		color: $dark;
-		text-decoration: none;
-		padding-right: 10px;
-		padding-left: 10px;
 
-		&:hover {
-			background-color: $secondary;
-			color: $light;
-		}
-
-		&:active {
+		a {
 			color: $dark;
+			text-decoration: none;
+			padding: 8px 12px;
+
+			&:hover {
+				background-color: $secondary;
+				color: $light;
+			}
+
+			&:active {
+				color: $dark;
+			}
 		}
 	}
 }

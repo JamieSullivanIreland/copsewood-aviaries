@@ -40,6 +40,11 @@
 	}
 }
 
+.menu-is-active {
+	display: block !important;
+	flex-direction: column;
+}
+
 #sortby-input,
 #page-input {
 	display: none;

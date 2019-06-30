@@ -36,7 +36,7 @@
 	} // bird-categories
 
 	.banner {
-		grid-row: 3 / span 1;
+		grid-row: 4 / span 1;
 	}
 	
 	.banner-height {
@@ -45,16 +45,30 @@
 
 	.banner__text {
 		grid-column: 1 / span 12;
-		grid-row: 3 / span 1;
+		grid-row: 4 / span 1;
+
+		h2 {
+			margin: 35px 0;
+		}
 	}
 
 	.banner__image {
 		grid-column: 1 / span 12;
-		grid-row: 2 / span 1;
+		grid-row: 3 / span 1;
 	}
 	// banner
 
+	.welcome {
+		grid-row: 5 / span 1;
+	}
+
+	.bird-categories {
+		grid-row: 6 / span 1;
+	}
+
 	.footer {
+		grid-row: 7 / span 1;
+
 		.wrapper:after { 
 			margin: 50px 0px 0px 0px; 
 		}
@@ -63,5 +77,10 @@
 
 /* Tablet - Between */
 @media (min-width: $tablet-bp) and (max-width: $laptop-bp) {
+
+}
+
+/* Tablet - Above */
+@media (min-width: $tablet-bp) {
 
 }

@@ -12,13 +12,13 @@
 }
 
 .banner-header-font {
-	@include fluid-type($phone-bp, $desktop-bp, 42px, 48px);
+	@include fluid-type($phone-bp, $desktop-bp, 36px, 48px);
 	font-family: 'Raleway', sans-serif;
 	color: $light;
 }
 
 .banner-sub-header-font {
-	@include fluid-type($phone-bp, $desktop-bp, 26px, 32px);
+	@include fluid-type($phone-bp, $desktop-bp, 24px, 32px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: $light;

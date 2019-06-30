@@ -145,6 +145,18 @@ eval("\n\nvar messages = document.querySelector('#messages');\n\nif (messages) {
 
 /***/ }),
 
+/***/ "./src/public/js/client/navigation.js":
+/*!********************************************!*\
+  !*** ./src/public/js/client/navigation.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nvar tabletSize = 900;\n\nvar menuBtn = void 0;\nvar navGroup = void 0;\nvar footerBtn = void 0;\n\nwindow.onresize = getWindowSize;\n\n$(document).ready(function () {\n  menuBtn = document.querySelector(\"#menu-btn\");\n  navGroup = document.querySelector('.navigation__group');\n  footerBtn = document.querySelector('#footer-icon-btn');\n  menuBtn.addEventListener('click', showMenu);\n  footerBtn.addEventListener('click', scrollTop);\n});\n\nfunction getWindowSize() {\n  if (window.innerWidth > tabletSize) {\n    navGroup.classList.remove('menu-is-active');\n  }\n}\n\nfunction showMenu() {\n  navGroup.classList.toggle('menu-is-active');\n}\n\nvar scrollTop = function scrollTop(e) {\n  window.scroll({\n    top: 0,\n    left: 0,\n    behavior: 'smooth'\n  });\n};\n\n//# sourceURL=webpack:///./src/public/js/client/navigation.js?");
+
+/***/ }),
+
 /***/ "./src/public/js/client/pagination.js":
 /*!********************************************!*\
   !*** ./src/public/js/client/pagination.js ***!
@@ -182,13 +194,13 @@ eval("\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./src/public/js/client/delete-items.js ./src/public/js/client/image-upload.js ./src/public/js/client/messages.js ./src/public/js/client/filters-ls.js ./src/public/js/client/sort-dropdown.js ./src/public/js/client/pagination.js ./src/public/js/client/redirect.js ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./src/public/js/client/delete-items.js ./src/public/js/client/image-upload.js ./src/public/js/client/messages.js ./src/public/js/client/filters-ls.js ./src/public/js/client/sort-dropdown.js ./src/public/js/client/pagination.js ./src/public/js/client/redirect.js ./src/public/js/client/navigation.js ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\filters-ls.js */\"./src/public/js/client/filters-ls.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\sort-dropdown.js */\"./src/public/js/client/sort-dropdown.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\pagination.js */\"./src/public/js/client/pagination.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\redirect.js */\"./src/public/js/client/redirect.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js_./src/public/js/client/filters-ls.js_./src/public/js/client/sort-dropdown.js_./src/public/js/client/pagination.js_./src/public/js/client/redirect.js?");
+eval("__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\delete-items.js */\"./src/public/js/client/delete-items.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\image-upload.js */\"./src/public/js/client/image-upload.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\messages.js */\"./src/public/js/client/messages.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\filters-ls.js */\"./src/public/js/client/filters-ls.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\sort-dropdown.js */\"./src/public/js/client/sort-dropdown.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\pagination.js */\"./src/public/js/client/pagination.js\");\n__webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\redirect.js */\"./src/public/js/client/redirect.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\jamie\\Documents\\Projects\\Github\\copsewood-aviaries\\src\\public\\js\\client\\navigation.js */\"./src/public/js/client/navigation.js\");\n\n\n//# sourceURL=webpack:///multi_./src/public/js/client/delete-items.js_./src/public/js/client/image-upload.js_./src/public/js/client/messages.js_./src/public/js/client/filters-ls.js_./src/public/js/client/sort-dropdown.js_./src/public/js/client/pagination.js_./src/public/js/client/redirect.js_./src/public/js/client/navigation.js?");
 
 /***/ })
 

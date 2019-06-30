@@ -13,7 +13,8 @@ module.exports = {
       path.resolve(__dirname, './src/public/js/client/filters-ls.js'),
       path.resolve(__dirname, './src/public/js/client/sort-dropdown.js'),
       path.resolve(__dirname, './src/public/js/client/pagination.js'),
-      path.resolve(__dirname, './src/public/js/client/redirect.js')
+      path.resolve(__dirname, './src/public/js/client/redirect.js'),
+      path.resolve(__dirname, './src/public/js/client/navigation.js')
     ]
   },
   output: {

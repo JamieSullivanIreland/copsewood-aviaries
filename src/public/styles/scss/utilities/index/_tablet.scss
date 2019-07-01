@@ -24,7 +24,7 @@
 		flex-direction: column !important;
 		text-align: center;
 		flex-wrap: nowrap;
-	} // navigation
+	}
 
 	.navigation__item {
 		padding: 0;
@@ -42,7 +42,7 @@
 				color: $dark;
 			}
 		}
-	}
+	} // navigation
 
 	.bird-categories {	
 		.wrapper {
@@ -94,7 +94,7 @@
 		.wrapper:after { 
 			margin: 50px 0px 0px 0px; 
 		}
-	}
+	} // footer
 }
 
 /* Tablet - Between */

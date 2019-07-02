@@ -1,0 +1,115 @@
+/* Tablet - Below */
+@media (max-width: $tablet-bp) {
+	.wrapper {
+      padding: 0px 50px;
+	} // wrapper
+
+	.header {
+      .wrapper {
+        padding: 0px 15px;
+      }
+
+      .phone {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+	} // header
+
+    //.navigation {
+    //  height: 0;
+    //}
+
+	.navigation__group {
+      height: 0;
+      padding: 0;
+      flex-direction: column !important;
+      text-align: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+	}
+
+	.navigation__item {
+      padding: 0;
+
+      a {
+        display: inline-block;
+        width: 100%;
+
+        &:hover {
+          background-color: $secondary;
+          color: $light;
+        }
+
+        &:active {
+				color: $dark;
+        }
+      }
+	} // navigation
+
+	.bird-categories {	
+      .wrapper {
+        .row {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .card {
+          align-self: center;
+        }
+      }
+	} // bird-categories
+
+	.banner, .section {
+      grid-row: 4 / span 1;
+	}
+	
+	.banner-height {
+      height: 380px;
+	}
+
+	.banner__text {
+      grid-column: 1 / span 12;
+      grid-row: 4 / span 1;
+
+      h2 {
+          margin: 35px 0;
+      }
+	}
+
+	.banner__image {
+      grid-column: 1 / span 12;
+      grid-row: 3 / span 1;
+	}
+	// banner
+
+	.welcome {
+      grid-row: 5 / span 1;
+	}
+
+	.bird-categories {
+      grid-row: 6 / span 1;
+	}
+
+	.footer {
+      grid-row: 7 / span 1;
+
+      .wrapper:after {
+          margin: 50px 0px 0px 0px;
+      }
+	} // footer
+}
+
+/* Tablet - Between */
+@media (min-width: $tablet-bp) and (max-width: $laptop-bp) {
+
+}
+
+/* Tablet - Above */
+@media (min-width: $tablet-bp) {
+	.navigation__item {
+      padding: 8px 0px;
+	}
+}

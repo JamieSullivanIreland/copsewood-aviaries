@@ -50,6 +50,13 @@
 	transition:  height 0.6s;
 }
 
+.show {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: hidden;
+}
 
 #sortby-input, #page-input {
 	display: none;

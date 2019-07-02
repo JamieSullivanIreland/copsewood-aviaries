@@ -1,0 +1,37 @@
+/* Laptop - Below */
+@media (max-width: $laptop-bp) {
+	.banner__text {
+		grid-column: 1 / span 6;
+	}
+	
+	.banner__image {
+		grid-column: 7 / span 12;
+	}
+	// banner
+
+	.footer {	
+		.wrapper:after { 
+			margin: 40px 0px 0px 0px; 
+		}
+
+		.wrapper {
+			.row {
+				width: 100%;
+				justify-content: space-between;
+
+				.footer__contact, .footer__navigation {
+					text-align: right;
+				}
+
+				.footer__opening, .footer__contact {
+					margin-top: 20px;
+				}
+			}
+		}
+	} // footer
+}
+
+/* Laptop - Between */
+@media (min-width: $laptop-bp) and (max-width: $desktop-bp) {
+
+}

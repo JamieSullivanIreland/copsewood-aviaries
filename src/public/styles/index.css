@@ -281,6 +281,23 @@ nav {
     padding: 50px 0;
     justify-content: space-around; }
 
+.section-height, .section__about-us {
+  min-height: 400px; }
+
+.section {
+  grid-column: 1 / span 12;
+  grid-row: 3 / span 1; }
+
+.section__about-us {
+  align-items: center;
+  padding: 0 10px; }
+
+.section__who-are-we p {
+  display: inline; }
+
+.section__who-are-we img {
+  width: 250px; }
+
 .btn {
   padding: 8px 12px;
   text-align: center;
@@ -322,42 +339,6 @@ nav {
     .card .card__body button {
       margin-bottom: 15px;
       float: right; }
-
-#messages {
-  padding: 0px; }
-  #messages li {
-    list-style: none; }
-  #messages .alert-success_msg {
-    color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d6e9c6; }
-  #messages .error {
-    color: #a94442;
-    background-color: #f2dede;
-    border-color: #ebccd1; }
-
-#dropArea {
-  height: 300px;
-  width: 300px;
-  border: 3px dashed green;
-  border-radius: 8px; }
-
-.highlight-upload .st0 {
-  stroke: green; }
-
-.unhighlight-upload .st0 {
-  stroke: black; }
-
-.show-menu {
-  height: 232px !important;
-  transition: height 0.6s; }
-
-.hide-menu {
-  height: 0px !important;
-  transition: height 0.6s; }
-
-#sortby-input, #page-input {
-  display: none; }
 
 /* Desktop - Below */
 @media (max-width: 1450px) {
@@ -415,7 +396,8 @@ nav {
     padding: 0;
     flex-direction: column !important;
     text-align: center;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    overflow: hidden; }
   .navigation__item {
     padding: 0; }
     .navigation__item a {
@@ -431,7 +413,7 @@ nav {
     flex-direction: column; }
   .bird-categories .wrapper .card {
     align-self: center; }
-  .banner {
+  .banner, .section {
     grid-row: 4 / span 1; }
   .banner-height, .banner, .banner__image, .banner__image img {
     height: 380px; }
@@ -473,3 +455,45 @@ nav {
       text-align: left; }
     .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__opening {
       margin-left: -22px; } }
+
+#messages {
+  padding: 0px; }
+  #messages li {
+    list-style: none; }
+  #messages .alert-success_msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6; }
+  #messages .error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1; }
+
+#dropArea {
+  height: 300px;
+  width: 300px;
+  border: 3px dashed green;
+  border-radius: 8px; }
+
+.highlight-upload .st0 {
+  stroke: green; }
+
+.unhighlight-upload .st0 {
+  stroke: black; }
+
+.show-menu {
+  height: 232px !important;
+  transition: height 0.6s; }
+
+.hide-menu {
+  height: 0px !important;
+  transition: height 0.6s; }
+
+.show {
+  visibility: visible; }
+
+.hidden {
+  visibility: hidden; }
+
+#sortby-input, #page-input {
+  display: none; }

@@ -21,11 +21,12 @@ $(document).ready(() => {
 
 function toggleNavigationClasses() {
   if (window.innerWidth > tabletSize) {
+    navigation.classList.add('wrapper');
     navGroup.classList.remove('show-menu');
     navGroup.classList.remove('hide-menu');
+  } else {
+    navigation.classList.remove('wrapper');
   }
-
-  window.innerWidth > tabletSize ? navigation.classList.add('wrapper') : navigation.classList.remove('wrapper');
 }
 
 function toggleMenu() {

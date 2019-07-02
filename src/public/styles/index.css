@@ -8,9 +8,9 @@
   color: #efe9df; }
   .header-font, .header {
     font-size: 28px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .header-font, .header {
-        font-size: calc( 28px + 6 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 28px + 6 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .header-font, .header {
         font-size: 34px; } }
@@ -20,9 +20,9 @@
   color: #efe9df; }
   .banner-header-font, .banner__text h1 {
     font-size: 36px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .banner-header-font, .banner__text h1 {
-        font-size: calc( 36px + 12 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 36px + 12 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .banner-header-font, .banner__text h1 {
         font-size: 48px; } }
@@ -33,9 +33,9 @@
   color: #efe9df; }
   .banner-sub-header-font, .banner__text h2 {
     font-size: 24px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .banner-sub-header-font, .banner__text h2 {
-        font-size: calc( 24px + 8 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 24px + 8 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .banner-sub-header-font, .banner__text h2 {
         font-size: 32px; } }
@@ -47,9 +47,9 @@
   color: #e23406; }
   .sub-header-font, .welcome h3, .btn__primary {
     font-size: 24px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .sub-header-font, .welcome h3, .btn__primary {
-        font-size: calc( 24px + 6 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 24px + 6 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .sub-header-font, .welcome h3, .btn__primary {
         font-size: 30px; } }
@@ -60,9 +60,9 @@
   color: #e23406; }
   .navbar-font, .navigation .navigation__item {
     font-size: 22px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .navbar-font, .navigation .navigation__item {
-        font-size: calc( 22px + 2 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 22px + 2 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .navbar-font, .navigation .navigation__item {
         font-size: 24px; } }
@@ -73,9 +73,9 @@
   color: #191512; }
   .body-font, p, .welcome p {
     font-size: 14px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .body-font, p, .welcome p {
-        font-size: calc( 14px + 6 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 14px + 6 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .body-font, p, .welcome p {
         font-size: 20px; } }
@@ -86,9 +86,9 @@
   color: #efe9df; }
   .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
     font-size: 20px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
-        font-size: calc( 20px + 4 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 20px + 4 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
         font-size: 24px; } }
@@ -99,9 +99,9 @@
   color: #efe9df; }
   .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
     font-size: 16px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
-        font-size: calc( 16px + 2 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 16px + 2 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
         font-size: 18px; } }
@@ -115,9 +115,9 @@
   color: #efe9df; }
   .card-button-font, .card .card__body button {
     font-size: 14px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 600px) {
       .card-button-font, .card .card__body button {
-        font-size: calc( 14px + 4 * ((100vw - 500px) / 950)); } }
+        font-size: calc( 14px + 4 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
       .card-button-font, .card .card__body button {
         font-size: 18px; } }
@@ -281,22 +281,25 @@ nav {
     padding: 50px 0;
     justify-content: space-around; }
 
-.section-height, .section__about-us {
-  min-height: 400px; }
+.border-bottom, .section h2, .section__who-are-we {
+  background-image: linear-gradient(to right, #191512 50%, #ffffff 0%);
+  background-position: bottom;
+  background-size: 30px 2px;
+  background-repeat: repeat-x; }
 
 .section {
-  grid-column: 1 / span 12;
-  grid-row: 3 / span 1; }
+  grid-column: 1 / span 12; }
+  .section img {
+    margin-top: 5px;
+    width: 100%;
+    height: auto; }
 
-.section__about-us {
-  align-items: center;
-  padding: 0 10px; }
-
-.section__who-are-we p {
-  display: inline; }
-
-.section__who-are-we img {
-  width: 250px; }
+.section__who-are-we {
+  display: flex;
+  align-self: center;
+  justify-content: center; }
+  .section__who-are-we p {
+    margin-left: 20px; }
 
 .btn {
   padding: 8px 12px;
@@ -441,9 +444,18 @@ nav {
     padding: 8px 0px; } }
 
 /* Phone - Below */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .wrapper {
     padding: 0px 20px; }
+  .section .section__who-are-we {
+    flex-direction: column-reverse; }
+    .section .section__who-are-we div {
+      text-align: center; }
+    .section .section__who-are-we img {
+      max-width: 250px;
+      height: auto; }
+    .section .section__who-are-we p {
+      margin-bottom: 20px; }
   .footer .wrapper:after {
     margin: 60px 0px 0px 0px; }
   .footer .row.wrapper .row {

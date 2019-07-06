@@ -5,7 +5,6 @@ let navigation;
 let navGroup;
 let menuBtn;
 let footerBtn;
-let showMenu = false;
 
 window.onresize = toggleNavigationClasses;
 
@@ -30,8 +29,7 @@ function toggleNavigationClasses() {
 }
 
 function toggleMenu() {
-  showMenu = !showMenu;
-
+  let showMenu = !navGroup.classList.contains('show-menu');
   if (showMenu) {
     navGroup.classList.add('show-menu');
     navGroup.classList.remove('hide-menu');

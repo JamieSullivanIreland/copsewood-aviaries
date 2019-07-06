@@ -4,8 +4,11 @@
 		padding: 0px 20px;
 	}
 
-	.section {
+	.heading__text {
+		display: none !important;
+	}
 
+	.section {
 		.section__who-are-we {
 			flex-direction: column-reverse;
 

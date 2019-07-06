@@ -33,7 +33,7 @@
 }
 
 .navbar-font {
-	@include fluid-type($phone-bp, $desktop-bp, 22px, 24px);
+	@include fluid-type($laptop-bp, $desktop-bp, 22px, 24px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: $secondary;

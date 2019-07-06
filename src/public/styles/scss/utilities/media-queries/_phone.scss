@@ -9,9 +9,8 @@
 	}
 
 	.section {
-		.section__who-are-we {
-			flex-direction: column-reverse;
-
+		.section__who-are-we,
+		.section__what-do-we-do {
 			div {
 				text-align: center;
 			}
@@ -23,9 +22,25 @@
 
 			p {
 				margin-bottom: 20px;
+				margin-left: 0;
+			}
+		}
+
+		.section__who-are-we{
+			flex-direction: column-reverse;
+			p {
+				margin-left: 0;
+			}
+		}
+
+		.section__what-do-we-do {
+			flex-direction: column;
+			p {
+				margin-right: 0;
 			}
 		}
 	}
+	// section
 
 	.footer {	
 		.wrapper:after { 
@@ -37,15 +52,19 @@
 				flex-direction: column;
 				align-content: center;
 
-				.footer__contact, .footer__navigation, .footer__opening {
+				.footer__contact,
+				.footer__navigation,
+				.footer__opening {
 					margin-top: 20px;
 				}
 
-				.footer__contact, .footer__navigation {
+				.footer__contact,
+				.footer__navigation {
 					text-align: left;
 				}
 
-				.footer__contact, .footer__opening {
+				.footer__contact,
+				.footer__opening {
 					margin-left: -22px;
 				}
 			}

@@ -40,19 +40,31 @@
       .banner-sub-header-font, .banner__text h2 {
         font-size: 32px; } }
 
-.sub-header-font, .welcome h3, .btn__primary {
+.sub-header-font, .welcome h3, .section h2, .btn__primary {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  margin-bottom: 8px;
   color: #e23406; }
-  .sub-header-font, .welcome h3, .btn__primary {
+  .sub-header-font, .welcome h3, .section h2, .btn__primary {
     font-size: 24px; }
     @media screen and (min-width: 600px) {
-      .sub-header-font, .welcome h3, .btn__primary {
+      .sub-header-font, .welcome h3, .section h2, .btn__primary {
         font-size: calc( 24px + 6 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
-      .sub-header-font, .welcome h3, .btn__primary {
+      .sub-header-font, .welcome h3, .section h2, .btn__primary {
         font-size: 30px; } }
+
+.section-header-font, .section h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #e23406; }
+  .section-header-font, .section h3 {
+    font-size: 18px; }
+    @media screen and (min-width: 600px) {
+      .section-header-font, .section h3 {
+        font-size: calc( 18px + 4 * ((100vw - 600px) / 850)); } }
+    @media screen and (min-width: 1450px) {
+      .section-header-font, .section h3 {
+        font-size: 22px; } }
 
 .navbar-font, .navigation .navigation__item {
   font-family: 'Open Sans', sans-serif;
@@ -281,11 +293,18 @@ nav {
     padding: 50px 0;
     justify-content: space-around; }
 
-.border-bottom, .section h2, .section__who-are-we {
+.border-bottom, .section h2, .section__who-are-we, .section__what-do-we-do {
   background-image: linear-gradient(to right, #191512 50%, #ffffff 0%);
   background-position: bottom;
-  background-size: 30px 2px;
+  background-size: 34px 2px;
   background-repeat: repeat-x; }
+
+.section-alignment, .section__who-are-we, .section__what-do-we-do {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-bottom: 40px; }
 
 .section {
   grid-column: 1 / span 12; }
@@ -293,13 +312,22 @@ nav {
     margin-top: 5px;
     width: 100%;
     height: auto; }
+  .section h2 {
+    color: #191512;
+    padding: 20px 0; }
+  .section h3 {
+    padding-top: 20px;
+    margin-bottom: 4px;
+    color: #191512; }
 
-.section__who-are-we {
-  display: flex;
-  align-self: center;
-  justify-content: center; }
-  .section__who-are-we p {
-    margin-left: 20px; }
+.section__who-are-we p {
+  margin-left: 20px; }
+
+.section__what-do-we-do img {
+  min-width: 300px; }
+
+.section__what-do-we-do p {
+  margin-right: 20px; }
 
 .btn {
   padding: 8px 12px;
@@ -449,25 +477,39 @@ nav {
     padding: 0px 20px; }
   .heading__text {
     display: none !important; }
+  .section .section__who-are-we div,
+  .section .section__what-do-we-do div {
+    text-align: center; }
+  .section .section__who-are-we img,
+  .section .section__what-do-we-do img {
+    max-width: 250px;
+    height: auto; }
+  .section .section__who-are-we p,
+  .section .section__what-do-we-do p {
+    margin-bottom: 20px;
+    margin-left: 0; }
   .section .section__who-are-we {
     flex-direction: column-reverse; }
-    .section .section__who-are-we div {
-      text-align: center; }
-    .section .section__who-are-we img {
-      max-width: 250px;
-      height: auto; }
     .section .section__who-are-we p {
-      margin-bottom: 20px; }
+      margin-left: 0; }
+  .section .section__what-do-we-do {
+    flex-direction: column; }
+    .section .section__what-do-we-do p {
+      margin-right: 0; }
   .footer .wrapper:after {
     margin: 60px 0px 0px 0px; }
   .footer .row.wrapper .row {
     flex-direction: column;
     align-content: center; }
-    .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__navigation, .footer .row.wrapper .row .footer__opening {
+    .footer .row.wrapper .row .footer__contact,
+    .footer .row.wrapper .row .footer__navigation,
+    .footer .row.wrapper .row .footer__opening {
       margin-top: 20px; }
-    .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__navigation {
+    .footer .row.wrapper .row .footer__contact,
+    .footer .row.wrapper .row .footer__navigation {
       text-align: left; }
-    .footer .row.wrapper .row .footer__contact, .footer .row.wrapper .row .footer__opening {
+    .footer .row.wrapper .row .footer__contact,
+    .footer .row.wrapper .row .footer__opening {
       margin-left: -22px; } }
 
 #messages {

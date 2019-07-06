@@ -2,8 +2,16 @@
   background-image: linear-gradient(to right, $dark
   50%, $white 0%);
   background-position: bottom;
-  background-size: 30px 2px;
+  background-size: 34px 2px;
   background-repeat: repeat-x;
+}
+
+.section-alignment {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 .section {
@@ -17,17 +25,37 @@
 
   h2 {
     @extend .border-bottom;
+    @extend .sub-header-font;
+    color: $dark;
+    padding: 20px 0;
+  }
+
+  h3 {
+    @extend .section-header-font;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    color: $dark;
   }
 }
 
 .section__who-are-we {
   @extend .border-bottom;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  //margin: 60px 0;
+  @extend .section-alignment;
 
   p {
     margin-left: 20px;
+  }
+}
+
+.section__what-do-we-do {
+  @extend .border-bottom;
+  @extend .section-alignment;
+
+  img {
+    min-width: 300px;
+  }
+
+  p {
+    margin-right: 20px;
   }
 }

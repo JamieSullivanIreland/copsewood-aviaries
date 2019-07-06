@@ -28,7 +28,13 @@
 	@include fluid-type($phone-bp, $desktop-bp, 24px, 30px);
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-	margin-bottom: 8px;
+	color: $secondary;
+}
+
+.section-header-font {
+	@include fluid-type($phone-bp, $desktop-bp, 18px, 22px);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 	color: $secondary;
 }
 

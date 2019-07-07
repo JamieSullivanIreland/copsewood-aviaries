@@ -83,6 +83,13 @@
       grid-row: 6 / span 1;
 	}
 
+    .section {
+      h3 {
+        padding-top: 25px;
+      }
+    }
+  // section
+
 	.footer {
       grid-row: 7 / span 1;
 
@@ -107,4 +114,7 @@
 	.navigation__item {
       padding: 8px 0px;
 	}
+  .section {
+    margin-left: 10px;
+  }
 }

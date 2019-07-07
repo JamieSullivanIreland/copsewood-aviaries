@@ -36,6 +36,13 @@
 		padding: 0px 200px;
 	}
 
+	.header {
+		.wrapper {
+			padding: 0px 132px;
+		}
+	}
+	// header
+
 	.banner__text {
 		grid-column: 1 / span 5;
 	}
@@ -43,4 +50,8 @@
 		grid-column: 6 / span 12;
 	}
 	// banner
+
+	.section {
+		margin-bottom: 200px;
+	}
 }

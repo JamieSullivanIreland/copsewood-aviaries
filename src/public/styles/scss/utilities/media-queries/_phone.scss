@@ -1,0 +1,86 @@
+/* Phone - Below */
+@media (max-width: $phone-bp) {
+	.wrapper {
+		padding: 0px 20px;
+	}
+
+	.heading__text {
+		display: none !important;
+	}
+
+	.section {
+		.section__who-are-we,
+		.section__what-do-we-do {
+			div {
+				text-align: center;
+			}
+
+			p {
+				margin-bottom: 20px;
+				margin-left: 0;
+			}
+		}
+		.section__who-are-we{
+			flex-direction: column-reverse;
+
+			img {
+				max-width: 250px;
+			}
+
+			p {
+				margin-left: 0;
+			}
+		}
+		.section__what-do-we-do {
+			flex-direction: column;
+
+			img {
+				max-width: 300px;
+			}
+
+			p {
+				margin-right: 0;
+			}
+		}
+	}
+	// section
+
+	.footer {	
+		.wrapper:after { 
+			margin: 60px 0px 0px 0px; 
+		}
+
+		.row.wrapper {
+			.row {
+				flex-direction: column;
+				align-content: center;
+
+				.footer__contact,
+				.footer__navigation,
+				.footer__opening {
+					margin-top: 20px;
+				}
+
+				.footer__contact,
+				.footer__navigation {
+					text-align: left;
+				}
+
+				.footer__contact,
+				.footer__opening {
+					margin-left: -22px;
+				}
+			}
+		}
+	} // footer
+}
+
+/* Phone - Between */
+@media (min-width: $phone-bp) and (max-width: $tablet-bp) {
+	.section__what-do-we-do {
+		img {
+			min-width: 250px;
+		}
+	}
+	// section
+}

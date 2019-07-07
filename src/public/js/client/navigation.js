@@ -5,7 +5,6 @@ let navigation;
 let navGroup;
 let menuBtn;
 let footerBtn;
-let showMenu = false;
 
 window.onresize = toggleNavigationClasses;
 
@@ -21,16 +20,16 @@ $(document).ready(() => {
 
 function toggleNavigationClasses() {
   if (window.innerWidth > tabletSize) {
+    navigation.classList.add('wrapper');
     navGroup.classList.remove('show-menu');
     navGroup.classList.remove('hide-menu');
+  } else {
+    navigation.classList.remove('wrapper');
   }
-
-  window.innerWidth > tabletSize ? navigation.classList.add('wrapper') : navigation.classList.remove('wrapper');
 }
 
 function toggleMenu() {
-  showMenu = !showMenu;
-
+  let showMenu = !navGroup.classList.contains('show-menu');
   if (showMenu) {
     navGroup.classList.add('show-menu');
     navGroup.classList.remove('hide-menu');

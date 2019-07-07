@@ -7,7 +7,6 @@
 	.banner__text {
 		grid-column: 1 / span 5;
 	}
-	
 	.banner__image {
 		grid-column: 6 / span 12;
 	}
@@ -34,14 +33,14 @@
 /* Desktop - Above */
 @media (min-width: $desktop-bp) {
 	.wrapper {
-		padding: 0px 110px;
+		padding: 0px 200px;
 	}
 
 	.banner__text {
 		grid-column: 1 / span 5;
 	}
-	
 	.banner__image {
 		grid-column: 6 / span 12;
 	}
+	// banner
 }

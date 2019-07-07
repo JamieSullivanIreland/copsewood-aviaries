@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="009a34e5-df8a-403a-ae00-63bdf9f36130" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/eddie_wife.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/images/eddie_wife.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/partials/about/who-are-we.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -31,8 +30,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+                <state relative-caret-position="212">
+                  <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -55,11 +54,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+                <state relative-caret-position="452">
+                  <caret line="50" column="3" lean-forward="true" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -67,8 +66,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+                <state relative-caret-position="428">
+                  <caret line="75" column="1" lean-forward="true" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -76,8 +75,26 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+                <state relative-caret-position="596">
+                  <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="740">
+                  <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="548">
+                  <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -110,6 +127,7 @@
       <find>margin-bottom: 8px;</find>
       <find>margin-bottom</find>
       <find>.sub-header-font</find>
+      <find>.wrapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,10 +154,13 @@
         <option value="$PROJECT_DIR$/src/views/partials/about/what-do-we-do.ejs" />
         <option value="$PROJECT_DIR$/src/views/partials/about/who-are-we.ejs" />
         <option value="$PROJECT_DIR$/src/views/pages/about.ejs" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" />
         <option value="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_media-queries.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss" />
       </list>
     </option>
   </component>
@@ -154,10 +175,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="420" />
-    <option name="y" value="-10" />
-    <option name="width" value="1750" />
-    <option name="height" value="1250" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -394,18 +415,19 @@
       <updated>1561902066571</updated>
       <workItem from="1561902069236" duration="13585000" />
       <workItem from="1562013121777" duration="885000" />
-      <workItem from="1562431914337" duration="6714000" />
+      <workItem from="1562431914337" duration="6810000" />
+      <workItem from="1562507942218" duration="3547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30353000" />
+    <option name="totallyTimeSpent" value="33996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29157782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -420,7 +442,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.7480491" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.9554069" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -476,23 +498,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_phone.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_index-mq.scss" />
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_media-queries.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/_utilities.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/structure/_grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -511,13 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -556,9 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/partials/index/welcome.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/elements/_elements.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -580,10 +575,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/partials/about/what-do-we-do.ejs">
+    <entry file="file://$PROJECT_DIR$/src/views/partials/about/what-do-we-do.ejs" />
+    <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="24" selection-end-column="10" />
+        <state relative-caret-position="48">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/index/welcome.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/structure/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="50" column="3" lean-forward="true" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="75" column="1" lean-forward="true" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -594,38 +621,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_media-queries.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        <state>
+          <caret selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss">
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/_utilities.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="212">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss">
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state relative-caret-position="740">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>

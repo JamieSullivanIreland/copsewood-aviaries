@@ -15,26 +15,29 @@
 				text-align: center;
 			}
 
-			img {
-				max-width: 250px;
-				height: auto;
-			}
-
 			p {
 				margin-bottom: 20px;
 				margin-left: 0;
 			}
 		}
-
 		.section__who-are-we{
 			flex-direction: column-reverse;
+
+			img {
+				max-width: 250px;
+			}
+
 			p {
 				margin-left: 0;
 			}
 		}
-
 		.section__what-do-we-do {
 			flex-direction: column;
+
+			img {
+				max-width: 300px;
+			}
+
 			p {
 				margin-right: 0;
 			}
@@ -70,4 +73,14 @@
 			}
 		}
 	} // footer
+}
+
+/* Phone - Between */
+@media (min-width: $phone-bp) and (max-width: $tablet-bp) {
+	.section__what-do-we-do {
+		img {
+			min-width: 250px;
+		}
+	}
+	// section
 }

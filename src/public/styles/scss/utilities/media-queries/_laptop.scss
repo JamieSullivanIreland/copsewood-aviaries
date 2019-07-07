@@ -35,3 +35,14 @@
 @media (min-width: $laptop-bp) and (max-width: $desktop-bp) {
 
 }
+
+/* Laptop - Above */
+@media (min-width: $laptop-bp) {
+	.section__what-do-we-do {
+		img {
+			min-width: 350px;
+		}
+	}
+	// section
+}
+

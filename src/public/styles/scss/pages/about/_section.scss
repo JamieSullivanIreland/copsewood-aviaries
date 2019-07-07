@@ -21,6 +21,7 @@
     margin-top: 5px;
     width: 100%;
     height: auto;
+    border-radius: 5px;
   }
 
   h2 {
@@ -42,6 +43,10 @@
   @extend .border-bottom;
   @extend .section-alignment;
 
+  img {
+    max-width: 800px;
+  }
+
   p {
     margin-left: 20px;
   }
@@ -50,10 +55,6 @@
 .section__what-do-we-do {
   @extend .border-bottom;
   @extend .section-alignment;
-
-  img {
-    min-width: 300px;
-  }
 
   p {
     margin-right: 20px;

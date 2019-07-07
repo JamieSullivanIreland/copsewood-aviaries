@@ -8,11 +8,9 @@
       .wrapper {
         padding: 0px 15px;
       }
-
       .phone {
         display: none;
       }
-
       .menu {
         display: block;
       }
@@ -26,7 +24,6 @@
       flex-wrap: nowrap;
       overflow: hidden;
 	}
-
 	.navigation__item {
       padding: 0;
 
@@ -61,11 +58,9 @@
 	.banner, .section {
       grid-row: 4 / span 1;
 	}
-
 	.banner-height {
       height: 380px;
 	}
-
 	.banner__text {
       grid-column: 1 / span 12;
       grid-row: 4 / span 1;
@@ -74,7 +69,6 @@
           margin: 35px 0;
       }
 	}
-
 	.banner__image {
       grid-column: 1 / span 12;
       grid-row: 3 / span 1;
@@ -100,7 +94,12 @@
 
 /* Tablet - Between */
 @media (min-width: $tablet-bp) and (max-width: $laptop-bp) {
-
+  .section__what-do-we-do {
+    img {
+      min-width: 300px;
+    }
+  }
+  // section
 }
 
 /* Tablet - Above */

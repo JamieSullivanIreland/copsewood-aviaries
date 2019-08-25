@@ -67,7 +67,7 @@ router.get('/about', (req, res) => {
 });
 
 // Birds Page
-router.get('/birds', (req, res) => {
+router.get('/birds-for-sale', (req, res) => {
   // {} for all results
   Bird.find({})
     .sort({ breed: 1 })
@@ -93,7 +93,7 @@ router.get('/birds', (req, res) => {
       if (req.query.page) birds = changePage(req.query.page, birds, 10);
       else birds = changePage(1, birds, 10);
 
-      res.render('pages/birds', {
+      res.render('pages/birds-for-sale', {
         title: 'Birds',
         birds: birds,
         total: total,
@@ -103,7 +103,7 @@ router.get('/birds', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(404);
-    });;
+    });
 });
 
 // Products Page

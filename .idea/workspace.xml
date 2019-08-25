@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="009a34e5-df8a-403a-ae00-63bdf9f36130" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/client/filters-ls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/client/filters-ls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/client/image-upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/client/image-upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/birds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/about.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/birds.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/navbar.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -28,8 +40,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+                <state relative-caret-position="456">
+                  <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -38,61 +50,84 @@
             <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="48">
-                  <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+                  <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/partials/index/welcome.ejs">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="28" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="22" selection-start-column="22" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss">
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+                <state relative-caret-position="547">
+                  <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="764">
-                  <caret line="86" selection-start-line="86" selection-end-line="86" />
+                <state relative-caret-position="24">
+                  <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
-                  <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="32" selection-start-line="32" selection-end-line="32" />
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list.scss">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss">
+            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/components/_cards.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="715">
-                  <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+                <state relative-caret-position="-4">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -118,7 +153,21 @@
       <find>.sub-header-font</find>
       <find>.wrapper</find>
       <find>padding: 0px 110px;</find>
+      <find>fileIsImage</find>
+      <find>isOver</find>
+      <find>limitIsReached</find>
+      <find>total</find>
+      <find>section h2</find>
+      <find>h4</find>
+      <find>who-are-we</find>
+      <find>section__who-are-we</find>
+      <find>section__what-do-we-do</find>
     </findStrings>
+    <replaceStrings>
+      <replace>isOverLimit</replace>
+      <replace>about__who-are-we</replace>
+      <replace>about__what-do-we-do</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,11 +176,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/index/_tablet.scss" />
-        <option value="$PROJECT_DIR$/src/views/partials/navbar.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/elements/_elements.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/partials/_navigation.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/_utilities.scss" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/structure/_grid.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/index/_phone.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/settings/_variables.scss" />
@@ -143,14 +190,30 @@
         <option value="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" />
         <option value="$PROJECT_DIR$/src/views/partials/about/what-do-we-do.ejs" />
         <option value="$PROJECT_DIR$/src/views/partials/about/who-are-we.ejs" />
-        <option value="$PROJECT_DIR$/src/views/pages/about.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_media-queries.scss" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" />
-        <option value="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/config/passport.js" />
+        <option value="$PROJECT_DIR$/src/public/js/client/image-upload.js" />
+        <option value="$PROJECT_DIR$/src/public/js/client/filters-ls.js" />
+        <option value="$PROJECT_DIR$/src/routes/api/birds.js" />
+        <option value="$PROJECT_DIR$/src/views/partials/navbar.ejs" />
+        <option value="$PROJECT_DIR$/src/views/partials/birds-for-sale/birds-list.ejs" />
+        <option value="$PROJECT_DIR$/src/routes/pages.js" />
+        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs" />
+        <option value="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" />
+        <option value="$PROJECT_DIR$/src/views/pages/about.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" />
+        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/birds/birds-for-sale.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/partials/_section.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss" />
+        <option value="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" />
       </list>
     </option>
   </component>
@@ -165,10 +228,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="327" />
-    <option name="y" value="-9" />
-    <option name="width" value="2735" />
-    <option name="height" value="880" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -190,12 +253,6 @@
               <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
               <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
@@ -247,6 +304,15 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
               <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
+              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
               <item name="elements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -267,6 +333,16 @@
               <item name="scss" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="about" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
+              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="birds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
@@ -335,6 +411,13 @@
               <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
               <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
+              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -365,7 +448,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="birds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,9 +460,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/public/styles/scss/pages/birds" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jamie\Documents\Projects\Github\copsewood-aviaries\src\public\styles\scss\pages\birds" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -407,22 +496,25 @@
       <workItem from="1562013121777" duration="885000" />
       <workItem from="1562431914337" duration="6810000" />
       <workItem from="1562507942218" duration="6019000" />
+      <workItem from="1562786706938" duration="1644000" />
+      <workItem from="1565209588355" duration="628000" />
+      <workItem from="1566742504032" duration="4877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36474000" />
+    <option name="totallyTimeSpent" value="43626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29157782" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="1" sideWeight="0.50441176" side_tool="true" weight="0.21744967" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49558824" weight="0.21695095" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -432,59 +524,48 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.9554069" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.95429206" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="1" sideWeight="0.50441176" side_tool="true" weight="0.21744967" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49558824" visible="true" weight="0.21695095" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.95429206" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/views/pages/index.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/settings/_settings.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/settings/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_desktop.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_laptop.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_tablet.scss" />
-    <entry file="file://$PROJECT_DIR$/src/views/partials/navbar.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/index/_bird-categories.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/js/client/image-upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="191" column="2" selection-start-line="191" selection-start-column="2" selection-end-line="191" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_phone.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_index-mq.scss" />
@@ -566,13 +647,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/partials/about/what-do-we-do.ejs" />
-    <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/partials/index/welcome.ejs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -597,45 +671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/settings/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -646,10 +685,180 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/js/client/image-upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/js/client/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/js/client/filters-ls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/js/client/delete-items.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/pages/index.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/api/birds.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/navbar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/pages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/components/_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/partials/_section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        <state relative-caret-position="456">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>

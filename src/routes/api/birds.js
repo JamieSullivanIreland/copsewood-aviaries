@@ -42,7 +42,7 @@ router.get('/', (req, res) => {
     .catch(err => {
       console.log(err);
       res.status(404);
-    });;
+    });
 });
 
 // @route         GET api/birds/:id

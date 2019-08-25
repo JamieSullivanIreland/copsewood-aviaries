@@ -63,26 +63,22 @@ function unhighlight(e) {
 // Get files when user selects from input
 function handleInput(e) {
   preventDefaults(e);
-
   const files = imageInput.files;
   const filesArr = Array.from(files);
 
   for (let i = 0; i < filesArr.length; ++i) {
     // Check if image limit was reached
-    if (limitIsReached()) {
+    if (isOverLimit()) {
       createErrorMessage('Limit of 4 Files!');
       break;
     }
-
     // Check file type
     if (!fileIsImage(filesArr[i])) {
       createErrorMessage('File Must be an Image!');
       break;
     }
-
     // Add images for submission
     imagesToSubmit.push(filesArr[i]);
-
     // Load images into DOM
     readAndPreview(filesArr[i]);
   }
@@ -97,7 +93,7 @@ function handleDrop(e) {
 
   for (let i = 0; i < filesArr.length; ++i) {
     // Check if image limit was reached
-    if (limitIsReached()) {
+    if (isOverLimit()) {
       createErrorMessage('Limit of 4 Files!');
       break;
     }
@@ -161,12 +157,14 @@ function changeInputLabel() {
   }
 }
 
-function limitIsReached() {
+function isOverLimit() {
   return imagesToSubmit.length === 4 ? true : false;
 }
 
 function fileIsImage(file) {
-  return file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'image/gif' ? true : false;
+  return file.type === 'image/jpeg'
+      || file.type === 'image/png'
+      || file.type === 'image/gif';
 }
 
 function createErrorMessage(message) {
@@ -231,6 +229,6 @@ function sendData(formData) {
   // Set up our request
   XHR.open('POST', '/api/birds');
 
-  // Send our FormData object; HTTP headers are set automatically
+  // Send our FormData object, HTTP headers are set automatically
   XHR.send(formData);
 }

@@ -45,7 +45,7 @@ function createFilterElements() {
 }
 
 function initCheckboxes() {
-  // Create checkboxes and  change their value to match Local Storage
+  // Create checkboxes and change their value to match Local Storage
   checkboxesLS = createCheckboxesLS();
 
   checkboxes.forEach((checkbox, i) => {

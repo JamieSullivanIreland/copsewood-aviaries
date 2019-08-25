@@ -1,11 +1,3 @@
-.border-bottom {
-  background-image: linear-gradient(to right, $dark
-  50%, $white 0%);
-  background-position: bottom;
-  background-size: 34px 2px;
-  background-repeat: repeat-x;
-}
-
 .section-alignment {
   display: flex;
   align-self: center;
@@ -26,7 +18,6 @@
   }
 
   h2 {
-    @extend .border-bottom;
     @extend .sub-header-font;
     color: $dark;
     padding: 25px 0;
@@ -37,27 +28,5 @@
     padding-top: 30px;
     margin-bottom: 4px;
     color: $dark;
-  }
-}
-
-.section__who-are-we {
-  @extend .border-bottom;
-  @extend .section-alignment;
-
-  img {
-    max-width: 800px;
-  }
-
-  p {
-    margin-left: 20px;
-  }
-}
-
-.section__what-do-we-do {
-  @extend .border-bottom;
-  @extend .section-alignment;
-
-  p {
-    margin-right: 20px;
   }
 }

@@ -81,3 +81,9 @@
 	font-weight: 600;
 	color: $light;
 }
+
+.list-header-font {
+	@extend .footer-header-font;
+	@include fluid-type($phone-bp, $desktop-bp, 12px, 16px);
+	color: $dark;
+}

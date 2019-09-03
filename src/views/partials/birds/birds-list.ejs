@@ -1,111 +1,36 @@
-
-<div class="">
-    <h1>Birds for Sale</h1>
-    <h2><%= total %> Results</h2>
-
-    <form method='GET' action='/api/birds' class="my-3" id="filter-form">
-        <input name="page" id="page-input" value="page-1" />
-
-        <nav aria-label="Page navigation">
-            <ul id="pagination-nav">
-                <li>
-                    <button id="previous-btn" value="page-previous">Previous</button>
-                </li>
-                <% for(let i = 0; i < numPages; ++i) { %>
-                    <li>
-                        <button id="page-link" value="page-<%= (i + 1) %>" onclick="submit"><%= (i + 1) %></button>
-                    </li>
-                <% } %>
-                <li class="">
-                    <button id="next-btn" value="page-next">Next</button>
-                </li>
-            </ul>
-        </nav>
-
-        <button onclick="submit" id="filter-button">Filter</button>
-        <br />
-
-        <input type="checkbox" value="Large Parrot" name="categories" aria-label="Checkbox for large parrot" id="filter-checkbox-0">
-        <label for="large-parrot">Large Parrot</label>
-        <br />
-
-        <input type="checkbox" value="Medium Parrot" name="categories" aria-label="Checkbox for medium parrot" id="filter-checkbox-1">
-        <label for="medium-parrot">Medium Parrot</label>
-        <br />
-
-        <input type="checkbox" value="Small Parrot" name="categories" aria-label="Checkbox for small parrot" id="filter-checkbox-2">
-        <label for="small-parrot">Small Parrot</label>
-        <br />
-
-        <input type="checkbox" value="Poultry" name="categories" aria-label="Checkbox for poultry" id="filter-checkbox-3">
-        <label for="poultry">Poultry</label>
-        <br />
-
-        <input type="radio" value="< 100" name="price" aria-label="Radio button for less than 100 euro" id="filter-radio-0">
-        <label for="poultry">&lt; 100</label>
-        <br />
-
-        <input type="radio" value="< 300" name="price" aria-label="Radio button for less than 300 euro" id="filter-radio-1">
-        <label for="poultry">&lt; 300</label>
-        <br />
-
-        <input type="radio" value="< 500" name="price" aria-label="Radio button for less than 500 euro" id="filter-radio-2">
-        <label for="poultry">&lt; 500</label>
-        <br />
-
-        <input type="radio" value="< 800" name="price" aria-label="Radio button for less than 800 euro" id="filter-radio-3">
-        <label for="poultry">&lt; 800</label>
-        <br />
-
-        <input type="radio" value="< 1000" name="price" aria-label="Radio button for less than 1000 euro" id="filter-radio-4">
-        <label for="poultry">&lt; 1000</label>
-        <br />
-
-        <input type="radio" value="> 1000" name="price" aria-label="Radio button for more than 1000 euro" id="filter-radio-5">
-        <label for="poultry">&gt; 1000</label>
-        <br />
-
-        <input name="sort" id="sortby-input" />
-
-        <span>Sort By: </span>
-        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-selection">Breed A-Z</button>
-
-        <div class="dropdown-menu">
-            <button id="sort-btn-0" onclick="submit" value="breed asc">Breed A-Z</button>
-            <button id="sort-btn-1" onclick="submit" value="breed desc">Breed Z-A</button>
-            <button id="sort-btn-2" onclick="submit" value="price asc">Price High to Low</button>
-            <button id="sort-btn-3" onclick="submit" value="price desc">Price Low to High</button>
-            <button id="sort-btn-4" onclick="submit" value="date asc">Most Recent</button>
-            <button id="sort-btn-5" onclick="submit" value="date desc">Oldest</button>
-        </div>
-    </form>
-
-    <%- messages() %>
-
-    <% if (user) { %>
-        <button>Delete All</button>
-    <% } %>
-
+<div class="bird-list__container">
     <ul>
-        <% for(let i = 0; i < birds.length; ++i) { %>
-        <li>
-            <h5>
-                <a href='/birds_<%=birds[i]._id %>'>Breed: <%= birds[i].breed %></a>
-            </h5>
+        <% for (let i = 0; i < birds.length; ++i) { %>
+        <li class="bird-list__item">
+            <div class="bird-list__item__header">
+                <a href='/birds_<%=birds[i]._id %>'>
+                    <%= birds[i].breed %>
+                </a>
+            </div>
 
-            <p>
-                Price: <%= birds[i].price %> <br />
-                Category: <%= birds[i].category %> <br />
-                Added By: <%= birds[i].addedBy %> <br />
-                Date: <%= birds[i].date %> <br />
-                Time: <%= birds[i].time %>
-            </p>
+            <div class="bird-list__item__content">
+                <div class="bird-list__img">
+                    <img src=<%= birds[i].images[0].path %> />
+                </div>
 
-            <% if (user) { %>
-                <a href="/edit-bird_<%= birds[i]._id %>">Edit</a>
-
-                <button id="<%= birds[i]._id %>">Delete</button>
-            <% } %>
+                <div class="bird-list__details">
+                    <p>
+                        Price: <%= birds[i].price %> <br />
+                        Category: <%= birds[i].category %> <br />
+                        Added By: <%= birds[i].addedBy %> <br />
+                        Date: <%= birds[i].date %> <br />
+                        Time: <%= birds[i].time %>
+                    </p>
+                    <% if (user) { %>
+                        <a href="/edit-bird_<%= birds[i]._id %>">
+                            Edit
+                        </a>
+                        <button id="<%= birds[i]._id %>">
+                            Delete
+                        </button>
+                    <% } %>
+                </div>
+            </div>
         </li>
         <% } %>
     </ul>

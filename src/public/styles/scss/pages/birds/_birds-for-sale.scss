@@ -1,2 +1,21 @@
 @import 'bird-list-container';
-@import 'bird-list';
+
+.birds-for-sale {
+    padding: 0 60px;
+
+    .bird-list__nav {
+        background-color: $light;
+
+        .bird-list__header {
+            @extend .list-header-font;
+
+            h4 {
+                display: inline;
+            }
+        }
+
+        .dropdown-menu {
+            float: right;
+        }
+    }
+}

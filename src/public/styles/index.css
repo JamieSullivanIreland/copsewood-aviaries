@@ -92,17 +92,17 @@
       .body-font, p, .welcome p {
         font-size: 20px; } }
 
-.footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
+.footer-header-font, .card-header-font, .bird-list__container .bird-list__item .bird-list__item__header, .card .card__header, .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header, .footer .wrapper h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: #efe9df; }
-  .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
+  .footer-header-font, .card-header-font, .bird-list__container .bird-list__item .bird-list__item__header, .card .card__header, .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header, .footer .wrapper h3 {
     font-size: 20px; }
     @media screen and (min-width: 600px) {
-      .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
+      .footer-header-font, .card-header-font, .bird-list__container .bird-list__item .bird-list__item__header, .card .card__header, .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header, .footer .wrapper h3 {
         font-size: calc( 20px + 4 * ((100vw - 600px) / 850)); } }
     @media screen and (min-width: 1450px) {
-      .footer-header-font, .card-header-font, .card .card__header, .footer .wrapper h3 {
+      .footer-header-font, .card-header-font, .bird-list__container .bird-list__item .bird-list__item__header, .card .card__header, .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header, .footer .wrapper h3 {
         font-size: 24px; } }
 
 .footer-body-font, .card-body-font, .card .card__body .card__text, .footer .wrapper div, .footer .wrapper a, .footer .footer__location {
@@ -133,6 +133,17 @@
     @media screen and (min-width: 1450px) {
       .card-button-font, .card .card__body button {
         font-size: 18px; } }
+
+.list-header-font, .birds-for-sale .bird-list__nav .bird-list__header {
+  color: #191512; }
+  .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header {
+    font-size: 12px; }
+    @media screen and (min-width: 600px) {
+      .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header {
+        font-size: calc( 12px + 4 * ((100vw - 600px) / 850)); } }
+    @media screen and (min-width: 1450px) {
+      .list-header-font, .birds-for-sale .bird-list__nav .bird-list__header {
+        font-size: 16px; } }
 
 .row {
   display: flex;
@@ -330,6 +341,40 @@ nav {
 
 .about__what-do-we-do p {
   margin-right: 20px; }
+
+.bird-list__container {
+  background-color: #efe9df; }
+  .bird-list__container ul {
+    list-style: none; }
+  .bird-list__container .bird-list__item {
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column; }
+    .bird-list__container .bird-list__item .bird-list__item__header {
+      background-color: #225e00;
+      color: #ffffff;
+      font-size: 22px;
+      padding: 4px 12px 6px 12px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px; }
+    .bird-list__container .bird-list__item .bird-list__item__content {
+      display: flex;
+      flex-direction: row;
+      padding: 20px 60px; }
+      .bird-list__container .bird-list__item .bird-list__item__content .bird-list__img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px; }
+
+.birds-for-sale {
+  padding: 0 60px; }
+  .birds-for-sale .bird-list__nav {
+    background-color: #efe9df; }
+    .birds-for-sale .bird-list__nav .bird-list__header h4 {
+      display: inline; }
+    .birds-for-sale .bird-list__nav .dropdown-menu {
+      float: right; }
 
 .btn {
   padding: 8px 12px;

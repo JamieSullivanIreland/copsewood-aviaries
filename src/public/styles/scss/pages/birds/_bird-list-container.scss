@@ -1,0 +1,48 @@
+
+.bird-list__container {
+    background-color: $light;
+
+    ul {
+        list-style: none;
+    }
+
+    .bird-list__item {
+        background-color: $white;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+
+        .bird-list__item__header {
+            @extend .card-header-font;
+            background-color: $primary;
+            color: $white;
+            font-size: 22px;
+            padding: 4px 12px 6px 12px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .bird-list__item__content {
+            display: flex;
+            flex-direction: row;
+            padding: 20px 60px;
+
+            .bird-list__img {
+                img {
+                    width: 200px;
+                    height: 200px;
+
+                    border-radius: 100px;
+                }
+            }
+
+            .bird-list__details {
+
+            }
+        }
+    }
+
+
+
+
+}

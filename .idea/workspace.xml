@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="009a34e5-df8a-403a-ae00-63bdf9f36130" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/views/partials/birds/birds-for-sale-section.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/js/client/filters-ls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/client/filters-ls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/js/client/image-upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/client/image-upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/birds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/pages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/birds.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/partials/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/navbar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/pages/index/_bird-categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/pages/index/_bird-categories.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/birds/old-birds-list.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -34,41 +29,32 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5529925">
+    <splitter split-orientation="horizontal" split-proportion="0.54966444">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/views/partials/index/bird-categories.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="36" />
+                <state relative-caret-position="168">
+                  <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
+            <entry file="file://$PROJECT_DIR$/src/views/partials/birds/old-birds-list.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+                <state relative-caret-position="571">
+                  <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs">
+            <entry file="file://$PROJECT_DIR$/src/views/object-info/bird.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+                <state relative-caret-position="1080">
+                  <caret line="45" selection-start-line="45" selection-end-line="49" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -76,8 +62,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="28" />
+                <state relative-caret-position="168">
+                  <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-for-sale-section.ejs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -86,48 +81,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="22" selection-start-column="22" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="547">
-                  <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="24">
-                  <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+                <state relative-caret-position="240">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list.scss">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="96">
+                  <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/public/styles/scss/components/_cards.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="168">
+                  <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -138,8 +114,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.navigation__group {</find>
-      <find>padding: 8px 0px;</find>
       <find>grid-row: 4 / span 1;</find>
       <find>images/birds/lovebird.jpg</find>
       <find>banner__image</find>
@@ -162,6 +136,14 @@
       <find>who-are-we</find>
       <find>section__who-are-we</find>
       <find>section__what-do-we-do</find>
+      <find>dropdown</find>
+      <find>dark</find>
+      <find>card__body</find>
+      <find>bird-list-container</find>
+      <find>about__who-are-we</find>
+      <find>section img</find>
+      <find>section</find>
+      <find>about__what-do-we-do</find>
     </findStrings>
     <replaceStrings>
       <replace>isOverLimit</replace>
@@ -187,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/public/styles/index.css" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/_helpers.scss" />
         <option value="$PROJECT_DIR$/src/public/js/client/navigation.js" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" />
         <option value="$PROJECT_DIR$/src/views/partials/about/what-do-we-do.ejs" />
         <option value="$PROJECT_DIR$/src/views/partials/about/who-are-we.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_media-queries.scss" />
@@ -200,20 +181,26 @@
         <option value="$PROJECT_DIR$/src/views/partials/navbar.ejs" />
         <option value="$PROJECT_DIR$/src/views/partials/birds-for-sale/birds-list.ejs" />
         <option value="$PROJECT_DIR$/src/routes/pages.js" />
-        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs" />
-        <option value="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" />
         <option value="$PROJECT_DIR$/src/views/pages/about.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_section.scss" />
-        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/birds/birds-for-sale.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/partials/_section.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_tablet.scss" />
         <option value="$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss" />
-        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss" />
         <option value="$PROJECT_DIR$/src/views/partials/about/about-content.ejs" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss" />
+        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs" />
+        <option value="$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/index/_bird-categories.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/partials/_section.scss" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/components/_cards.scss" />
+        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss" />
+        <option value="$PROJECT_DIR$/src/views/partials/birds/birds-for-sale-section.ejs" />
+        <option value="$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss" />
       </list>
     </option>
   </component>
@@ -228,10 +215,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="2425" />
+    <option name="height" value="1375" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -240,221 +227,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="birds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="structure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="media-queries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="copsewood-aviaries" type="b2602c69:ProjectViewProjectNode" />
-              <item name="copsewood-aviaries" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="birds" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -463,7 +236,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/public/styles/scss/pages/birds" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -498,23 +271,24 @@
       <workItem from="1562507942218" duration="6019000" />
       <workItem from="1562786706938" duration="1644000" />
       <workItem from="1565209588355" duration="628000" />
-      <workItem from="1566742504032" duration="4877000" />
+      <workItem from="1566742504032" duration="5820000" />
+      <workItem from="1567517948603" duration="4684000" />
+      <workItem from="1567525106663" duration="2384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43626000" />
+    <option name="totallyTimeSpent" value="51637000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="npm" order="1" sideWeight="0.50441176" side_tool="true" weight="0.21744967" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49558824" weight="0.21695095" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49558824" weight="0.2771812" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -524,7 +298,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.95429206" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.9529412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -557,17 +331,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_desktop.scss" />
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_laptop.scss" />
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_tablet.scss" />
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/index/_bird-categories.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_phone.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/index/_index-mq.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -636,13 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -758,65 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/components/_cards.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list-container.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_laptop.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -827,20 +528,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
+    <entry file="file://$PROJECT_DIR$/src/views/pages/about.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="48">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/partials/_section.scss">
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/settings/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="811">
+          <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/index/birds-for-sale.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="59" column="163" lean-forward="true" selection-start-line="59" selection-start-column="163" selection-end-line="59" selection-end-column="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list.scss" />
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -848,17 +564,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/partials/about/about-content.ejs">
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/pages.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/pages/birds-for-sale.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/index/_bird-categories.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/index/bird-categories.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/object-info/bird.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" selection-start-line="45" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/utilities/media-queries/_phone.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/old-birds-list.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="84" column="12" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/about/_about-content.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="475">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/partials/_section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/components/_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-list.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_bird-list-container.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/partials/birds/birds-for-sale-section.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/styles/scss/pages/birds/_birds-for-sale.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
